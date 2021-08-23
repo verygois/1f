@@ -5,14 +5,14 @@ const contents = [
     "/1f/01/004.jpg"
   ];
   
-  function randomContents(contentsArray) {
+  function randomOne(contentsArray) {
     var contents =
       contentsArray[Math.floor(Math.random() * contentsArray.length)];
     console.log(contents);
     return contents;
   }
   function sentenceGenerator() {
-    var sentence = `<img src="${randomContents(contents)}">`;
+    var sentence = `<img src="${randomOne(contents)}">`;
     document.querySelector(".one").innerHTML = sentence;
   }
   window.setInterval(function() {
