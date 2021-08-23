@@ -101,7 +101,7 @@ body {
   
   @media print {
   .text {
-    height: 72vh;
+    height: 75vh;
   }
   }
   
