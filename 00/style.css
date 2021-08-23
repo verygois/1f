@@ -1,0 +1,116 @@
+body {
+    margin:0;
+    padding:0;
+    font-size: 2vw;
+    font-family: "ＭＳ 明朝","MS Mincho", sans-serif;
+    letter-spacing: 0.04rem;
+  }
+  h1 {
+    font-size: 8vw;
+    font-weight: normal;
+    line-height: 100%;
+    float: right;
+    margin: 0 1vw 2vw;
+  }
+  h2 {
+    float: right;
+    margin: 0 2vw;
+  }
+  h2,
+  .text {
+    font-size: 2vw;
+    line-height: 4vw;
+    font-weight: 555;
+    letter-spacing: 0.07rem;
+  }
+  h3 {
+    font-size: 4vw;
+    font-weight: normal;
+    float: left;
+    line-height: 8vw;
+    margin: 0;
+  }
+  
+  hr {
+    border: 0;
+    height: 2vw;
+    clear: both;
+  }
+  
+  a {
+    font-weight: normal;
+    text-decoration: none;
+  }
+  #contents {
+    padding: 2.5vw;
+  }
+  .text {
+    display:block;
+    position:relative;
+    overflow:auto;
+  }
+  .text a {
+    font-size: 4vw;
+  }
+  
+  .left,
+  .right {
+    width: 47.5%;
+  }
+  .left {float: left;}
+  .right {float: right;}
+  
+  #foot {
+    float: right;
+    line-height: 3vw;
+    width: auto;
+    padding:0 2.5vw;
+    position: relative;
+  }
+  
+  .events {
+    line-height: 2vw;
+    padding: 0;
+    letter-spacing: 0.07rem;
+  }
+  .events p {
+    padding: 0;
+    margin: 1.5vw 0;
+  }
+  .events h1 {
+    float: left;
+    margin: 0 2vw 0 0;
+  }
+  .events h3 {
+    float: right;
+    margin: 0 0 0 2vw;
+  }
+  .events .left,
+  .events .right {
+    padding: 0 0 4.5vw;
+  }
+  .events hr {border-top: solid 0.25vw #000;}
+  
+  .info {
+    line-height: 3vw;
+    padding-top: 4vw;
+    margin-bottom: 4vw;
+    letter-spacing: 0.07rem;
+  }
+  .events img {width: 100%;}
+  
+  @media print {
+  .text {
+    height: 72vh;
+  }
+  }
+  
+  @media screen and (max-width: 750px){
+  .left,
+  .right {
+    width: 100%;
+    float: left;
+    display:block;
+    padding: 0 0 4.5vw;
+  }
+  }
