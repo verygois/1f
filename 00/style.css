@@ -43,7 +43,7 @@ body {
   }
   #contents {
     clear: both;
-    padding: 2.5vw;
+    padding: 2.5vw 5vw;
   }
   .text {
     display:block;
@@ -56,7 +56,7 @@ body {
   
   .left,
   .right {
-    width: 47.5%;
+    width: 42.5%;
   }
   .left {float: left;}
   .right {float: right;}
