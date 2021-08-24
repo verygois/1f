@@ -17,6 +17,6 @@ const random = [
   }
   window.setInterval(function() {
     sentenceGenerator();
-  }, 500);
+  }, 1000);
   sentenceGenerator();
   
