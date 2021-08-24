@@ -105,6 +105,9 @@ body {
   .text {
     height: 75vh;
   }
+  .a4 {
+    height: 100vh;
+  }
   }
   
   @media screen and (max-width: 750px){
