@@ -86,7 +86,9 @@ body {
   .events .right {
     padding: 0 0 4.5vw;
   }
-  .events hr {border-top: solid 0.25vw #000;}
+
+  .events hr,
+  .foot hr {border-top: solid 0.25vw #000;}
   
   .info {
     line-height: 3vw;
