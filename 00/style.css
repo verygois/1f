@@ -61,9 +61,7 @@ body {
   .right {float: right;}
   
   #foot {
-    float: right;
     line-height: 3vw;
-    width: auto;
     padding:0 2.5vw;
     position: relative;
   }
