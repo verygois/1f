@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>快晴 by 16 young japanese artists'.</title>
+    <script src="05/random.js" defer></script>
+    <title>05 by Laurel Schwulst, Woopheadclrms</title>
     <link rel="stylesheet" href="/1f/00/style.css" />
     <style>
       html {color: #111; background-color: #fff;}
@@ -46,7 +47,14 @@ animation: AnimationName 2s ease infinite;
       .aa {line-height:2vw;}
       .aa a {font-size: 3vw;}
       
+      #credit {line-height:5vw;}
+      
       .print_only {display:none;}
+      #print {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
       
       @media print {
         .print_only {display:block;}
@@ -68,7 +76,7 @@ animation: AnimationName 2s ease infinite;
 <a href="http://revuelagon.com/">LAGON</a> の制作チーム協力のもと、2018年5月に創刊する雑誌<b>「快晴」</b>の完成に先駆け、参加する日本の若手アーティスト16組による雑誌掲載作品を展覧会形式で展開するグループ展を二期に渡って開催いたします。<br />
 <hr/>
 <p>We will launch a new magazine <b>快晴</b> with 16 young japanese artists'.</p>
-<p>We will present the contents of the magazine ahead of completion in the exhibition format over the second term.<br/>organized by <a>nice shop su</a>, Support by <a href="http://revuelagon.com/">LAGON</a>.<br/>
+<p>We will present the contents of the magazine ahead of completion in the exhibition format over the second term.<br/>organized by <a>nice shop su</a>, Support by <a href="http://revuelagon.com/">LAGON</a>.
         </div>
         <div class="right aa">
 <p><a>安部悠介 | Yusuke Abe</a></p>
@@ -88,21 +96,27 @@ animation: AnimationName 2s ease infinite;
 <p><a href="http://shingominamida.tumblr.com/">南田真吾 | Shingo Minamida</a></p>
 <p><a href="http://5bangaimac.web.fc2.com/">五番街マック | Gobangai Mac</a></p>
         </div>
-      <hr/>
       </div>
+      <hr/>
       <div id="foot" class="print_only">
-        <p>&and;&deg;┐ | <a href="http://vg.pe.hu/jp/">vg.pe.hu/jp</a></p>
-          〒530-0047<br/>
+        <div class="left">
+        &and;&deg;┐ | <a href="http://vg.pe.hu/jp/">vg.pe.hu/jp</a>
+        <p>〒530-0047<br/>
           大阪府大阪市北区西天満4-8-1<br/>
-          4-8-1 Nishitemma, Kita-ku, Osaka
+          4-8-1 Nishitemma, Kita-ku, Osaka</p>
+        </div>
+        <div class="right">　
+          <p>平日：正午から午後9時<br/>
+          土日祝：午後3時から午後9時<br/>
+          休館日：毎週木曜日</p>
+        </div>
       </div>
-      <hr/>
-      </div>
+    </div>
+    
     <div id="contents" class="print_only">
 <h2>exhibition by <br />16 young japanese artists'.</h2>
 <h3>快晴</h3>
         <hr/>
-      <div class="text">
         <div class="left">
 <p>前期 : 2018年4月9日 - 18日<br/>first half: April 9 - 18</p>
 <div class="pf">
@@ -134,20 +148,11 @@ animation: AnimationName 2s ease infinite;
         </div>
       </div>
       <hr/>
-    </div>
-      <hr/>
-      <div id="foot" class="print_only">
-        平日：正午から午後9時<br />土日祝：午後3時から午後9時<br />休館日：毎週木曜日
-      </div>
-      <hr/>
   </div>
 
-    <div id="contents">
-      <div class="events no_print">
-        <div class="left">
-<p class="vg">VG VTLG</p>
-        </div>
-<h1>
+  <div id="contents" class="no_print">
+<p class="vg">VG VTLG</p> 
+<h3 id="credit">
 <a>Yusuke Abe</a>,
 <a href="https://soundcloud.com/takaoo">Takao Oishi</a>,
 <a href="http://kazquiz.com">Kazquiz</a>,
@@ -164,21 +169,9 @@ animation: AnimationName 2s ease infinite;
 <a href="https://www.instagram.com/ryusuke_marume/">Ryusuke Marume</a>,
 <a href="http://shingominamida.tumblr.com/">Shingo Minamida</a>,
 <a href="http://5bangaimac.web.fc2.com/">Gobangai Mac</a>.
-</h1>
-        <div class="left">
-<img src="kaisei/front/001.jpg" width="100%">
-        </div>
-        <div class="right">
-<img src="kaisei/back/001.jpg" width="100%">
-        </div>
-        <div class="left">
-<img src="kaisei/front/002.jpg" width="100%">
-        </div>
-        <div class="right">
-<img src="kaisei/back/002.jpg" width="100%">
-        </div>
-        <hr/>
-      </div>
-    </div>
+</h3>
+    <hr/>
+    <p id="print">このページを印刷すると、 2018年4月にペフで開催した展覧会「快晴」の概要が表示されます。</p>
+  </div>
   </body>
 </html>
