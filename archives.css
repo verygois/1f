@@ -119,7 +119,6 @@ a:hover {
 
 @media screen and (max-width: 750px){
   .mobile {display: none;}
-  .mobile_only {display:inline-block;}
     #hello {
       position: relative;
       z-index: 1;
