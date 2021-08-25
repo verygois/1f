@@ -1,0 +1,54 @@
+.print_block {display: block;}
+.print_only {display: inline-block;}
+.no_print {display: none;}
+
+#a4 {
+  max-height: 100vh;
+  }
+#contents {
+  position:relative;
+  top:0;
+  height: 100vw;
+  padding: 0 0 4.5vw;
+  }
+#credit {
+    height: 33vw;
+    margin:auto;
+    padding: 2vw 0 0;
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: justify;
+    text-align: justify-all;
+  }
+#credit p {
+    margin:0;
+    padding:0;
+  line-height: 100%;
+  }
+  #contents h1 {
+    padding: 0 0 1.25vw;
+  }
+  #contents h1 i {
+    position:absolute;
+    top:2.5vw;
+    right:2.5vw;
+    padding-top: 2.5vw;
+    display: inline-block;
+    font-size: 4.5vw;
+    font-family: "Great Vibes", cursive;
+    font-weight: 555;
+    transform: scale(1, 4.5);
+  }
+  #hello {
+    padding: 0 0 15vw;0
+  }
+  #hello .image {
+    height: 4.5vw;
+    top: -1vw;
+    margin-left: 3.5vw;
+    margin-right: 4vw;
+    transform: scale(1.75);
+  }
+
+
+  
