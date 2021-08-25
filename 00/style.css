@@ -118,4 +118,5 @@ body {
     display:block;
     padding: 0 0 4.5vw;
   }
+  .mobile {display: none;}
   }
