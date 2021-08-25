@@ -31,9 +31,11 @@ body, .portrait {padding:0; margin:0;}
         position: fixed;
         z-index:100;
         width: 100%;
-        top: 0;
-        color: #306060;
+        bottom: 0;
         text-shadow:1px 1px 0 #000;
+      }
+#print a {
+        color:#fff:
       }
 
   @media screen and (max-width: 750px){
@@ -44,7 +46,6 @@ body, .portrait {padding:0; margin:0;}
   </head>
   <body>
     <p id="print" class="no_print">
-      <a class="back" onclick="history.back(-1);return false;" style="font-size:7.5vw; border:none;">↵</a></br>
       <a class="mobile" href="javascript:void(0)" onclick="window.print();return false;">ここをクリックすると、 このページを PDF または 印刷物として 出力できます。</a>
     </p>
 
