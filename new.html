@@ -45,6 +45,11 @@
   .print_block {display: none;}
   hr {border:none; display:block;}
 
+  @media print {
+  .print_only {display: inline-block;}
+  .print_block {display: block;}
+  .no_print {display: none;}
+  }
 </style>
   </head>
   <body>
@@ -145,7 +150,7 @@
       </div>
     </div>
     <div id="credit">
-      <a class="arcives mobile　no_print" href="javascript:void(0)" onclick="window.print();return false;">
+      <a class="no_print mobile" href="javascript:void(0)" onclick="window.print();return false;">
       <span>ここ</span>
       <span>を</span>
       <span>クリック</span>
