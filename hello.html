@@ -3,49 +3,185 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>1F | VG CTLG</title>
-    <link rel="stylesheet" href="http://creative-community.pe.hu/coding/html/ruby/ruby.css"/>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/1f/archives.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("").load("");
+      })
+    </script>
+<style type="text/css">
+  .Heritage-Display {
+    font-family: "Heritage-Display";
+    font-size: 150%;
+    text-transform: uppercase;
+  }
+  @font-face {
+    font-family: "Heritage-Display";
+    src: url("Heritage-Display.otf");
+  }
+  #book {
+    position: absolute;
+    top:100vh;
+    width:100%;
+  }
+
+  .pehu {
+  font-family: "SimSong", "MS Mincho", selif;
+  font-stretch: condensed;
+  font-variant: common-ligatures tabular-nums;
+  letter-spacing: 0.1vw;
+}
+
+  .print_only,
+  .print_block {display: none;}
+  hr {border:none; display:block;}
+
+  @media print {
+  .print_only {display: inline-block;}
+  .print_block {display: block;}
+  .no_print {display: none;}
+  }
+</style>
   </head>
   <body>
-    <div id="jp">
-      <p>
-        <ruby data-ruby="The HTML ruby element">
-          ルビ
-        </ruby>
-        はベーステキストの上、下、隣に
-        <ruby data-ruby="びょうが">
-          描画
-        </ruby>
-        される小さな
-        <br />
-        <ruby
-          data-ruby="本文の語句や文章をとりあげてその意味を解説すること。また、その解説したもの。注。注解。"
-        >
-          注釈
-        </ruby>
-        で、よく東アジアの文字の
-        <ruby
-          data-ruby="音、特に、言語の音声を発すること。 また、その音声の出し方。 はついん。"
-        >
-          発音
-        </ruby>
-        を表すのに使われます。
-      </p>
-      <p>
-        他の種類の注釈にも使われることがありますが、この使い方はあまり一般的ではありません。
-      </p>
-    </div>
+  <div id="a4">
+    <div id="contents">
+      <h1>
+        <b>1F</b>
+        <span class="print_only">大 chotto crazy 2021</span>
+        <u class="no_print archives Heritage-Display">Archives</u>
+        <u class="no_print ctlg Heritage-Display">CTLG</u>
+        <i>VG CTLG</i>
+      </h1>
 
-    <div id="en">
-      <p>
-        The
-        <ruby data-ruby="HyperText Markup Language element">
-          ruby
-        </ruby>
-        represents small annotations that are rendered above, below, or next to
-        base text, usually used for showing the pronunciation of East Asian
-        characters.
+      <div id="hello">
+        <span class="print_block">This is The <i>Art Show</i> by</span>
+        <span class="print_block">creative, community space <b class="pehu">∧°┐</b></span>
+        <i class="print_block">with</i>
+        
+        <span class="no_print archives">
+        <u><a href="/1f/01.html">01</a></u>
+        by
+        <span class="archives">
+        <a class="link" href="/ctlg/book/reijisaito/">Reiji Saito</a>,</span>
+        <a class="link" href="/ctlg/book/010001111000/">0100011110001</a>
+        <span class="image">
+          <img src="/1f/01/001.jpg"/>
+        </span>
+        </span>
+        
+        <span class="archives">
+        <u><a href="/1f/02.html">02</a></u>
+        <span class="print_only">Idea</span> by
+        <a class="link" href="">Sarah Marshall</a>,
+        <a class="link" href="#">Natalia Panzer</a>
+        <span class="image">
+          <img src="/1f/02/01.jpg"/>
+        </span>
+        </span>
+
+        <u><a href="/1f/03.html">03</a></u> by
+        <a class="link" href="#">Takamitsu Ohta</a>,
+        <a class="link" href="#">Muku Kobayashi</a>,
+        <a class="link" href="#">Shoji Funakawa</a>,
+        <a class="link" href="#">Soshi Matsunobe</a>
+        <span class="ctlg">
+        Video/Edit by
+        <a class="link" href="/ctlg/book/reijisaito/">Reiji Saito</a>
+        </span>
+        <span class="print_only">
+        Video/Edit by
+        <a class="link" href="/ctlg/book/reijisaito/">Reiji Saito</a>
+        </span>
+        <span class="image">
+          <img src="/1f/03/001.jpg"/>
+        </span>
+        
+        <span class="archives">
+        <u><a href="/1f/04.html">04</a></u>
+        by
+        <a class="link" href="#">Emeraldclitoris</a>
+        <span class="image">
+          <img src="/1f/04/05.jpg"/>
+        </span>
+        </span>
+        
+        <u><a href="/1f/05.html">05</a></u>
+        <span class="print_only">Idea</span> by
+        <span class="no_print archives">
+        <a class="link" href="#">Laurel Schwulst</a>,</span>
+        <a class="link" href="#">Woopheadclrms</a>
+        <span class="image">
+          <img src="/1f/05/001.png"/>
+        </span>
+        <hr/>
+        <span class="no_print archives">
+        <u><a href="/1f/kaisei.html">快晴</a></u>
+        by
+        <a class="link" href="#">Yusuke Abe</a>,
+        <a class="link" href="#">Takao Oishi</a>,
+        <a class="link" href="#">Kazquiz</a>,
+        <a class="link" href="#">Haruna Kawai</a>,
+        <a class="link" href="#">Itsuki Kaito</a>,
+        <a class="link" href="#">Takashi Sakurai</a>,
+        <a class="link" href="#">Yuriko Sumi</a>,
+        <a class="link" href="#">NANOOK</a>,
+        <a class="link" href="#">HAKKE</a>,
+        <a class="link" href="#">Sae Fujita</a>,
+        <a class="link" href="#">Fukin</a>,
+        <a class="link" href="#">Haruka Matsumoto</a>,
+        <a class="link" href="#">Ryusuke Marume</a>,
+        <a class="link" href="#">Shingo Minamida</a>,
+        <a class="link" href="#">Gobangai Mac</a><br/>
+        <span class="image">
+          <img src="/1f/kaisei/front/001.jpg"/>
+        </span>
+        <span class="image">
+          <img src="/1f/kaisei/front/002.jpg"/>
+        </span>
+        <span class="image">
+          <img src="/1f/kaisei/back/001.jpg"/>
+        </span>
+        <span class="image">
+          <img src="/1f/kaisei/back/002.jpg"/>
+        </span>
+        <span class="image">
+          <img src="/1f/kaisei/back/003.jpg"/>
+        </span>
+      </span>
+      </div>
+    </div>
+    <div class="archives">
+    <div id="credit">
+      <a class="no_print mobile" href="javascript:void(0)" onclick="window.print();return false;">
+      <span>ここ</span>
+      <span>を</span>
+      <span>クリック</span>
+      <span>すると</span>
+      <span>大 chotto crazy 2021</span>
+      <span>内で 開催する</span>
+      <span>展覧会 の 概要</span>
+      <span>が表示されます。</span>
+      </a>
+
+      <p class="print_block">
+        会場 音ビル |
+        559-0011 大阪府大阪市住之江区北加賀屋5-5-1 2F<br/>
+        会期 2021年 10月 10日 (日) - 10月 31日 (日) |
+        開館時間 11:00 - 20:00<br/>
+        主催 クリエイティブ・コミュニティスペース ペフ  |
+        助成 おおさか千島創造財団
       </p>
     </div>
+  </div>
+  </div>
   </body>
 </html>
