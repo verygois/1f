@@ -116,10 +116,13 @@ a:hover {
   justify-content: space-between;
 }
 
+.mobile_only
+{display: none;}
+
 
 @media screen and (max-width: 750px){
   .mobile {display: none;}
-  .mobile_only {display:inline-block;}
+  .mobile_only {display:block;}
     #hello {
       position: relative;
       z-index: 1;
