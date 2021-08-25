@@ -14,11 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-        $("book").load("/1f/book/");
-      })
-    </script>
+    <script src="random.js" defer></script>
+    
 <style type="text/css">
   .Heritage-Display {
     font-family: "Heritage-Display";
@@ -164,8 +161,6 @@
       </div>
     </div>
 
-    <div id="book"></div>
-
     <div class="archives">
     <div id="credit">
       <a class="no_print mobile" href="javascript:void(0)" onclick="window.print();return false;">
@@ -190,5 +185,19 @@
     </div>
   </div>
   </div>
+
+<div id="book">
+<div id="portrait" class="random"></div>
+    
+<div id="who">
+<ruby class="title">
+<rb>VG CTLG</rb>
+<rt>1F</rt>
+</ruby>
+
+<img class="qr" src="qr.png">
+
+</div>
+</div>
   </body>
 </html>
