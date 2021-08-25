@@ -11,6 +11,18 @@
       content="Infomation"
     />
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="random.js" defer></script>
+    <script type="text/javascript">
+      $(function(){
+        $("one").load("/1f/");
+      })
+    </script>
+    <link rel="stylesheet" href="/1f/archives.css" />
+    <link rel="stylesheet" href="/1f/ctlg.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/1f/print.css" />
+    <link rel="stylesheet" href="/ctlg/book/style.css" />
+    <link type="text/css" media="print" rel="stylesheet" href="/ctlg/book/print.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
 
@@ -22,6 +34,8 @@ body, .portrait {padding:0; margin:0;}
 
   </head>
   <body>
+    <div id="one"></div>
+
     <div class="portrait">
       <iframe src="/ctlg/book/reijisaito/"></iframe>
     </div>
@@ -55,5 +69,19 @@ body, .portrait {padding:0; margin:0;}
     <div class="portrait">
       <iframe src="/ctlg/book/woopheadclrms/"></iframe>
     </div>
+
+    <div id="book" class="print_only">
+      <div id="portrait" class="random"></div>
+          
+      <div id="who">
+      <ruby class="title">
+      <rb>VG CTLG</rb>
+      <rt>1F</rt>
+      </ruby>
+      
+      <img class="qr" src="qr.png">
+      
+      </div>
+      </div>
   </body>
 </html>
