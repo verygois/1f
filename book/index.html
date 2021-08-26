@@ -21,6 +21,11 @@
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="random.js" defer></script>
+    <script type="text/javascript">
+    $(function(){
+    $("#statement").load("/1f/");
+    })
+    </script>
 
 <style type="text/css">
 body, .portrait {padding:0; margin:0;}
@@ -30,6 +35,7 @@ body, .portrait {padding:0; margin:0;}
   width:90%;
   max-width:1000px;
   height:90vh;
+  overflow: auto;
   border:0.1vw solid;
   border-radius: 1rem;
   background-color:rgba(255,255,255,0.55);
