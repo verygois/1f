@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="/ctlg/book/style.css" />
-    <link type="text/css" rel="stylesheet" href="/1f/print.css" />
+    <link type="text/css" media="print" rel="stylesheet" href="/1f/print.css" />
     <link type="text/css" media="print" rel="stylesheet" href="/ctlg/book/print.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
@@ -23,7 +23,7 @@
     <script src="random.js" defer></script>
     <script type="text/javascript">
     $(function(){
-    $("#statement").load("/1f/");
+    $("#statement").load("hello.html");
     })
     </script>
 
@@ -43,7 +43,6 @@ body, .portrait {padding:0; margin:0;}
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
-.comeon {display:block;}
 
   @media screen and (max-width: 750px){
   .mobile {display: none;}
@@ -55,7 +54,7 @@ body, .portrait {padding:0; margin:0;}
     <div class="portrait">
       <div id="portrait" class="random"></div>
 
-      <div id="statement" class="">
+      <div id="statement" class="no_print">
       
       </div>
     
