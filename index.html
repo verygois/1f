@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>1F | VG CTLG</title>
-    <meta
-      name="description"
-      content="Infomation"
-    />
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/1f/archives.css" />
+    <link rel="stylesheet" href="ctlg.css" />
     <link rel="stylesheet" type="text/css" media="print" href="/1f/print.css" />
     <link rel="stylesheet" href="/ctlg/book/style.css" />
     <link type="text/css" media="print" rel="stylesheet" href="/ctlg/book/print.css" />
@@ -20,80 +16,209 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="random.js" defer></script>
+    <script src="/1f/book/random.js" defer></script>
 
 <style type="text/css">
-body, .portrait {padding:0; margin:0;}
-.portrait {position:relative; width:100%; height:99vh;}
-.portrait iframe {width:100%; height:100%; border:none;}
+  .Heritage-Display {
+    font-family: "Heritage-Display";
+    font-size: 150%;
+    text-transform: uppercase;
+  }
+  @font-face {
+    font-family: "Heritage-Display";
+    src: url("Heritage-Display.otf");
+  }
+  #book {
+    position: absolute;
+    top:100vh;
+    width:100%;
+  }
 
-  @media screen and (max-width: 750px){
-  .mobile {display: none;}
+  .pehu {
+  font-family: "SimSong", "MS Mincho", selif;
+  font-stretch: condensed;
+  font-variant: common-ligatures tabular-nums;
+  letter-spacing: 0.1vw;
+}
+
+  .print_only,
+  .print_block,
+  .none
+  {display: none;}
+  
+  hr {border:none; display:block;}
+  #credit a {
+      position: fixed;
+      bottom:0;
+      left:0;
+      z-index: 10;
+      width:100%;
+  }
+
+  @media print {
+  .print_only {display: inline-block;}
+  .print_block {display: block;}
+  .no_print {display: none;}
   }
 </style>
-
   </head>
   <body>
-    <div class="portrait">
-      <div id="portrait" class="random"></div>
+  <div id="a4">
+    <div id="contents">
+      <h1>
+        <b>1F</b>
+        <span class="print_only">大 chotto crazy 2021</span>
+        <u class="no_print ctlg Heritage-Display">CTLG</u>
+        <u class="no_print archives Heritage-Display">EXHIBITION</u>
+        <i class="print_block">VG CTLG</i>
+      </h1>
 
-      <div class="infomation no_print">
-        <a class="click" href="/1f/">come on join us !</a>
+      <div id="hello">
+        <span class="print_block">This is The <i>Showcase</i> of</span>
+        <span class="print_block"><b>VG CTLG</b> <i>with</i></span>
+        
+        <span class="archives">
+        <u><a href="/1f/01.html">01</a></u>
+        by
+        <span class="no_print archives">
+        <a class="link" href="/ctlg/book/reijisaito/">Reiji Saito</a>,</span>
+        <a class="link" href="/ctlg/book/010001111000/">0100011110001</a>
+        <span class="image">
+          <a href="/1f/01.html"><img src="/1f/01/001.jpg"/></a>
+        </span>
+        </span>
+        
+        <span class="archives">
+        <u><a href="/1f/02.html">02</a></u>
+        <span class="print_only">Idea</span> by
+        <a class="link" href="/ctlg/book/sarahmarshall/">Sarah Marshall</a>,
+        <a class="link" href="/ctlg/book/npanzer/">Natalia Panzer</a>
+        <span class="image">
+          <a href="/1f/02.html"><img src="/1f/02/01.jpg"/></a>
+        </span>
+        </span>
+
+        <u><a href="/1f/03.html">03</a></u> by
+        <a class="link" href="/ctlg/book/takamitsuohta/">Takamitsu Ohta</a>,
+        <a class="link" href="/ctlg/book/pocopuu/">Muku Kobayashi</a>,
+        <a class="link" href="/ctlg/book/weather/">Shoji Funakawa</a>,
+        <a class="link" href="/ctlg/book/matsunobe/">Soshi Matsunobe</a>
+        <span class="ctlg">
+        Video/Edit by
+        <a class="link" href="/ctlg/book/reijisaito/">Reiji Saito</a>
+        </span>
+        <span class="print_only">
+        Video/Edit by
+        <a class="link" href="/ctlg/book/reijisaito/">Reiji Saito</a>
+        </span>
+        <span class="image">
+          <a href="/1f/03.html"><img src="/1f/03/001.jpg"/></a>
+        </span>
+        
+        <span class="archives">
+        <u><a href="/1f/04.html">04</a></u>
+        by
+        <a class="link" href="/ctlg/book/emeraldclitoris/">Emeraldclitoris</a>
+        <span class="image">
+          <a href="/1f/04.html"><img src="/1f/04/05.jpg"/></a>
+        </span>
+        </span>
+        
+        <u><a href="/1f/05.html">05</a></u>
+        <span class="print_only">Idea</span> by
+        <span class="no_print archives">
+        <a class="link" href="/ctlg/book/roombaghost/">Laurel Schwulst</a>,</span>
+        <a class="link" href="/ctlg/book/woopheadclrms/">Woopheadclrms</a>
+        <span class="image">
+          <a href="/1f/05.html"><img src="/1f/05/001.png"/></a>
+        </span>
+        <hr/>
+        
+        <span class="no_print archives none">
+        <u><a href="/1f/kaisei.html">快晴</a></u>
+        by
+        <a class="link" href="#">Yusuke Abe</a>,
+        <a class="link" href="#">Takao Oishi</a>,
+        <a class="link" href="#">Kazquiz</a>,
+        <a class="link" href="#">Haruna Kawai</a>,
+        <a class="link" href="#">Itsuki Kaito</a>,
+        <a class="link" href="#">Takashi Sakurai</a>,
+        <a class="link" href="#">Yuriko Sumi</a>,
+        <a class="link" href="#">NANOOK</a>,
+        <a class="link" href="#">HAKKE</a>,
+        <a class="link" href="#">Sae Fujita</a>,
+        <a class="link" href="#">Fukin</a>,
+        <a class="link" href="#">Haruka Matsumoto</a>,
+        <a class="link" href="#">Ryusuke Marume</a>,
+        <a class="link" href="#">Shingo Minamida</a>,
+        <a class="link" href="#">Gobangai Mac</a><br/>
+        <span class="image">
+          <a href="/1f/kaisei.html"><img src="/1f/kaisei/front/001.jpg"/></a>
+        </span>
+        <span class="image">
+          <a href="/1f/kaisei.html"><img src="/1f/kaisei/front/002.jpg"/></a>
+        </span>
+        <span class="image">
+          <a href="/1f/kaisei.html"><img src="/1f/kaisei/back/001.jpg"/></a>
+        </span>
+        <span class="image">
+          <a href="/1f/kaisei.html"><img src="/1f/kaisei/back/002.jpg"/></a>
+        </span>
+        <span class="image">
+          <a href="/1f/kaisei.html"><img src="/1f/kaisei/back/003.jpg"/></a>
+        </span>
+      </span>
       </div>
-    
-      <div id="who">
-      <ruby class="title">
-      <rb>VG CTLG</rb>
-      <rt>1F</rt>
-      </ruby>
-      
-      <img class="qr" src="/1f/qr.png">
-      
-      </div>
     </div>
-    <div class="portrait">
-      <iframe src="/ctlg/book/reijisaito/"></iframe>
-    </div>
-    <div class="portrait">
-      <iframe src="/ctlg/book/010001111000/"></iframe>
-    </div>
-    <div class="portrait">
-      <iframe src="/ctlg/book/sarahmarshall/"></iframe>
-    </div>
-    <div class="portrait">
-      <iframe src="/ctlg/book/npanzer/"></iframe>
-    </div>
-    <div class="portrait">
-      <iframe src="/ctlg/book/takamitsuohta/"></iframe>
-    </div>
-    <div class="portrait">
-      <iframe src="/ctlg/book/pocopuu/"></iframe>
-    </div>
-    <div class="portrait">
-      <iframe src="/ctlg/book/weather/"></iframe>
-    </div>
-    <div class="portrait">
-      <iframe src="/ctlg/book/matsunobe/"></iframe>
-    </div>
-    <div class="portrait">
-      <iframe src="/ctlg/book/emeraldclitoris/"></iframe>
-    </div>
-    <div class="portrait">
-      <iframe src="/ctlg/book/roombaghost/"></iframe>
-    </div>
-    <div class="portrait">
-      <iframe src="/ctlg/book/woopheadclrms/"></iframe>
-    </div>
-    <div class="portrait">
-      
-    <div class="credit">
-      <a class="click" href="/1f/">10.10 - 10.31.2021</a>
-      
-      <p class=""><b>音ビル</b><br/>
-        11:00 - 20:00<br/><a href="/1f/" target="_blank" rel="noopener noreferrer">vg.pe.hu/1f/</a>
+
+    <div class="archives">
+    <div id="credit">
+      <a class="no_print mobile" href="javascript:void(0)" onclick="window.print();return false;">
+      <span>このページ</span>
+      <span>を</span>
+      <span>印刷</span>
+      <span>すると</span>
+      <span>大 chotto crazy 2021</span>
+      <span>内で 開催する</span>
+      <span>展覧会 の 概要</span>
+      <span>が表示されます。</span>
+      </a>
+
+      <p class="print_block">
+        会場 音ビル |
+        559-0011 大阪府大阪市住之江区北加賀屋5-5-1 2F<br/>
+        会期 2021年 10月 10日 (日) - 10月 31日 (日) |
+        開館時間 11:00 - 20:00<br/>
+        主催 クリエイティブ・コミュニティスペース ペフ  |
+        助成 おおさか千島創造財団
       </p>
 
+      <a class="mobile_only" href="otobuil.pdf">
+        <span>ここ</span>
+        <span>を</span>
+        <span>クリック</span>
+        <span>すると</span>
+        <span>大 chotto crazy 2021</span>
+        <span>内で 開催する</span>
+        <span>展覧会 の 概要</span>
+        <span>が表示されます。</span>
+        </a>
     </div>
-    </div>
+  </div>
+  </div>
+
+<div id="book" class="print_only">
+<div id="portrait" class="random"></div>
+    
+<div id="who">
+<ruby class="title">
+<rb>VG CTLG</rb>
+<rt>1F</rt>
+</ruby>
+
+<img class="qr" src="/1f/book/qr.png">
+
+</div>
+</div>
   </body>
 </html>
