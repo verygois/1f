@@ -27,7 +27,7 @@ if ($fp) {
 fclose ($fp);
 
 echo '<p class="counter">';
-echo ('You are the <b>'.$counter.'</b> visitors.');
+echo ('<b>'.$counter.'</b>');
 echo '</p>';
 ?>
 </body>
