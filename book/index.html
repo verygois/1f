@@ -1,260 +1,99 @@
-body {
-  padding: 0;
-  margin: 0;
-}
-.qr,
-.none {
-  display:none;
-}
-#portrait img,
-.title {
-  user-select:none;
-  pointer-events:none;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 
-#portrait img,
-.infomation,
-.credit {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-}
-#who,
-.infomation,
-.credit {
-  font-family: "SimSong", "MS Mincho", selif;
-  font-stretch: condensed;
-  font-variant: common-ligatures tabular-nums;
-  letter-spacing: -0.1vw;
-}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-#portrait {
-  position: fixed;
-  top:0; left:0;
-  z-index:-1;
-  overflow:hidden;
-  width:100%;
-  height:100vh;
-}
-#portrait img {
-  min-width:100%;
-  min-height:100%;
-}
+    <title>1F | VG CTLG</title>
+    <meta
+      name="description"
+      content="Infomation"
+    />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" media="print" href="/1f/print.css" />
+    <link rel="stylesheet" href="/ctlg/book/style.css" />
+    <link type="text/css" media="print" rel="stylesheet" href="/ctlg/book/print.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="random.js" defer></script>
 
-#who {
-  position: fixed;
-  top:2rem; left:0;
-  width:100%;
-}
-.title {
-  width:75%;
-  max-width:750px;
-  margin:auto;
-  display:block;
-}
-.title {
-  text-align: justify;
-}
-.title rb {
-  color:#fff;
-  text-shadow: #000 1px 1px;
-  font-family: "Great Vibes", cursive;
-  transform: scale(0.75,2.5);
-  display:inline-block;
-  font-size: 2rem;
-  line-height:75%;
-}
-.title rt {
-  font-size: 1rem;
-  line-height:125%;
-  color:#000;
-  text-shadow: #fff 1px 1px;
-}
+<style type="text/css">
+body, .portrait {padding:0; margin:0;}
+.portrait {position:relative; width:100%; height:99vh;}
+.portrait iframe {width:100%; height:100%; border:none;}
 
-.link {
-  width:75%;
-  max-width:750px;
-  margin:2.5rem auto 0;
-}
-.link a {
-  color:#000;
-  font-size: 1rem;
-  line-height:200%;
-  padding: 1vw;
-  margin: 0 1vw;
-  border:0.1vw solid;
-  background-color:rgba(255,255,255,0.55);
-  text-decoration:none;
-}
-.back:hover,
-.link a:hover {
-  filter: invert(100%);
-}
+  @media screen and (max-width: 750px){
+  .mobile {display: none;}
+  }
+</style>
 
-.infomation,
-.credit {
-  margin-top:2rem;
-  text-align: center;
-}
-.infomation .click,
-.credit .click {
-  color:#000;
-  text-shadow: #fff 1px 1px;
-  font-size: 200%;
-  font-family: 'Times New Roman', serif;
-  padding: 1rem;
-}
-.infomation .click:hover,
-.credit .click:hover {
-  color:#fff;
-  cursor:pointer;
-  transform: scale(1.25);
-  text-shadow: #000 1px 1px;
-}
+  </head>
+  <body>
+    <div class="portrait">
+      <div id="portrait" class="random"></div>
 
-.infomation p,
-.credit p {
-  padding: 0.5rem;
-  margin-top:2rem;
-  line-height:125%;
-  border:0.1vw solid;
-  border-radius: 1rem;
-  background-color:rgba(255,255,255,0.55);
-}
-.infomation p b,
-.credit p b {
-  color:#fff;
-  text-shadow: #000 1px 1px;
-  font-family: "Great Vibes", cursive;
-  transform: scale(0.5,2);
-  display:inline-block;
-  margin-bottom:1rem;
-  font-size: 1rem;
-  line-height:200%;
-}
-.infomation p a,
-.credit p a {
-  display:inline-block;
-  letter-spacing: -0.2vw;
-  word-spacing: -.2ch;
-  line-height:150%;
-  padding: 0 0.5rem;
-  margin:0.1rem;
-  text-decoration:none;
-  background: linear-gradient(
--90deg
-, #fff, #ccc, #aaa);
-  background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.infomation p a:hover,
-.credit p a:hover {
-  background: linear-gradient(
--90deg
-, #fff, #ccc, #aaa);
-  background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
-  -webkit-text-fill-color: #000;
-}
+      <div class="infomation no_print">
+        <a class="click" href="/1f/">come on join us !</a>
+      </div>
+    
+      <div id="who">
+      <ruby class="title">
+      <rb>VG CTLG</rb>
+      <rt>1F</rt>
+      </ruby>
+      
+      <img class="qr" src="/1f/qr.png">
+      
+      </div>
+    </div>
+    <div class="portrait">
+      <iframe src="/ctlg/book/reijisaito/"></iframe>
+    </div>
+    <div class="portrait">
+      <iframe src="/ctlg/book/010001111000/"></iframe>
+    </div>
+    <div class="portrait">
+      <iframe src="/ctlg/book/sarahmarshall/"></iframe>
+    </div>
+    <div class="portrait">
+      <iframe src="/ctlg/book/npanzer/"></iframe>
+    </div>
+    <div class="portrait">
+      <iframe src="/ctlg/book/takamitsuohta/"></iframe>
+    </div>
+    <div class="portrait">
+      <iframe src="/ctlg/book/pocopuu/"></iframe>
+    </div>
+    <div class="portrait">
+      <iframe src="/ctlg/book/weather/"></iframe>
+    </div>
+    <div class="portrait">
+      <iframe src="/ctlg/book/matsunobe/"></iframe>
+    </div>
+    <div class="portrait">
+      <iframe src="/ctlg/book/emeraldclitoris/"></iframe>
+    </div>
+    <div class="portrait">
+      <iframe src="/ctlg/book/roombaghost/"></iframe>
+    </div>
+    <div class="portrait">
+      <iframe src="/ctlg/book/woopheadclrms/"></iframe>
+    </div>
+    <div class="portrait">
+      
+    <div class="credit">
+      <a class="click" href="/1f/">10.10 - 10.31.2021</a>
+      
+      <p class=""><b>音ビル</b><br/>
+        11:00 - 20:00<br/><a href="/1f/" target="_blank" rel="noopener noreferrer">vg.pe.hu/1f/</a>
+      </p>
 
-.nlc {
-  position: fixed;
-  bottom:0; left:0;
-  width:100%;
-  padding: 1rem 0;
-  text-align:center;
-}
-
-.nlc a {
-  color:#000;
-  font-size: 1.25rem;
-  font-family: 'Times New Roman', serif;
-  font-stretch: condensed;
-  font-variant: common-ligatures tabular-nums;
-  display:inline-block;
-  transform: scale(1,1.1);
-  letter-spacing: -0.2vw;
-  word-spacing: -.2ch;
-  line-height:200%;
-  padding: 0 1rem;
-  border:0.1vw solid;
-  text-decoration:none;
-  border-radius: 3rem;
-  background: linear-gradient(
--90deg
-, #b3cbf6, #FFC778, #eee);
-  background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
-}
-.nlc a:hover {
-  color:#fff;
-  background: linear-gradient(
-90deg
-, #b3cbf6, #FFC778, #eee);
-  background-size: 400% 400%;
-  animation: gradientBG 5s ease infinite;
-}
-
-.back {
-  position: fixed;
-  z-index: 10;
-  top:1rem; right:2rem;
-  text-shadow: #fff 1px 1px;
-}
-
-.popup {
-  position:fixed;
-  z-index:100;
-  width:100%; height:100%;
-  top:0; left:0;
-}
-.popup p {
-position: fixed;
-background-color:rgba(255,255,255,1);
-z-index:100;
-margin:0; padding:0;
-margin-top:2.5vh;
--webkit-transform:translate(-50%,-50%);
-transform:translate(-50%,-50%);
-width:90%; height:85vh;
-top: 50%; left: 50%;
-border-radius:1rem;
-}
-.popup iframe {
-width:100%;
-height:100%;
-border-radius:1rem;
-border:none;
-}
-.close {
-position:absolute;
-font-size:5vw;
-padding:1.25vh 2.5%;
-top:0; left:0;
-width: 100%;
-height:100%;
-background-color:rgba(0,0,0,0.5);
-text-shadow: #fff 1px 1px;
-}
-.close:hover {
-cursor:pointer;
-text-shadow: #000 1px 1px;
-background-color:rgba(255,255,255,0.5);
-}
-
-@keyframes gradientBG {
-0% {background-position: 0% 50%;}
-50% {background-position: 100% 50%;}
-100% {background-position: 0% 50%;}
-}
-
-@media screen and (max-width: 750px){
-.infomation {display:none;}
-}
-
-@media screen and (max-width: 500px){
-.popup p {width:90%; height:85vh; margin-top:5vh;}
-.close {font-size:10vw;}
-}
+    </div>
+    </div>
+  </body>
+</html>
