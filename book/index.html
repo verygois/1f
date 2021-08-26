@@ -24,6 +24,7 @@
     <script type="text/javascript">
     $(function(){
     $("#statement").load("hello.html");
+    $("#visitors").load("visitors.php");
     })
     </script>
 
@@ -73,6 +74,13 @@ body, .portrait {padding:0; margin:0;}
   background-size: 400% 400%;
   animation: gradientBG 2.5s ease infinite;
   -webkit-text-fill-color: #000;
+}
+#visitors {
+  position:fixed;
+  z-index:100;
+  bottom:0; right:0;
+  pointer-events:none;
+  font-family:"NewYork";
 }
 @keyframes gradientBG {
 0% {background-position: 0% 50%;}
@@ -159,5 +167,6 @@ body, .portrait {padding:0; margin:0;}
 
     </div>
     </div>
+    <div id="visitors" class="print_block"></div>
   </body>
 </html>
