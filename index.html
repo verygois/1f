@@ -41,11 +41,42 @@
   letter-spacing: 0.1vw;
 }
   .pass {
+    text-align: center;
+    line-height: 200%;
     position: absolute;
     bottom: 0%; left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+  .pass a {
+  display:inline-block;
+  letter-spacing: -0.2vw;
+  word-spacing: -.2ch;
+  line-height:150%;
+  padding: 0 0.5rem;
+  margin:0.1rem;
+  text-decoration:none;
+  background: linear-gradient(
+-90deg
+, #fff, #ccc, #aaa);
+  background-size: 400% 400%;
+  animation: gradientBG 5s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pass a:hover {
+  background: linear-gradient(
+-90deg
+, #fff, #ccc, #aaa);
+  background-size: 400% 400%;
+  animation: gradientBG 2.5s ease infinite;
+  -webkit-text-fill-color: #000;
+}
+@keyframes gradientBG {
+0% {background-position: 0% 50%;}
+50% {background-position: 100% 50%;}
+100% {background-position: 0% 50%;}
+} 
+
   hr {border:none; display:block;}
   #credit a {
       position: fixed;
@@ -225,7 +256,7 @@
 <img class="qr" src="/1f/book/qr.png">
 
 <p class="pass print_block">
-  vg.pe.hu/1f/book/<br/>
+  <a href="/1f/book/">vg.pe.hu/1f/book/</a><br/>
   ID : 1F | Pass : CTLG
 </p>
 </div>
