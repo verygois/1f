@@ -90,6 +90,7 @@ It is really naturally, pureful and beautiful. what a wonderful world.
       <a class="back" onclick="history.back(-1);return false;" style="font-size:7.5vw; border:none;">↵</a></br>
       <a class="mobile" href="javascript:void(0)" onclick="window.print();return false;">このページを印刷すると、 2018年3月5日 - 18日 に開催した展覧会の概要が表示されます。</a>
     </p>
+    <div id="itempage"></div>
   </div>
   <div class="portrait print_only">
     <iframe src="/ctlg/book/roombaghost/"></iframe>
@@ -98,4 +99,11 @@ It is really naturally, pureful and beautiful. what a wonderful world.
     <iframe src="/ctlg/book/woopheadclrms/"></iframe>
   </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+  $("#itempage").load("/1f/05/index.html");
+  })
+  </script>
 </html>
