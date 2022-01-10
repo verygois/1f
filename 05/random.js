@@ -11,9 +11,7 @@ const random = [
     "/1f/05/010.jpeg",
     "/1f/05/011.jpeg",
     "/1f/05/012.jpeg",
-    "/1f/05/013.jpeg",
-    "/1f/05/014.png",
-    "/1f/05/000.png"
+    "/1f/05/013.jpeg"
   ];
   
   function randomImg(randomArray) {
