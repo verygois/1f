@@ -37,6 +37,24 @@
   }
 
   hr {border:none; display:block;}
+  #credit a {
+      position: fixed;
+      bottom:0;
+      left:0;
+      z-index: 10;
+      width:100%;
+  }
+
+  .print_only,
+  .print_block,
+  .none
+  {display: none;}
+
+  @media print {
+  .print_only {display: inline-block;}
+  .print_block {display: block;}
+  .no_print {display: none;}
+  }
 </style>
   </head>
   <body>
