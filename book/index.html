@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="/ctlg/book/style.css" />
-    <link type="text/css" media="print" rel="stylesheet" href="/1f/print.css" />
+    <link type="text/css" media="print" rel="stylesheet" href="../print.css" />
     <link type="text/css" media="print" rel="stylesheet" href="/ctlg/book/print.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
@@ -23,7 +23,8 @@
     <script src="/1f/random.js" defer></script>
     <script type="text/javascript">
     $(function(){
-    $("#statement").load("/1f/hello.html");
+    $("#about").load("/1f/hello.html");
+    $("#contents").load("contents.html");
     $("#visitors").load("visitors.php");
     })
     </script>
@@ -32,7 +33,7 @@
 body, .portrait {padding:0; margin:0;}
 .portrait {position:relative; width:100%; height:99vh;}
 .portrait iframe {width:100%; height:100%; border:none;}
-#statement {
+#about {
   width:90%;
   max-width:1000px;
   height:90vh;
@@ -43,6 +44,12 @@ body, .portrait {padding:0; margin:0;}
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
+}
+#contents {
+  width:90%;
+  margin:5vh auto;
+  padding:2.5%;
+  background-color:rgba(255,255,255,1);
 }
   .pass {
     text-align: center;
@@ -109,7 +116,7 @@ body, .portrait {padding:0; margin:0;}
   <body>
     <div class="portrait no_print">
       <div id="portrait" class="random"></div>
-      <div id="statement" class="no_print"></div>
+      <div id="about" class="no_print"></div>
     
       <div id="who">
         <ruby class="title">
@@ -158,14 +165,7 @@ body, .portrait {padding:0; margin:0;}
     <div class="portrait">
       <iframe src="/ctlg/book/woopheadclrms/"></iframe>
     </div>
-    <div class="portrait no_print">
-      
-    <div class="credit">
-      <span class="click" style="pointer-events: none;">1F</span>
-      <p class="">More Info Soon</p>
-
-    </div>
-    </div>
+    <div id="contents" class="no_print"></div>
     <div id="visitors" class="no_print"></div>
   </body>
 </html>
