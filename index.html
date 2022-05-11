@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -13,168 +14,197 @@
     <link rel="stylesheet" href="/ctlg/book/style.css" />
     <link type="text/css" media="print" rel="stylesheet" href="/ctlg/book/print.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
-  
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/1f/random.js" defer></script>
 
-<style type="text/css">
-  .Heritage-Display {
-    font-family: "Heritage-Display";
-    font-size: 150%;
-    text-transform: uppercase;
-  }
-  @font-face {
-    font-family: "Heritage-Display";
-    src: url("/1f/Heritage-Display.otf");
-  }
-  #book {
-    position: absolute;
-    top:100vh;
-    width:100%;
-  }
-
-  #contents b a {color:#fff;}
-  #contents b a:hover {color:#FF5733;}
-  .pehu {
-  font-family: "SimSong", "MS Mincho", selif;
-  font-stretch: condensed;
-  font-variant: common-ligatures tabular-nums;
-  letter-spacing: 0.1vw;
-}
-  .vg {font-family:'Great Vibes', cursive;}
-  .pass {
-    text-align: center;
-    position: absolute;
-    bottom: 0%; left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .pass a {
-  display:inline-block;
-  letter-spacing: -0.2vw;
-  word-spacing: -.2ch;
-  font-size: 150%;
-  line-height:150%;
-  padding: 0 0.5rem;
-  margin:0.1rem;
-  text-decoration:none;
-  background: linear-gradient(
--90deg
-, #fff, #ccc, #aaa);
-  background-size: 400% 400%;
-  animation: gradientBG 5s ease infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.pass a:hover {
-  background: linear-gradient(
--90deg
-, #fff, #ccc, #aaa);
-  background-size: 400% 400%;
-  animation: gradientBG 2.5s ease infinite;
-  -webkit-text-fill-color: #000;
-}
-@keyframes gradientBG {
-0% {background-position: 0% 50%;}
-50% {background-position: 100% 50%;}
-100% {background-position: 0% 50%;}
-} 
-
-  hr {border:none; display:block;}
-  #credit a {
-      position: fixed;
-      bottom:0;
-      left:0;
-      z-index: 10;
-      width:100%;
-  }
-
-  .print_only,
-  .print_block,
-  .none
-  {display: none;}
-
-  @media print {
-  .print_only {display: inline-block;}
-  .print_block {display: block;}
-  .no_print {display: none;}
-  }
-</style>
-  </head>
-  <body>
-  <div id="a4">
-    <div id="contents">
-      <h1>
-        <b><a href="http://vg.pe.hu/1f/" target="_parent">1F</a></b>
-        <span class="print_only">大 chotto crazy 2021</span>
-        <u class="no_print ctlg Heritage-Display"><a href="https://newlifecollection.com/ca86/1274/p-r-s/" target="_parent">BOX</a></u>
-        <span class="no_print archives pehu">by</span>
-        <u class="no_print archives vg"><a href="http://vg.pe.hu/" target="_parent">Very Gois</a></u>
-        <i class="print_block">VG CTLG</i>
-      </h1>
-
-      <div id="hello">
-        <span class="print_block">This is The <i>Showcase</i> of</span>
-        <span class="print_only">Very Gois <i>with</i></span>
+    <style type="text/css">
+        .Heritage-Display {
+            font-family: "Heritage-Display";
+            font-size: 150%;
+            text-transform: uppercase;
+        }
         
-        <span class="archives">
+        @font-face {
+            font-family: "Heritage-Display";
+            src: url("/1f/Heritage-Display.otf");
+        }
+        
+        #book {
+            position: absolute;
+            top: 100vh;
+            width: 100%;
+        }
+        
+        #contents b a {
+            color: #fff;
+        }
+        
+        #contents b a:hover {
+            color: #FF5733;
+        }
+        
+        .pehu {
+            font-family: "SimSong", "MS Mincho", selif;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            letter-spacing: 0.1vw;
+        }
+        
+        .vg {
+            font-family: 'Great Vibes', cursive;
+        }
+        
+        .pass {
+            text-align: center;
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .pass a {
+            display: inline-block;
+            letter-spacing: -0.2vw;
+            word-spacing: -.2ch;
+            font-size: 150%;
+            line-height: 150%;
+            padding: 0 0.5rem;
+            margin: 0.1rem;
+            text-decoration: none;
+            background: linear-gradient( -90deg, #fff, #ccc, #aaa);
+            background-size: 400% 400%;
+            animation: gradientBG 5s ease infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .pass a:hover {
+            background: linear-gradient( -90deg, #fff, #ccc, #aaa);
+            background-size: 400% 400%;
+            animation: gradientBG 2.5s ease infinite;
+            -webkit-text-fill-color: #000;
+        }
+        
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        hr {
+            border: none;
+            display: block;
+        }
+        
+        #credit a {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+        }
+        
+        .print_only,
+        .print_block,
+        .none {
+            display: none;
+        }
+        
+        @media print {
+            .print_only {
+                display: inline-block;
+            }
+            .print_block {
+                display: block;
+            }
+            .no_print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a4">
+        <div id="contents">
+            <h1>
+                <b><a href="http://vg.pe.hu/1f/" target="_parent">1F</a></b>
+                <span class="print_only">大 chotto crazy 2021</span>
+                <u class="no_print ctlg Heritage-Display"><a href="https://newlifecollection.com/ca86/1274/p-r-s/" target="_parent">BOX</a></u>
+                <span class="no_print archives pehu">by</span>
+                <u class="no_print archives vg">Niceshop Su</u>
+                <i class="print_block">VG CTLG</i>
+            </h1>
+
+            <div id="hello">
+                <span class="print_block">This is The <i>Showcase</i> of</span>
+                <span class="print_only">Very Gois <i>with</i></span>
+
+                <span class="archives">
         <u><a href="/1f/01.html" target="_parent">01</a></u>
         by
         <span class="no_print archives">
         <a class="link" href="/ctlg/book/reijisaito/" target="_parent">Reiji Saito</a>,</span>
-        <a class="link" href="/ctlg/book/010001111000/" target="_parent">0100011110001</a>
-        <span class="image">
+                <a class="link" href="/ctlg/book/010001111000/" target="_parent">0100011110001</a>
+                <span class="image">
           <img src="/1f/01/001.jpg"/>
         </span>
-        </span>
-        
-        <span class="archives">
+                </span>
+
+                <span class="archives">
         <u><a href="/1f/02.html" target="_parent">02</a></u>
         <span class="print_only">Idea</span> by
-        <a class="link" href="/ctlg/book/sarahmarshall/" target="_parent">Sarah Marshall</a>,
-        <a class="link" href="/ctlg/book/npanzer/" target="_parent">Natalia Panzer</a>
-        <span class="image">
+                <a class="link" href="/ctlg/book/sarahmarshall/" target="_parent">Sarah Marshall</a>,
+                <a class="link" href="/ctlg/book/npanzer/" target="_parent">Natalia Panzer</a>
+                <span class="image">
           <img src="/1f/02/01.jpg"/>
         </span>
-        </span>
+                </span>
 
-        <u><a href="/1f/03.html" target="_parent">03</a></u> by
-        <a class="link" href="/ctlg/book/takamitsuohta/" target="_parent">Takamitsu Ohta</a>,
-        <a class="link" href="/ctlg/book/pocopuu/" target="_parent">Muku Kobayashi</a>,
-        <a class="link" href="/ctlg/book/weather/" target="_parent">Shoji Funakawa</a>,
-        <a class="link" href="/ctlg/book/matsunobe/" target="_parent">Soshi Matsunobe</a>
-        <span class="ctlg">
+                <u><a href="/1f/03.html" target="_parent">03</a></u> by
+                <a class="link" href="/ctlg/book/takamitsuohta/" target="_parent">Takamitsu Ohta</a>,
+                <a class="link" href="/ctlg/book/pocopuu/" target="_parent">Muku Kobayashi</a>,
+                <a class="link" href="/ctlg/book/weather/" target="_parent">Shoji Funakawa</a>,
+                <a class="link" href="/ctlg/book/matsunobe/" target="_parent">Soshi Matsunobe</a>
+                <span class="ctlg">
         Video/Edit by
         <a class="link" href="/ctlg/book/reijisaito/" target="_parent">Reiji Saito</a>
         </span>
-        <span class="print_only">
+                <span class="print_only">
         Video/Edit by
         <a class="link" href="/ctlg/book/reijisaito/" target="_parent">Reiji Saito</a>
         </span>
-        <span class="image">
+                <span class="image">
           <img src="/1f/03/img/000.jpg"/>
         </span>
-        
-        <u><a href="/1f/04.html" target="_parent">04</a></u>
-        by
-        <a class="link" href="/ctlg/book/emeraldclitoris/" target="_parent">Emeraldclitoris</a>
-        <span class="image">
+
+                <u><a href="/1f/04.html" target="_parent">04</a></u> by
+                <a class="link" href="/ctlg/book/emeraldclitoris/" target="_parent">Emeraldclitoris</a>
+                <span class="image">
           <img src="/1f/04/img/000.jpeg"/>
         </span>
-        
-        <u><a href="/1f/05.html" target="_parent">05</a></u>
-        <span class="print_only">Idea</span> by
-        <span class="archives"><a class="link" href="/ctlg/book/roombaghost/" target="_parent">Laurel Schwulst</a>,</span>
-        <a class="link" href="/ctlg/book/woopheadclrms/" target="_parent">Woopheadclrms</a>
-        <span class="image">
+
+                <u><a href="/1f/05.html" target="_parent">05</a></u>
+                <span class="print_only">Idea</span> by
+                <span class="archives"><a class="link" href="/ctlg/book/roombaghost/" target="_parent">Laurel Schwulst</a>,</span>
+                <a class="link" href="/ctlg/book/woopheadclrms/" target="_parent">Woopheadclrms</a>
+                <span class="image">
           <img src="/1f/05/img/000.png"/>
         </span>
-        <span class="print_only">
+                <span class="print_only">
         <hr/>and <i>Past & Present</i> about Pehu <i>with</i> the Friends of Pehu</span>
 
-        <hr/>
+                <hr/>
 
-        <span class="no_print">
+                <span class="no_print">
           <u><a href="/1f/kaisei/" target="_parent">快晴</a></u>
           by
           <a class="link">Yusuke Abe</a>,
@@ -196,72 +226,67 @@
           <span class="image">
             <img src="/1f/kaisei/front/001.jpg"/>
           </span>
-          <span class="image">
+                <span class="image">
             <img src="/1f/kaisei/front/002.jpg"/>
           </span>
-          <span class="image">
+                <span class="image">
             <img src="/1f/kaisei/back/001.jpg"/>
           </span>
-          <span class="image">
+                <span class="image">
             <img src="/1f/kaisei/back/002.jpg"/>
           </span>
-          <span class="image">
+                <span class="image">
             <img src="/1f/kaisei/back/003.jpg"/>
           </span>
-          </span>
-        
-      </div>
+                </span>
+
+            </div>
+        </div>
+
+        <div class="archives">
+            <div id="credit">
+                <a class="no_print mobile" href="javascript:void(0)" onclick="window.print();return false;">
+                    <span>このページ</span>
+                    <span>を</span>
+                    <span>出力</span>
+                    <span>すると</span>
+                    <span>2022年1月15日〜30日</span>
+                    <span>に</span>
+                    <span>開催した</span>
+                    <span>展覧会 の 概要</span>
+                    <span>が表示されます。</span>
+                </a>
+
+                <p class="print_block">
+                    会場 音ビル | 559-0011 大阪府大阪市住之江区北加賀屋5-5-1 2F<br/> 会期 2021年 1月 15日 (土) - 1月 30日 (日) | 開館時間 11:00 - 18:00<br/> 主催 クリエイティブ・コミュニティスペース ペフ | 助成 おおさか創造千島財団
+                </p>
+
+                <a class="mobile_only" href="/1f/book/" target="_parent">
+                    <span>ID</span>
+                    <span>:</span>
+                    <span>1F</span>
+                    <span>|</span>
+                    <span>Pass</span>
+                    <span>:</span>
+                    <span>CTLG</span>
+                </a>
+            </div>
+        </div>
     </div>
 
-    <div class="archives">
-    <div id="credit">
-      <a class="no_print mobile" href="javascript:void(0)" onclick="window.print();return false;">
-      <span>このページ</span>
-      <span>を</span>
-      <span>出力</span>
-      <span>すると</span>
-      <span>2022年1月15日〜30日</span>
-      <span>に</span>
-      <span>開催した</span>
-      <span>展覧会 の 概要</span>
-      <span>が表示されます。</span>
-      </a>
-
-      <p class="print_block">
-        会場 音ビル |
-        559-0011 大阪府大阪市住之江区北加賀屋5-5-1 2F<br/>
-        会期 2021年 1月 15日 (土) - 1月 30日 (日) |
-        開館時間 11:00 - 18:00<br/>
-        主催 クリエイティブ・コミュニティスペース ペフ  |
-        助成 おおさか創造千島財団
-      </p>
-
-      <a class="mobile_only" href="/1f/book/" target="_parent">
-        <span>ID</span>
-        <span>:</span>
-        <span>1F</span>
-        <span>|</span>
-        <span>Pass</span>
-        <span>:</span>
-        <span>CTLG</span>
-        </a>
-    </div>
-  </div>
-  </div>
-
-<div id="book" class="print_only">
-<div id="portrait" class="random"></div>
-<div id="who">
-<ruby class="title">
+    <div id="book" class="print_only">
+        <div id="portrait" class="random"></div>
+        <div id="who">
+            <ruby class="title">
 <rb>VG CTLG</rb>
 <rt>1F</rt>
 </ruby>
-<img class="qr" src="/1f/qr.png">
-<p class="pass print_block">
-  <a href="/1f/book/" target="_parent">vg.pe.hu/1f/book/</a><br/>
-  ID : 1F | Pass : CTLG
-</p>
-</div>
-</div>
+            <img class="qr" src="/1f/qr.png">
+            <p class="pass print_block">
+                <a href="/1f/book/" target="_parent">vg.pe.hu/1f/book/</a><br/> ID : 1F | Pass : CTLG
+            </p>
+        </div>
+    </div>
 </body>
+
 </html>
