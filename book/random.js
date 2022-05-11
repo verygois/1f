@@ -55,5 +55,5 @@ function sentenceGenerator() {
 }
 window.setInterval(function() {
     sentenceGenerator();
-}, 1000);
+}, 1111);
 sentenceGenerator();
