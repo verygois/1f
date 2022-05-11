@@ -1,9 +1,9 @@
 const random = [
     "http://vg.pe.hu/1f/01/001.jpg",
     "http://vg.pe.hu/1f/02/01.jpg",
-    "http://vg.pe.hu/1f/03/000.jpg",
-    "http://vg.pe.hu/1f/04/000.jpeg",
-    "http://vg.pe.hu/1f/05/000.png"
+    "http://vg.pe.hu/1f/03/img/000.jpg",
+    "http://vg.pe.hu/1f/04/img/000.jpeg",
+    "http://vg.pe.hu/1f/05/img/000.png"
 ];
 
 function randomImg(randomArray) {
