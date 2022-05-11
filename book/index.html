@@ -1,171 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>1F | VG CTLG</title>
-    <meta
-      name="description"
-      content="Infomation"
-    />
-    
+    <meta name="description" content="Infomation" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/ctlg/book/style.css" />
     <link type="text/css" media="print" rel="stylesheet" href="../print.css" />
     <link type="text/css" media="print" rel="stylesheet" href="/ctlg/book/print.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
-  
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="/1f/random.js" defer></script>
+    <script src="random.js" defer></script>
     <script type="text/javascript">
-    $(function(){
-    $("#about").load("/1f/hello.html");
-    $("#box").load("contents.html");
-    $("#visitors").load("visitors.php");
-    })
+        $(function() {
+            $("#about").load("/1f/hello.html");
+            $("#box").load("contents.html");
+            $("#visitors").load("visitors.php");
+        })
     </script>
 
-<style type="text/css">
-body, .portrait {padding:0; margin:0;}
-.portrait {position:relative; width:100%; height:99vh;}
-.portrait iframe {width:100%; height:100%; border:none;}
-#about {
-  width:90%;
-  max-width:1000px;
-  height:90vh;
-  overflow: auto;
-  border:0.1vw solid;
-  border-radius: 1rem;
-  background-color:rgba(255,255,255,0.55);
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-}
-#box {
-  width:90%;
-  margin:5vh auto;
-  padding:2.5%;
-  background-color:rgba(255,255,255,1);
-}
-  .pass {
-    text-align: center;
-    position: absolute;
-    bottom: 0%; left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .pass a {
-  display:inline-block;
-  letter-spacing: -0.2vw;
-  word-spacing: -.2ch;
-  font-size: 150%;
-  line-height:150%;
-  padding: 0 0.5rem;
-  margin:0.1rem;
-  text-decoration:none;
-  background: linear-gradient(
--90deg
-, #fff, #ccc, #aaa);
-  background-size: 400% 400%;
-  animation: gradientBG 5s ease infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.pass a:hover {
-  background: linear-gradient(
--90deg
-, #fff, #ccc, #aaa);
-  background-size: 400% 400%;
-  animation: gradientBG 2.5s ease infinite;
-  -webkit-text-fill-color: #000;
-}
-#visitors {
-  position:fixed;
-  z-index:100;
-  padding:1.25%;
-  color:#fff;
-  bottom:0; right:0;
-  pointer-events:none;
-  font-family: "SimSong", "MS Mincho", selif;
-  font-stretch: condensed;
-  font-variant: common-ligatures tabular-nums;
-  letter-spacing: -0.1vw;
-}
-@keyframes gradientBG {
-0% {background-position: 0% 50%;}
-50% {background-position: 100% 50%;}
-100% {background-position: 0% 50%;}
-} 
+    <style type="text/css">
+        body,
+        .portrait {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .portrait {
+            position: relative;
+            width: 100%;
+            height: 99vh;
+        }
+        
+        .portrait iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        #about {
+            width: 90%;
+            max-width: 1000px;
+            height: 90vh;
+            overflow: auto;
+            border: 0.1vw solid;
+            border-radius: 1rem;
+            background-color: rgba(255, 255, 255, 0.55);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        #box {
+            width: 90%;
+            margin: 5vh auto;
+            padding: 2.5%;
+            background-color: rgba(255, 255, 255, 1);
+        }
+        
+        .pass {
+            text-align: center;
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .pass a {
+            display: inline-block;
+            letter-spacing: -0.2vw;
+            word-spacing: -.2ch;
+            font-size: 150%;
+            line-height: 150%;
+            padding: 0 0.5rem;
+            margin: 0.1rem;
+            text-decoration: none;
+            background: linear-gradient( -90deg, #fff, #ccc, #aaa);
+            background-size: 400% 400%;
+            animation: gradientBG 5s ease infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .pass a:hover {
+            background: linear-gradient( -90deg, #fff, #ccc, #aaa);
+            background-size: 400% 400%;
+            animation: gradientBG 2.5s ease infinite;
+            -webkit-text-fill-color: #000;
+        }
+        
+        #visitors {
+            position: fixed;
+            z-index: 100;
+            padding: 1.25%;
+            color: #fff;
+            bottom: 0;
+            right: 0;
+            pointer-events: none;
+            font-family: "SimSong", "MS Mincho", selif;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            letter-spacing: -0.1vw;
+        }
+        
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .print_block {
+            display: none;
+        }
+        
+        @media print {
+            .print_block {
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 750px) {
+            .mobile {
+                display: none;
+            }
+        }
+    </style>
 
-.print_block
-  {display: none;}
+</head>
 
-  @media print {
-  .print_block {display: block;}
-  }
-
-  @media screen and (max-width: 750px){
-  .mobile {display: none;}
-  }
-</style>
-
-  </head>
-  <body>
+<body>
     <div class="portrait no_print">
-      <div id="portrait" class="random"></div>
-      <div id="about" class="no_print"></div>
-    
-      <div id="who">
-        <ruby class="title">
+        <div id="portrait" class="random"></div>
+        <div id="about" class="no_print"></div>
+
+        <div id="who">
+            <ruby class="title">
         <rb>VG CTLG</rb>
         <rt></rt>
         </ruby>
-        
-        <img class="qr" src="/1f/qr.png">
-        
-        <p class="pass print_block">
-          <a href="/1f/book/">vg.pe.hu/1f/book/</a><br/>
-          ID : 1F | Pass : CTLG
-        </p>
+
+            <img class="qr" src="/1f/qr.png">
+
+            <p class="pass print_block">
+                <a href="/1f/book/">vg.pe.hu/1f/book/</a><br/> ID : 1F | Pass : CTLG
+            </p>
         </div>
     </div>
     <div id="box" class="no_print"></div>
     <div class="portrait">
-      <iframe src="/ctlg/book/reijisaito/"></iframe>
+        <iframe src="/ctlg/book/reijisaito/"></iframe>
     </div>
     <div class="portrait">
-      <iframe src="/ctlg/book/010001111000/"></iframe>
+        <iframe src="/ctlg/book/010001111000/"></iframe>
     </div>
     <div class="portrait">
-      <iframe src="/ctlg/book/sarahmarshall/"></iframe>
+        <iframe src="/ctlg/book/sarahmarshall/"></iframe>
     </div>
     <div class="portrait">
-      <iframe src="/ctlg/book/npanzer/"></iframe>
+        <iframe src="/ctlg/book/npanzer/"></iframe>
     </div>
     <div class="portrait">
-      <iframe src="/ctlg/book/takamitsuohta/"></iframe>
+        <iframe src="/ctlg/book/takamitsuohta/"></iframe>
     </div>
     <div class="portrait">
-      <iframe src="/ctlg/book/pocopuu/"></iframe>
+        <iframe src="/ctlg/book/pocopuu/"></iframe>
     </div>
     <div class="portrait">
-      <iframe src="/ctlg/book/weather/"></iframe>
+        <iframe src="/ctlg/book/weather/"></iframe>
     </div>
     <div class="portrait">
-      <iframe src="/ctlg/book/matsunobe/"></iframe>
+        <iframe src="/ctlg/book/matsunobe/"></iframe>
     </div>
     <div class="portrait">
-      <iframe src="/ctlg/book/emeraldclitoris/"></iframe>
+        <iframe src="/ctlg/book/emeraldclitoris/"></iframe>
     </div>
     <div class="portrait">
-      <iframe src="/ctlg/book/roombaghost/"></iframe>
+        <iframe src="/ctlg/book/roombaghost/"></iframe>
     </div>
     <div class="portrait">
-      <iframe src="/ctlg/book/woopheadclrms/"></iframe>
+        <iframe src="/ctlg/book/woopheadclrms/"></iframe>
     </div>
     <div id="visitors" class="no_print"></div>
-  </body>
+</body>
+
 </html>
