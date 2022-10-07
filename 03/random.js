@@ -1,8 +1,8 @@
 const random = [
-    "/1f/03/img/001.jpeg",
-    "/1f/03/img/002.jpeg",
-    "/1f/03/img/003.jpeg",
-    "/1f/03/img/004.jpeg"
+    "img/001.jpeg",
+    "img/002.jpeg",
+    "img/003.jpeg",
+    "img/004.jpeg"
   ];
   
   function randomImg(randomArray) {
