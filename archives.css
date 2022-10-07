@@ -4,13 +4,16 @@ body,
   padding: 0;
   margin: 0;
 }
+
 a {
   color: #000;
   text-decoration: none;
 }
+
 a:hover {
   color: #FF5733;
 }
+
 #contents {
   position: relative;
 }
@@ -40,6 +43,7 @@ a:hover {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 #contents h1 b {
   display: inline-block;
   font-size: 2.5vw;
@@ -48,9 +52,11 @@ a:hover {
   color: #fff;
   background: #000;
 }
+
 #contents h1 i {
   font-family: "Great Vibes", cursive;
 }
+
 #contents p {
   font-size: 2.5vw;
   padding: 2.5vw 0;
@@ -67,9 +73,11 @@ a:hover {
   line-height: 200%;
   font-weight: 500;
 }
+
 #hello a {
   text-decoration: none;
 }
+
 #contents u,
 #hello u {
   text-decoration: none;
@@ -78,12 +86,14 @@ a:hover {
   border-radius: 2.5vw;
   padding: 1% 1.5%;
 }
+
 #hello i,
 #hello .link {
   font-family: "Times New Roman", Symbol;
   font-size: 120%;
   font-style: oblique 45deg;
 }
+
 #hello .image {
   position: relative;
   height: 4.5vw;
@@ -93,12 +103,14 @@ a:hover {
   transition: all 0.5s ease-out;
   transform: scale(1.5);
 }
+
 #hello .image:hover {
-  z-index:10;
+  z-index: 10;
   transform: scale(4.5);
   transform-origin: bottom left;
   transition: all 0.25s ease-out;
 }
+
 #hello .image img {
   height: 100%;
 }
@@ -117,39 +129,50 @@ a:hover {
   justify-content: space-between;
 }
 
-.mobile_only
-{display: none;}
+.mobile_only {
+  display: none;
+}
 
 
-@media screen and (max-width: 750px){
-  .mobile {display: none;}
-  .mobile_only {display:block;}
-    #hello {
-      position: relative;
-      z-index: 1;
-      width: 90%;
-      padding: 5% 5% 15vw;
-      font-size: 1.5rem;
-      line-height: 200%;
-      font-weight: 500;
-    }
-    #hello u {
-      padding:0.25rem 1rem;
-      border-radius: 1.5rem;
-    }
-    #hello .link {
-      font-family: "Times New Roman", Symbol;
-      font-size: 110%;
-      font-style: oblique 45deg;
-    }
-    #hello .image {
-      height: 1.5rem;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
-      display: inline-block;
-      transition: all 0.5s ease-out;
-      transform: scale(1.5);
-    }
+@media screen and (max-width: 750px) {
+  .mobile {
+    display: none;
+  }
+
+  .mobile_only {
+    display: block;
+  }
+
+  #hello {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    padding: 5% 5% 15vw;
+    font-size: 1.5rem;
+    line-height: 200%;
+    font-weight: 500;
+  }
+
+  #hello u {
+    padding: 0.25rem 1rem;
+    border-radius: 1.5rem;
+  }
+
+  #hello .link {
+    font-family: "Times New Roman", Symbol;
+    font-size: 110%;
+    font-style: oblique 45deg;
+  }
+
+  #hello .image {
+    height: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: inline-block;
+    transition: all 0.5s ease-out;
+    transform: scale(1.5);
+  }
+
   #hello .image:hover {
     transform: scale(3.5);
     transform-origin: bottom center;
