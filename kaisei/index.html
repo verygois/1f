@@ -1,229 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="/1f/kaisei/book/random.js" defer></script>
-    <title>快晴 | KAISEI</title>
-    <link rel="stylesheet" href="/1f/00/style.css" />
-    <style>
-      html {color: #111; background-color: #fff;}
-      a {
-      color:#fff;
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="book/random.js" defer></script>
+  <title>快晴 | KAISEI</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    html {
+      color: #111;
+      background-color: #fff;
+    }
+
+    a {
+      color: #fff;
       background: linear-gradient(-90deg, green, blue, yellow, red);
-background-size: 200% 100%;
-animation: AnimationName 2.5s ease infinite;
-      }
-      .pf {
-        line-height: 3vw;
-        font-size: 1.4vw;
-        float: left;
-        width: 50%;
-      }
-      
- @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-      a:hover {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;}
-      .Heritage-Display {
-        position:absolute;
-        z-index:-1;
-        font-family: "Heritage-Display";
-        font-size: 5vw;
-        top:0;
-      }
-      @font-face {
-        font-family: "Heritage-Display";
-        src: url("Heritage-Display.otf");
-      }
-      
-      .aa {line-height:2vw;}
-      .aa a {font-size: 3vw;}
-      
-      #credit {line-height:5vw;}
+      background-size: 200% 100%;
+      animation: AnimationName 2.5s ease infinite;
+    }
 
-      .random {
-        display: block;
-        margin: auto;
-        max-width:100%;
-        max-height: 90vh;
-      }
-      .random img {
-        display: block;
-        margin: auto;
-        max-width:100%;
-        max-height: 90vh;
+    .pf {
+      line-height: 3vw;
+      font-size: 1.4vw;
+      float: left;
+      width: 50%;
+    }
+
+    @-webkit-keyframes AnimationName {
+      0% {
+        background-position: 0% 50%
       }
 
-      #info {
-        padding: 0;
-        margin: 0 auto 2.5vw;
-        line-height:125%;
+      50% {
+        background-position: 100% 50%
       }
-      
-      .print_only {display:none;}
-      #print {
-        position: fixed;
-        width: 100%;
-        bottom: 0;
+
+      100% {
+        background-position: 0% 50%
       }
-      
-      @media print {
-        .print_only {display:block;}
-        .no_print {display:none;}
+    }
+
+    @keyframes AnimationName {
+      0% {
+        background-position: 0% 50%
       }
-    </style>
-  </head>
-  <body>
-    <div id="contents" class="print_only">
-      <h1 class="print_only">快晴</h1>
-      <h2 class="print_only">前期 : 2018年4月9日 - 18日<br />後期 : 2018年4月21日 - 30日</h2>
-      <h3 class="print_only">∧°┐ | pe.hu</h3>
-      <hr/>
-      <div class="text print_only">
-        <div class="left">
-大阪のカルチャーショップ<br/>
-<a>ナイスショップスー</a> が、
-<br/>フランスの新進コミック雑誌
-<a href="http://revuelagon.com/">LAGON</a> の制作チーム協力のもと、2018年5月に創刊する雑誌<b>「快晴」</b>の完成に先駆け、参加する日本の若手アーティスト16組による雑誌掲載作品を展覧会形式で展開するグループ展を二期に渡って開催いたします。<br />
-<hr/>
-<p>We will launch a new magazine <b>快晴</b> with 16 young japanese artists'.</p>
-<p>We will present the contents of the magazine ahead of completion in the exhibition format over the second term.<br/>organized by <a>nice shop su</a>, Support by <a href="http://revuelagon.com/">LAGON</a>.
-        </div>
-        <div class="right aa">
-<p><a>安部悠介 | Yusuke Abe</a></p>
-<p><a href="https://soundcloud.com/takaoo">大石峰生 | Takao Oishi</a></p>
-<p><a href="http://kazquiz.com">Kazquiz</a></p>
-<p><a href="https://www.instagram.com/haruna_kawai/">カワイハルナ | Haruna Kawai</a></p>
-<p><a href="http://kaito-itsuki.tumblr.com/">皆藤齋 | Itsuki Kaito</a></p>
-<p><a href="https://www.smoothness.onl/">櫻井崇史 | Takashi Sakurai</a></p>
-<p><a href="http://sanukiayaka.tumblr.com/">佐貫絢郁 | Ayaka Sanuki</a></p>
-<p><a href="https://www.instagram.com/__________sumi/">角ゆり子 | Yuriko Sumi</a></p>
-<p><a href="http://nanoooook.blogspot.jp/">NANOOK</a></p>
-<p><a href="http://hakke.info/">HAKKE</a></p>
-<p><a href="https://www.instagram.com/saefujita/">藤田紗衣 | Sae Fujita</a></p>
-<p><a href="http://fukin.tumblr.com/">フキン | Fukin</a></p>
-<p><a href="https://www.instagram.com/matsumoto_haruka1993/">松元悠 | Haruka Matsumoto</a></p>
-<p><a href="https://www.instagram.com/ryusuke_marume/">丸目龍介 | Ryusuke Marume</a></p>
-<p><a href="http://shingominamida.tumblr.com/">南田真吾 | Shingo Minamida</a></p>
-<p><a href="http://5bangaimac.web.fc2.com/">五番街マック | Gobangai Mac</a></p>
-        </div>
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    a:hover {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .Heritage-Display {
+      position: absolute;
+      z-index: -1;
+      font-family: "Heritage-Display";
+      font-size: 5vw;
+      top: 0;
+    }
+
+    @font-face {
+      font-family: "Heritage-Display";
+      src: url("Heritage-Display.otf");
+    }
+
+    .aa {
+      line-height: 2vw;
+    }
+
+    .aa a {
+      font-size: 3vw;
+    }
+
+    #credit {
+      line-height: 5vw;
+    }
+
+    .random {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      max-height: 90vh;
+    }
+
+    .random img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      max-height: 90vh;
+    }
+
+    #info {
+      padding: 0;
+      margin: 0 auto 2.5vw;
+      line-height: 125%;
+    }
+
+    .print_only {
+      display: none;
+    }
+
+    #print {
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    @media print {
+      .print_only {
+        display: block;
+      }
+
+      .no_print {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="contents" class="print_only">
+    <h1 class="print_only">快晴</h1>
+    <h2 class="print_only">前期 : 2018年4月9日 - 18日<br />後期 : 2018年4月21日 - 30日</h2>
+    <h3 class="print_only">∧°┐ | pe.hu</h3>
+    <hr />
+    <div class="text print_only">
+      <div class="left">
+        大阪のカルチャーショップ<br />
+        <a>ナイスショップスー</a> が、
+        <br />フランスの新進コミック雑誌
+        <a href="http://revuelagon.com/">LAGON</a>
+        の制作チーム協力のもと、2018年5月に創刊する雑誌<b>「快晴」</b>の完成に先駆け、参加する日本の若手アーティスト16組による雑誌掲載作品を展覧会形式で展開するグループ展を二期に渡って開催いたします。<br />
+        <hr />
+        <p>We will launch a new magazine <b>快晴</b> with 16 young japanese artists'.</p>
+        <p>We will present the contents of the magazine ahead of completion in the exhibition format over the second
+          term.<br />organized by <a>nice shop su</a>, Support by <a href="http://revuelagon.com/">LAGON</a>.
       </div>
-      <hr/>
-      <div id="foot" class="print_only">
-        <div class="left">
-        &and;&deg;┐ | <a href="http://vg.pe.hu/jp/">vg.pe.hu/jp</a>
-        <p>〒530-0047<br/>
-          大阪府大阪市北区西天満4-8-1<br/>
-          4-8-1 Nishitemma, Kita-ku, Osaka</p>
-        </div>
-        <div class="right">　
-          <p>平日：正午から午後9時<br/>
-          土日祝：午後3時から午後9時<br/>
-          休館日：毎週木曜日</p>
-        </div>
+      <div class="right aa">
+        <p><a>安部悠介 | Yusuke Abe</a></p>
+        <p><a href="https://soundcloud.com/takaoo">大石峰生 | Takao Oishi</a></p>
+        <p><a href="http://kazquiz.com">Kazquiz</a></p>
+        <p><a href="https://www.instagram.com/haruna_kawai/">カワイハルナ | Haruna Kawai</a></p>
+        <p><a href="http://kaito-itsuki.tumblr.com/">皆藤齋 | Itsuki Kaito</a></p>
+        <p><a href="https://www.smoothness.onl/">櫻井崇史 | Takashi Sakurai</a></p>
+        <p><a href="http://sanukiayaka.tumblr.com/">佐貫絢郁 | Ayaka Sanuki</a></p>
+        <p><a href="https://www.instagram.com/__________sumi/">角ゆり子 | Yuriko Sumi</a></p>
+        <p><a href="http://nanoooook.blogspot.jp/">NANOOK</a></p>
+        <p><a href="http://hakke.info/">HAKKE</a></p>
+        <p><a href="https://www.instagram.com/saefujita/">藤田紗衣 | Sae Fujita</a></p>
+        <p><a href="http://fukin.tumblr.com/">フキン | Fukin</a></p>
+        <p><a href="https://www.instagram.com/matsumoto_haruka1993/">松元悠 | Haruka Matsumoto</a></p>
+        <p><a href="https://www.instagram.com/ryusuke_marume/">丸目龍介 | Ryusuke Marume</a></p>
+        <p><a href="http://shingominamida.tumblr.com/">南田真吾 | Shingo Minamida</a></p>
+        <p><a href="http://5bangaimac.web.fc2.com/">五番街マック | Gobangai Mac</a></p>
       </div>
     </div>
-    
-    <div id="contents" class="print_only">
-<h2 style="text-align: right;">exhibition by<br/>16 young japanese artists</h2>
-<h3>快晴</h3>
-    <hr/>
-        <div class="left">
-<p>前期 : 2018年4月9日 - 18日<br/>first half: April 9 - 18</p>
-<div class="pf">
-<p>安部悠介 | Yusuke Abe<img src="/1f/kaisei/abe.jpg" width="55%" /></p><hr/>
-<p>大石峰生 | Takao Oishi<img src="/1f/kaisei/takao.jpg" width="60%"></p><hr/>
-<p>皆藤齋 | Itsuki Kaito<img src="/1f/kaisei/kaito.jpg" width="65%" /></p><hr/>
-<p>櫻井崇史 | Takashi Sakurai<img src="/1f/kaisei/sakurai.jpg" width="67%" /></p><hr/>
-</div>
-<div class="pf">
-<p>佐貫絢郁 | Ayaka Sanuki<img src="/1f/kaisei/sanuki.jpg" width="63%" /></p><hr/>
-<p>角ゆり子 | Yuriko Sumi<img src="/1f/kaisei/sumiyuriko.jpg" width="65%" /></p><hr/>
-<p>松元悠 | Haruka Matsumoto<img src="/1f/kaisei/matsumoto.jpg" width="60%"></p><hr/>
-<p>丸目龍介 | Ryusuke Marume<img src="/1f/kaisei/marume.jpg" width="65%" /></p><hr/>
-        </div>
-        </div>
-        <div class="right">
-<p style="text-align: right;">後期 : 2018年4月21日 - 30日<br/>second half: April 21 - 30</p>
-<div class="pf">
-<p>Kazquiz<br/><img src="/1f/kaisei/kazquiz.jpg" width="65%" /></p><hr/>
-<p>カワイハルナ | Haruna Kawai<img src="/1f/kaisei/kawai.jpg" width="65%" /></p><hr/>
-<p>NANOOK<br/><img src="/1f/kaisei/nanook.jpg" width="60%" /><hr/>
-<p>HAKKE<br/><img src="/1f/kaisei/HAKKE.jpg" width="65%" /></p><hr/>
-</div>
-<div class="pf">
-<p>藤田紗衣 | Sae Fujita<img src="/1f/kaisei/fujita.jpg" width="60%" /></p><hr/>
-<p>フキン | Fukin<img src="/1f/kaisei/fukin.jpg" width="63%" /></p><hr/>
-<p>南田真吾 | Shingo Minamida<img src="/1f/kaisei/minamida.jpg" width="65%" /></p><hr/>
-<p>五番街マック | Gobangai Mac<img src="/1f/kaisei/5mac.jpg" width="90%" /></p><hr/>
-        </div>
+    <hr />
+    <div id="foot" class="print_only">
+      <div class="left">
+        &and;&deg;┐ | <a href="/jp/">vg.pe.hu/jp</a>
+        <p>〒530-0047<br />
+          大阪府大阪市北区西天満4-8-1<br />
+          4-8-1 Nishitemma, Kita-ku, Osaka</p>
       </div>
-      <hr/>
+      <div class="right">　
+        <p>平日：正午から午後9時<br />
+          土日祝：午後3時から午後9時<br />
+          休館日：毎週木曜日</p>
+      </div>
+    </div>
   </div>
-  
+
+  <div id="contents" class="print_only">
+    <h2 style="text-align: right;">exhibition by<br />16 young japanese artists</h2>
+    <h3>快晴</h3>
+    <hr />
+    <div class="left">
+      <p>前期 : 2018年4月9日 - 18日<br />first half: April 9 - 18</p>
+      <div class="pf">
+        <p>安部悠介 | Yusuke Abe<img src="/1f/kaisei/abe.jpg" width="55%" /></p>
+        <hr />
+        <p>大石峰生 | Takao Oishi<img src="/1f/kaisei/takao.jpg" width="60%"></p>
+        <hr />
+        <p>皆藤齋 | Itsuki Kaito<img src="/1f/kaisei/kaito.jpg" width="65%" /></p>
+        <hr />
+        <p>櫻井崇史 | Takashi Sakurai<img src="/1f/kaisei/sakurai.jpg" width="67%" /></p>
+        <hr />
+      </div>
+      <div class="pf">
+        <p>佐貫絢郁 | Ayaka Sanuki<img src="/1f/kaisei/sanuki.jpg" width="63%" /></p>
+        <hr />
+        <p>角ゆり子 | Yuriko Sumi<img src="/1f/kaisei/sumiyuriko.jpg" width="65%" /></p>
+        <hr />
+        <p>松元悠 | Haruka Matsumoto<img src="/1f/kaisei/matsumoto.jpg" width="60%"></p>
+        <hr />
+        <p>丸目龍介 | Ryusuke Marume<img src="/1f/kaisei/marume.jpg" width="65%" /></p>
+        <hr />
+      </div>
+    </div>
+    <div class="right">
+      <p style="text-align: right;">後期 : 2018年4月21日 - 30日<br />second half: April 21 - 30</p>
+      <div class="pf">
+        <p>Kazquiz<br /><img src="/1f/kaisei/kazquiz.jpg" width="65%" /></p>
+        <hr />
+        <p>カワイハルナ | Haruna Kawai<img src="/1f/kaisei/kawai.jpg" width="65%" /></p>
+        <hr />
+        <p>NANOOK<br /><img src="/1f/kaisei/nanook.jpg" width="60%" />
+          <hr />
+        <p>HAKKE<br /><img src="/1f/kaisei/HAKKE.jpg" width="65%" /></p>
+        <hr />
+      </div>
+      <div class="pf">
+        <p>藤田紗衣 | Sae Fujita<img src="/1f/kaisei/fujita.jpg" width="60%" /></p>
+        <hr />
+        <p>フキン | Fukin<img src="/1f/kaisei/fukin.jpg" width="63%" /></p>
+        <hr />
+        <p>南田真吾 | Shingo Minamida<img src="/1f/kaisei/minamida.jpg" width="65%" /></p>
+        <hr />
+        <p>五番街マック | Gobangai Mac<img src="/1f/kaisei/5mac.jpg" width="90%" /></p>
+        <hr />
+      </div>
+    </div>
+    <hr />
+  </div>
+
   <div id="contents" class="no_print">
     <h3>快晴 | KAISEI</h3>
-    <h2>A new generation of<br/>japanese artists</h2>
-    <hr/>
+    <h2>A new generation of<br />japanese artists</h2>
+    <hr />
     <div class="random"></div>
-    <hr/>
+    <hr />
     <div class="left">
-<h3 id="credit">
-<a>Yusuke Abe</a>,
-<a href="https://soundcloud.com/takaoo">Takao Oishi</a>,
-<a href="http://kazquiz.com">Kazquiz</a>,
-<a href="https://www.instagram.com/haruna_kawai/">Haruna Kawai</a>,
-<a href="http://kaito-itsuki.tumblr.com/">Itsuki Kaito</a>,
-<a href="https://www.smoothness.onl/">Takashi Sakurai</a>,
-<a href="http://sanukiayaka.tumblr.com/">Ayaka Sanuki</a>,
-<a href="https://www.instagram.com/__________sumi/">Yuriko Sumi</a>,
-<a href="http://nanoooook.blogspot.jp/">NANOOK</a>,
-<a href="http://hakke.info/">HAKKE</a>,
-<a href="https://www.instagram.com/saefujita/">Sae Fujita</a>,
-<a href="http://fukin.tumblr.com/">Fukin</a>,
-<a href="https://www.instagram.com/matsumoto_haruka1993/">Haruka Matsumoto</a>,
-<a href="https://www.instagram.com/ryusuke_marume/">Ryusuke Marume</a>,
-<a href="http://shingominamida.tumblr.com/">Shingo Minamida</a>,
-<a href="http://5bangaimac.web.fc2.com/">Gobangai Mac</a><br/>
-</h3>
+      <h3 id="credit">
+        <a>Yusuke Abe</a>,
+        <a href="https://soundcloud.com/takaoo">Takao Oishi</a>,
+        <a href="http://kazquiz.com">Kazquiz</a>,
+        <a href="https://www.instagram.com/haruna_kawai/">Haruna Kawai</a>,
+        <a href="http://kaito-itsuki.tumblr.com/">Itsuki Kaito</a>,
+        <a href="https://www.smoothness.onl/">Takashi Sakurai</a>,
+        <a href="http://sanukiayaka.tumblr.com/">Ayaka Sanuki</a>,
+        <a href="https://www.instagram.com/__________sumi/">Yuriko Sumi</a>,
+        <a href="http://nanoooook.blogspot.jp/">NANOOK</a>,
+        <a href="http://hakke.info/">HAKKE</a>,
+        <a href="https://www.instagram.com/saefujita/">Sae Fujita</a>,
+        <a href="http://fukin.tumblr.com/">Fukin</a>,
+        <a href="https://www.instagram.com/matsumoto_haruka1993/">Haruka Matsumoto</a>,
+        <a href="https://www.instagram.com/ryusuke_marume/">Ryusuke Marume</a>,
+        <a href="http://shingominamida.tumblr.com/">Shingo Minamida</a>,
+        <a href="http://5bangaimac.web.fc2.com/">Gobangai Mac</a><br />
+      </h3>
     </div>
     <div class="right">
       <div id="info">
-      <p>Book<br/>
-      14.7 x 21 cm / 64 pages</p>
-      <p>+ 8 sheets<br/>
-      12.7 x 18 cm</p>
-      <p>+ card<br/>
-      8.5 x 5.5 cm</p>
-      <p>+ poster<br/>
-      29.4 x 42 cm</p>
-      <hr/>
-      Released in <u>May 2018</u>
-      <h3>Out of Stock</h3>
-      <hr/>
-      <p>
-      Curated by <u>Niceshop Su</u><br/>
-      Supported by <a href="http://revuelagon.com/" target="_blank">Lagon</a><br/>
-      Designed by <a href="https://jeanphilippebretin.fr/" target="_blank">Jean-Philippe Bretin</a><br/>
-      Silkscreened by <a href="http://www.institut-serigraphique.com/" target="_blank">L'institut sérigraphique</a><br/>
-      Riso Print by <a href="http://www.papiermachine.fr/" target="_blank">Papier Machine</a></p>
+        <p>Book<br />
+          14.7 x 21 cm / 64 pages</p>
+        <p>+ 8 sheets<br />
+          12.7 x 18 cm</p>
+        <p>+ card<br />
+          8.5 x 5.5 cm</p>
+        <p>+ poster<br />
+          29.4 x 42 cm</p>
+        <hr />
+        Released in <u>May 2018</u>
+        <h3>Out of Stock</h3>
+        <hr />
+        <p>
+          Curated by <u>Niceshop Su</u><br />
+          Supported by <a href="http://revuelagon.com/" target="_blank">Lagon</a><br />
+          Designed by <a href="https://jeanphilippebretin.fr/" target="_blank">Jean-Philippe Bretin</a><br />
+          Silkscreened by <a href="http://www.institut-serigraphique.com/" target="_blank">L'institut
+            sérigraphique</a><br />
+          Riso Print by <a href="http://www.papiermachine.fr/" target="_blank">Papier Machine</a></p>
       </div>
     </div>
-    <hr/>
+    <hr />
     <p id="print">
-      <a class="mobile" class="back" onclick="history.back(-1);return false;" style="font-size:7.5vw; border:none;">↵</a></br>
-      <a class="mobile" href="javascript:void(0)" onclick="window.print();return false;">ここをクリックすると、 2018年4月にペフで開催した展覧会「快晴」の概要が表示されます。</a>
+      <a class="mobile" class="back" onclick="history.back(-1);return false;"
+        style="font-size:7.5vw; border:none;">↵</a></br>
+      <a class="mobile" href="javascript:void(0)" onclick="window.print();return false;">ここをクリックすると、
+        2018年4月にペフで開催した展覧会「快晴」の概要が表示されます。</a>
     </p>
   </div>
-  </body>
+</body>
+
 </html>
