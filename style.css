@@ -6,6 +6,13 @@ body {
   letter-spacing: 0.04rem;
 }
 
+#contents,
+.contents {
+  box-sizing: border-box;
+  clear: both;
+  padding: 2.5vw;
+}
+
 h1 {
   font-size: 8vw;
   font-weight: normal;
@@ -16,13 +23,13 @@ h1 {
 
 h2 {
   float: right;
-  margin: 0 2vw;
+  margin: 0 2.5vw;
 }
 
 h2,
 .text {
   font-size: 2vw;
-  line-height: 4vw;
+  line-height: 200%;
   font-weight: 555;
   letter-spacing: 0.07rem;
 }
@@ -42,19 +49,7 @@ hr {
 }
 
 a {
-  font-weight: normal;
   text-decoration: none;
-}
-
-#contents {
-  clear: both;
-  padding: 2.5vw;
-}
-
-.text {
-  display: block;
-  position: relative;
-  overflow: auto;
 }
 
 .text a {
@@ -64,6 +59,7 @@ a {
 .left,
 .right {
   position: relative;
+  display: block;
   width: 47.5%;
 }
 
@@ -85,17 +81,20 @@ a {
   text-align: right;
 }
 
-#print {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  z-index: 100;
-}
-
 .events {
   line-height: 2vw;
   padding: 0;
   letter-spacing: 0.07rem;
+}
+
+.events h1 {
+  float: left;
+  margin-right: 2vw;
+}
+
+.events h3 {
+  float: right;
+  margin-left: 2vw;
 }
 
 .events p {
@@ -103,23 +102,13 @@ a {
   margin: 1.5vw 0;
 }
 
-.events h1 {
-  float: left;
-  margin: 0 2vw 0 0;
-}
-
-.events h3 {
-  float: right;
-  margin: 0 0 0 2vw;
-}
-
 .events .left,
 .events .right {
-  padding: 0 0 4.5vw;
+  padding-bottom: 4.5vw;
 }
 
 .events hr {
-  border-top: solid 0.25vw #000;
+  border-top: solid 0.1vw #000;
 }
 
 .info {
@@ -133,7 +122,33 @@ a {
   width: 100%;
 }
 
+
+.print_only {
+  display: none;
+}
+
+#print {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 100;
+}
+
 @media print {
+
+  #contents,
+  .contents {
+    height: 100vh;
+  }
+
+  .print_only {
+    display: block;
+  }
+
+  .no_print {
+    display: none;
+  }
+
   .text {
     height: 75vh;
   }

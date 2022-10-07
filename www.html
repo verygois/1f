@@ -8,7 +8,7 @@
   <script src="random.js" defer></script>
   <link rel="stylesheet" href="style.css" />
   <style>
-    html {
+    body {
       background-color: #fff;
     }
 
@@ -20,76 +20,50 @@
       background-color: #000;
       color: #fff;
     }
-
-    .print_only {
-      display: none;
-    }
-
-    @media print {
-      .print_only {
-        display: block;
-      }
-
-      .no_print {
-        display: none;
-      }
-    }
   </style>
 </head>
 
 <body>
-  <div id="contents" class="print_only">
-    <h1>00</h1>
-    <h2>0000年00月00日 - 00日<br />00.00.00 - 00.00.00</h2>
-    <h3>Title</h3>
+  <div class="contents print_only">
+    <h1>H1</h1>
+    <h2>H2<br />H2</h2>
+    <h3>H3</h3>
     <hr />
-    <div class="text">
+    <section class="text">
+      <p>section class="text"</p>
       <div class="left">
         div class="right" <a href="#">a href="#"</a>
       </div>
       <div class="right">
         div class="right" <a href="#">a href="#"</a>
       </div>
-    </div>
+    </section>
     <hr />
     <div id="foot">
-      <p>1F | WWW to Print <a href="/1f/">vg.pe.hu/1f/</a></p>
-      Address<br />
-      _______<br />
-      ______________
+      <p>1F | <a href="/1f/">WWW to Print</a></p>
+      div id="foot"
     </div>
     <hr />
   </div>
 
-  <div id="contents">
-    <div class="events print_only">
+  <div class="contents print_only">
+    <section class="events">
+      <h1>.events h1</h1>
+      <p>section class="events contents print_only" .events p</p>
+      <hr />
       <div class="left">
-        <h3>class="events" H3</h3>
-        <p>class="events" P</p>
+        <h3>.events h3</h3>
+        <p>.events p</p>
       </div>
       <div class="right">
-        <h3>Event</h3>
-        <p>00月00日(日)<br />
-          Week, Month Day<br />
-          Start : 00pm</p>
-        <p>Infomation</p>
-      </div>
-      <div class="left">
-        <h3>Event</h3>
-        <p>00月00日(日)<br />
-          Week, Month Day<br />
-          Start : 00pm</p>
-        <p>Infomation</p>
-      </div>
-      <div class="right">
-        <h3>class="events" H3</h3>
-        <p>class="events" P</p>
+        <h3>.events h3</h3>
+        <p>.events p</p>
       </div>
       <hr />
-    </div>
+    </section>
   </div>
 
-  <div id="contents" class="no_print">
+  <div class="contents no_print">
     <div class="events">
       <div class="left">
         <p class="vg">WWW to Print</p>
