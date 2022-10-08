@@ -161,8 +161,7 @@ hr {
 
   .contents img,
   .contents .info,
-  #credit .contents .info:first-child,
-  #credit .contents .info {
+  .ctlg .info:first-child {
     width: 100%;
     max-width: 100%;
     padding-right: 0;
