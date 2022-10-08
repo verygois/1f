@@ -148,14 +148,14 @@ a:hover {
     z-index: 1;
     width: 90%;
     padding: 5% 5% 15vw;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 200%;
     font-weight: 500;
   }
 
   #hello u {
     padding: 0.25rem 1rem;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
   }
 
   #hello .link {
@@ -165,9 +165,9 @@ a:hover {
   }
 
   #hello .image {
-    height: 1.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    height: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     display: inline-block;
     transition: all 0.5s ease-out;
     transform: scale(1.5);
