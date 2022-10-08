@@ -46,7 +46,6 @@ a:hover {
 
 #contents h1 b {
   display: inline-block;
-  font-size: 2.5vw;
   font-weight: 555;
   padding: 1.25%;
   color: #fff;
@@ -148,6 +147,10 @@ a:hover {
     font-size: 2rem;
     padding: 2.5% 5%;
     line-height: 2rem;
+  }
+
+  #contents h1 b {
+    padding: 1rem;
   }
 
   #hello {
