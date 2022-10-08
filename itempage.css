@@ -130,7 +130,7 @@ hr {
   float: left;
   padding: 0 2rem;
   margin: 0 0 2rem;
-  font-size: 75%;
+  font-size: 90%;
   width: 20rem;
   font-family: 'Lucida Console', Courier, monospace;
 }
@@ -161,5 +161,6 @@ hr {
     width: 100%;
     max-width: 100%;
     padding-right: 0;
+    font-size: 100%;
   }
 }
