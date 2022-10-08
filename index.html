@@ -10,7 +10,6 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="1f.css" />
     <link rel="stylesheet" href="/1f/archives.css" />
-    <link rel="stylesheet" type="text/css" media="print" href="/1f/print.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
 
@@ -62,6 +61,20 @@
         .print_block,
         .none {
             display: none;
+        }
+
+        @media print {
+            .print_only {
+                display: inline-block;
+            }
+
+            .print_block {
+                display: block;
+            }
+
+            .no_print {
+                display: none;
+            }
         }
     </style>
 </head>
