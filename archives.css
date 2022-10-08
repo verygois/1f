@@ -144,13 +144,13 @@ a:hover {
 
 
   #contents h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 2.5% 5%;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 
   #contents h1 b {
-    padding: 1rem;
+    padding: 0.75rem;
   }
 
   #hello {
