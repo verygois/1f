@@ -6,7 +6,6 @@ body {
   letter-spacing: 0.04rem;
 }
 
-#contents,
 .contents {
   box-sizing: border-box;
   clear: both;
@@ -107,10 +106,6 @@ a {
   padding-bottom: 4.5vw;
 }
 
-.events hr {
-  border-top: solid 0.1vw #000;
-}
-
 .info {
   line-height: 3vw;
   padding-top: 4vw;
@@ -151,10 +146,6 @@ a {
 
   .text {
     height: 75vh;
-  }
-
-  .a4 {
-    height: 99.1vh;
   }
 }
 

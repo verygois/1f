@@ -52,10 +52,6 @@
       font-family: "Great Vibes", cursive;
     }
 
-    .print_only {
-      display: none;
-    }
-
     @media print {
       body {
         color: #111;
@@ -65,20 +61,12 @@
       a {
         color: #000;
       }
-
-      .print_only {
-        display: block;
-      }
-
-      .no_print {
-        display: none;
-      }
     }
   </style>
 </head>
 
 <body>
-  <div id="contents">
+  <div class="contents">
     <h1>04</h1>
     <h2 class="print_only">2018年2月19日 - 28日<br />2.19 - 2.28.2018</h2>
     <h3 class="print_only">∧°┐ | pe.hu</h3>
@@ -116,7 +104,7 @@
       </div>
     </div>
   </div>
-  <div id="contents" class="no_print">
+  <div class="contents no_print">
     <div class="events">
       <div class="left">
         <p class="vg">VG VTLG</p>
