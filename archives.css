@@ -145,7 +145,7 @@ a:hover {
 
   #contents h1 {
     font-size: 1.5rem;
-    padding: 2.5% 5%;
+    padding: 2.5% 5% 0;
     line-height: 1.5rem;
   }
 
