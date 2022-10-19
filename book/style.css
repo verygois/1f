@@ -1,0 +1,117 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.random {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.random img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#visitors {
+    position: fixed;
+    z-index: 100;
+    padding: 1.25%;
+    color: #fff;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    font-family: "SimSong", "MS Mincho", selif;
+    font-stretch: condensed;
+    font-variant: common-ligatures tabular-nums;
+    letter-spacing: -0.1vw;
+}
+
+.no b {
+    font-weight: 500;
+    margin-top: 2.5rem;
+    display: inline-block;
+    transform: scale(.5, 5);
+    -webkit-transform: scale(.5, 5);
+}
+
+.contents img {
+    margin-top: 2.5rem;
+}
+
+#hello {
+    font-family: "Arial", sans-serif;
+    font-size: 1.5rem;
+    line-height: 200%;
+    font-weight: 500;
+    float: left;
+    width: 450px;
+    max-width: 50%;
+    margin-top: 2rem;
+}
+
+#hello a,
+#hello i {
+    font-size: 120%;
+    font-family: "Times New Roman", Symbol;
+}
+
+#hello b,
+#hello i {
+    font-style: oblique 45deg;
+}
+
+#hello p,
+#hello a,
+#hello b {
+    padding: 0;
+    margin: 0;
+}
+
+#hello a {
+    border: none;
+    text-decoration: none;
+}
+
+#hello a:hover,
+#hello b:hover {
+    color: blue;
+    background: transparent;
+}
+
+#hello b {
+    color: #000;
+    background: transparent;
+}
+
+#hello u {
+    text-decoration: none;
+    white-space: nowrap;
+    border: 2px solid;
+    border-radius: 1rem;
+    padding: 0.45rem 0.5rem;
+}
+
+@media screen and (max-width: 750px) {
+
+    #hello {
+        width: 450px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .random img {
+        min-width: 100vw;
+        max-height: 100vh;
+    }
+}

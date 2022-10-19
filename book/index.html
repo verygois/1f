@@ -9,69 +9,79 @@
     <title>1F | VG CTLG</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://vg.pe.hu/compilation/style.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="random.js" defer></script>
     <script type="text/javascript">
         $(function () {
-            $("#about").load("hello.html");
             $("#visitors").load("visitors.php");
         })
     </script>
 
     <style type="text/css">
-        body {
-            padding: 0;
-            margin: 0;
-        }
-
-        .random {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            z-index: -1;
-            overflow: hidden;
-            transform: translate(-50%, -50%);
-        }
-
-        .random img {
-            min-width: 100vw;
-            min-height: 100vh;
-        }
-
-        #about {
-            position: relative;
-            width: 90%;
-            max-width: 1000px;
-            height: 90vh;
-            margin: 5vh auto 100vh;
-            overflow: auto;
-            border: 0.1vw solid;
-            border-radius: 1rem;
-            background-color: rgba(255, 255, 255, 0.55);
-        }
-
-        #visitors {
-            position: fixed;
-            z-index: 100;
-            padding: 1.25%;
-            color: #fff;
-            bottom: 0;
-            right: 0;
-            pointer-events: none;
-            font-family: "SimSong", "MS Mincho", selif;
-            font-stretch: condensed;
-            font-variant: common-ligatures tabular-nums;
-            letter-spacing: -0.1vw;
-        }
     </style>
 
 </head>
 
 <body>
     <div id="portrait" class="random"></div>
-    <div id="about" class="no_print"></div>
     <div id="visitors" class="no_print"></div>
+    <p class="no"><b>VG CTLG</b> <i>1F </i></p>
+    <section class="contents">
+        <div id="hello">
+            <p>
+                <span class="">This is The <i>BOX</i> for The Items that</span>
+                <span class="">archive of <i>1F</i></span>
+            </p>
+
+            <p>
+                <u><a href="/1f/03/">03</a></u> by
+                <a class="link" href="/ctlg/book/takamitsu-ohta/"><b>Takamitsu Ohta</b></a>,
+                <a class="link" href="/ctlg/book/muku-kobayashi/"><b>Muku Kobayashi</b></a>,
+                <a class="link" href="/ctlg/book/shoji-funakawa/"><b>Shoji Funakawa</b></a>,
+                <a class="link" href="/ctlg/book/soshi-matsunobe/"><b>Soshi Matsunobe</b></a>
+                <span class="">
+                    Video/Edit by
+                    <a class="link" href="/ctlg/book/reiji-saito/"><b>Reiji Saito</b></a>
+                </span>
+            </p>
+
+            <p>
+                <span class="archives">
+                    <u><a href="/1f/04/">04</a></u>
+                    by
+                    <a class="link" href="/ctlg/book/emeraldclitoris/"><b>Emeraldclitoris</b></a>
+                </span>
+            </p>
+
+            <p>
+                <u><a href="/1f/05/">05</a></u>
+                <span class="">Idea</span> by
+                <a class="link" href="/ctlg/book/woopheadclrms/"><b>Woopheadclrms</b></a>
+            </p>
+            <p>
+                and something more <i>Special Items</i>
+            <p>
+        </div>
+        <img src="box.jpeg" />
+        <div class="pr">
+            <div class="buy">
+                <p class="no">
+                    Sales Price
+                    <i>5000 JPY</i>
+                </p>
+                <p class="order">
+                    <a href="http://newlifecollection.com/ca86/1274/p-r-s/">Order Now</a>
+                </p>
+                <p class="no">
+                    <i>10 Qty</i>
+                    Limited
+                </p>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
