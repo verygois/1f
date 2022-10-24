@@ -1,4 +1,4 @@
-const random = [
+let random = [
     "https://64.media.tumblr.com/9c973a0d8716dae0f37cd92c11d981f7/a44391d2dea1d331-8e/s2048x3072/12a6c123e5670e895179f4e28dcf9fff7c5d8978.jpg",
     "https://64.media.tumblr.com/33b31b91d3b50ea14b2fa04bc1581171/a44391d2dea1d331-15/s2048x3072/45657096086f6a23139f57ba94fd51eac9308031.jpg",
     "https://64.media.tumblr.com/b58b530e2ee8b228cb1eef090644f0bd/a44391d2dea1d331-b2/s2048x3072/3fa6687efe997772a7e9154160f26691ec2af21f.jpg",
@@ -43,17 +43,16 @@ const random = [
 ];
 
 function randomImg(randomArray) {
-    var random =
-        randomArray[Math.floor(Math.random() * randomArray.length)];
-    console.log(random);
+    let random = randomArray[Math.floor(Math.random() * randomArray.length)];
     return random;
 }
 
-function sentenceGenerator() {
-    var sentence = `<img src="${randomImg(random)}">`;
-    document.querySelector(".random").innerHTML = sentence;
+function BGImg() {
+    const bgimage = document.getElementById("random");
+    bgimage.style.backgroundImage = "url(" + randomImg(random) + ")";
 }
-window.setInterval(function() {
-    sentenceGenerator();
+
+window.setInterval(function () {
+    BGImg();
 }, 2022);
-sentenceGenerator();
+BGImg();

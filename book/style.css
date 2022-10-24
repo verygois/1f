@@ -1,34 +1,32 @@
+html {
+    height: -webkit-fill-available;
+}
+
 body {
     padding: 0;
     margin: 0;
 }
 
-.random {
-    z-index: -1;
+#random {
+    position: fixed;
     top: 0;
     left: 0;
-    position: fixed;
     width: 100%;
     height: 100vh;
-}
-
-.random img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100vw;
-    min-height: 100vh;
-    max-height: auto;
+    max-height: -webkit-fill-available;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #visitors {
     position: fixed;
+    bottom: 0;
+    right: 0;
     z-index: 100;
     padding: 1.25%;
     color: #fff;
-    bottom: 0;
-    right: 0;
     pointer-events: none;
     font-family: "SimSong", "MS Mincho", selif;
     font-stretch: condensed;
@@ -106,13 +104,5 @@ body {
     #hello {
         width: 450px;
         max-width: 100%;
-    }
-}
-
-@media screen and (max-width: 550px) {
-
-    .random img {
-        min-width: 100vw;
-        max-height: 100vh;
     }
 }
