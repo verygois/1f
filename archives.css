@@ -35,6 +35,7 @@ a:hover {
 
 #contents h1 {
   font-size: 2.5vw;
+  margin: 0 0 2.5vw;
   padding: 0 2.5vw 1.25vw;
   position: relative;
   font-weight: 500;
