@@ -90,7 +90,6 @@ a:hover {
 #hello .link {
   font-family: "Times New Roman", Symbol;
   font-size: 120%;
-  font-style: oblique 45deg;
 }
 
 #hello .image {
@@ -156,7 +155,6 @@ a:hover {
   #hello {
     position: relative;
     z-index: 1;
-    width: 90%;
     padding: 5% 5% 15vw;
     font-size: 2rem;
     line-height: 200%;
@@ -169,9 +167,7 @@ a:hover {
   }
 
   #hello .link {
-    font-family: "Times New Roman", Symbol;
     font-size: 110%;
-    font-style: oblique 45deg;
   }
 
   #hello .image {
