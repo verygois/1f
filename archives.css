@@ -152,12 +152,8 @@ a:hover {
   }
 
   #hello {
-    position: relative;
-    z-index: 1;
     padding: 5% 5% 15vw;
     font-size: 2rem;
-    line-height: 200%;
-    font-weight: 500;
   }
 
   #hello u {
