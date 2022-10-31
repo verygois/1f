@@ -89,6 +89,7 @@ a:hover {
 #hello .link {
   font-family: "Times New Roman", Symbol;
   font-size: 120%;
+  font-style: italic;
 }
 
 #hello .image {
