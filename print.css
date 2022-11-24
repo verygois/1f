@@ -1,7 +1,7 @@
 #a4 {
   position: relative;
   box-sizing: border-box;
-  max-height: 100vh;
+  height: 100vh;
 }
 
 #contents {
