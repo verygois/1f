@@ -14,10 +14,18 @@ body {
 
 .vg {
   position: relative;
+  z-index: -1;
   padding: 10vw 1vw ;
   text-shadow: 1px 1px 0 #000;
   transform: scale(1, 4.5);
   font-family: "Great Vibes", cursive;
+}
+
+.vg,
+.random {
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
 }
 
 .contents,
@@ -146,9 +154,6 @@ h3 {
 .random {
   height: 100vh;
   max-height: 100vw;
-  pointer-events: none;
-  user-select: none;
-  z-index: -1;
 }
 
 .random img {
