@@ -53,7 +53,7 @@ a:hover,
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -67,7 +67,7 @@ a:hover,
 
 #hello {
   position: relative;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 200%;
   padding: 2.5rem;
@@ -79,7 +79,7 @@ a:hover,
 #contents u,
 #hello u {
   border: 1px solid;
-  padding: 0.25rem 0.75rem;
+  padding: 0.45rem 1rem;
   border-radius: 2.5rem;
   text-decoration: none;
   white-space: nowrap;
@@ -87,7 +87,7 @@ a:hover,
 
 #hello .image {
   position: relative;
-  height: 1.75rem;
+  height: 2.5rem;
   margin-left: 0.45rem;
   margin-right: 0.875rem;
   display: inline-block;
@@ -97,7 +97,7 @@ a:hover,
 
 #hello .image:hover {
   z-index: 10;
-  transform: scale(4.5);
+  transform: scale(5);
   transform-origin: bottom left;
   transition: all 0.25s ease-out;
 }
@@ -134,15 +134,34 @@ a:hover,
     display: block;
   }
 
-  #hello {
-    padding: 5% 5% 10vw;
+  #contents h1 {
+    font-size: 3vw;
+    font-weight: 500;
   }
 
-  #hello .link {
-    font-size: 110%;
+  #contents h1 a {
+    padding: 2vw;
+  }
+
+  #hello {
+    font-size: 4.5vw;
+    padding: 2.5%;
+  }
+
+  #contents u,
+  #hello u {
+    border: 0.1vw solid;
+    padding: 1vw 2.5vw;
+    border-radius: 5vw;
+  }
+
+  #hello .image {
+    height: 4.5vw;
+    margin-left: 1.25vw;
+    margin-right: 2.5vw;
   }
 
   #hello .image:hover {
-    transform: scale(3.5);
+    transform: scale(3);
   }
 }
