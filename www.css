@@ -184,7 +184,7 @@ hr {
 }
 
 .contents {
-  display: block;
+  display: none;
 }
 
 @media screen and (max-width: 750px) {
