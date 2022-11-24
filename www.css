@@ -1,142 +1,206 @@
+html {
+  height: -webkit-fill-available;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-size: 2vw;
-  font-family: "MS Mincho", "SimSong", selif;
-  letter-spacing: 0.04rem;
 }
 
-.contents {
+@font-face {
+  font-family: "MS Mincho";
+  src: url("https://vg.pe.hu/jp/MSMincho.ttf");
+}
+
+.vg {
+  position: relative;
+  padding: 10vw 1vw ;
+  text-shadow: 1px 1px 0 #000;
+  transform: scale(1, 4.5);
+  font-family: "Great Vibes", cursive;
+}
+
+.contents,
+.text,
+.left,
+.right,
+#footer,
+.no_print {
   box-sizing: border-box;
+}
+
+.contents,
+.no_print {
+  height: 100vh;
+}
+
+body {
+  background-color: var(--sub-color);
+  color: var(--main-color);
+  font-family: var(--main-font);
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+  color: var(--sub-color);
+  background-color: var(--main-color);
+}
+
+h1,
+h2,
+.right {
+  display: block;
+  float: right;
+}
+
+h3,
+.left,
+.no_print h1 {
+  display: block;
+  float: left;
+}
+
+hr,
+.contents,
+#footer,
+.no_print {
   clear: both;
-  padding: 2.5vw;
 }
 
-h1 {
+h1,
+.back {
   font-size: 8vw;
-  font-weight: normal;
   line-height: 100%;
-  float: right;
-  margin: 0 1vw 2vw;
-}
-
-h2 {
-  float: right;
-  margin: 0 2.5vw;
 }
 
 h2,
 .text {
   font-size: 2vw;
   line-height: 200%;
-  font-weight: 555;
-  letter-spacing: 0.07rem;
 }
 
-h3 {
-  font-size: 4vw;
-  font-weight: normal;
-  float: left;
-  line-height: 8vw;
-  margin: 0;
-}
-
-hr {
-  border: 0;
-  height: 2vw;
-  clear: both;
-}
-
-a {
-  text-decoration: none;
-}
-
+h3,
 .text a {
   font-size: 4vw;
 }
 
+h1,
+h2,
+h3,
+.contents b {
+  font-weight: 400;
+}
+
+h1 {
+  margin: 0 1vw 2vw;
+}
+
+h2 {
+  margin: 0 2.5vw;
+}
+
+h3 {
+  line-height: 8vw;
+  margin: 0 2.5vw 0 0;
+}
+
+.contents b {
+  font-size: 125%;
+}
+
+.contents i,
+.contents u {
+  font-size: 125%;
+  font-weight: 400;
+}
+
+.contents,
+.no_print {
+  padding: 2.5vw;
+}
+
+.text {
+  height: 75vh;
+}
+
 .left,
 .right {
-  position: relative;
   display: block;
-  width: 47.5%;
+  position: relative;
+  width: 50%;
 }
 
 .left {
-  z-index: 2;
-  float: left;
+  padding-right: 1.25vw;
 }
 
 .right {
-  float: right;
+  padding-left: 1.25vw;
 }
 
-#foot {
-  padding: 0 2.5vw 2.5vw;
-  position: relative;
+.random {
+  height: 100vh;
+  max-height: 100vw;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
 }
 
-#foot .right {
-  text-align: right;
+.random img {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  user-select: none;
 }
 
-.events {
-  line-height: 2vw;
-  padding: 0;
-  letter-spacing: 0.07rem;
+hr {
+  border: none;
+  height: 2vw;
 }
 
-.events h1 {
-  float: left;
-  margin-right: 2vw;
-}
-
-.events h3 {
-  float: right;
-  margin-left: 2vw;
-}
-
-.events p {
-  padding: 0;
-  margin: 1.5vw 0;
-}
-
-.events .left,
-.events .right {
-  padding-bottom: 4.5vw;
-}
-
-.info {
-  line-height: 3vw;
-  padding-top: 4vw;
-  margin-bottom: 4vw;
-  letter-spacing: 0.07rem;
-}
-
-.events img {
+#footer {
   width: 100%;
-}
-
-
-.print_only {
-  display: none;
+  padding: 2.5vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 #print {
   position: fixed;
-  width: 100%;
+  margin: 0 2.5%;
   bottom: 0;
   z-index: 100;
 }
 
-@media print {
+.contents {
+  display: block;
+}
 
-  #contents,
-  .contents {
-    height: 100vh;
+@media screen and (max-width: 750px) {
+  .left,
+  .right {
+    width: 100%;
+    padding: 0 0 4vw;
   }
 
-  .print_only {
+  .mobile {
+    display: none;
+  }
+}
+
+@media print {
+  .contents {
     display: block;
   }
 
@@ -146,20 +210,5 @@ a {
 
   .text {
     height: 75vh;
-  }
-}
-
-@media screen and (max-width: 750px) {
-
-  .left,
-  .right {
-    width: 100%;
-    float: left;
-    display: block;
-    padding: 0 0 4.5vw;
-  }
-
-  .mobile {
-    display: none;
   }
 }
