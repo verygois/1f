@@ -98,7 +98,7 @@ a:hover,
 #hello .image:hover {
   z-index: 10;
   transform: scale(5);
-  transform-origin: bottom left;
+  transform-origin: middle left;
   transition: all 0.25s ease-out;
 }
 
@@ -163,5 +163,6 @@ a:hover,
 
   #hello .image:hover {
     transform: scale(3);
+    transform-origin: bottom left;
   }
 }
