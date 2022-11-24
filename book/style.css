@@ -1,103 +1,101 @@
-body {
-    padding: 0;
-    margin: 0;
+body,
+#hello p,
+#hello a,
+#hello b  {
+  padding: 0;
+  margin: 0;
 }
 
 #random {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #visitors {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 100;
-    padding: 1.25%;
-    color: #fff;
-    pointer-events: none;
-    font-family: "SimSong", "MS Mincho", selif;
-    font-stretch: condensed;
-    font-variant: common-ligatures tabular-nums;
-    letter-spacing: -0.1vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.25%;
+  color: #fff;
+  pointer-events: none;
+  font-family: "SimSong", "MS Mincho", selif;
+  font-stretch: condensed;
+  font-variant: common-ligatures tabular-nums;
+  letter-spacing: -0.1vw;
 }
 
 .no b {
-    font-weight: 500;
-    margin-top: 2.5rem;
-    display: inline-block;
-    transform: scale(.5, 5);
-    -webkit-transform: scale(.5, 5);
+  font-weight: 500;
+  margin-top: 2.5rem;
+  display: inline-block;
+  transform: scale(.5, 5);
+  -webkit-transform: scale(.5, 5);
 }
 
 .contents img {
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 #hello {
-    font-family: "Arial", sans-serif;
-    font-size: 1.5rem;
-    line-height: 200%;
-    font-weight: 500;
-    float: left;
-    width: 450px;
-    max-width: 50%;
-    margin-top: 2rem;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 200%;
+  float: left;
+  width: 450px;
+  max-width: 50%;
+  padding: 2rem 2rem 0 0;
 }
 
 #hello a,
 #hello i {
-    font-size: 120%;
-    font-family: "Times New Roman", serif;
+  font-size: 120%;
+  font-family: "Times New Roman", serif;
 }
 
 #hello b,
 #hello i {
-    font-style: oblique 45deg;
-}
-
-#hello p,
-#hello a,
-#hello b {
-    padding: 0;
-    margin: 0;
+  font-style: italic;
 }
 
 #hello a {
-    border: none;
-    text-decoration: none;
+  border: none;
+  text-decoration: none;
 }
 
 #hello a:hover,
 #hello b:hover {
-    color: blue;
-    background: transparent;
+  color: blue;
+  background: transparent;
 }
 
 #hello b {
-    color: #000;
-    background: transparent;
+  color: #000;
+  background: transparent;
 }
 
 #hello u {
-    text-decoration: none;
-    white-space: nowrap;
-    border: 2px solid;
-    border-radius: 1rem;
-    padding: 0.45rem 0.5rem;
+  text-decoration: none;
+  white-space: nowrap;
+  border: 2px solid;
+  border-radius: 1rem;
+  padding: 0.45rem 0.5rem;
 }
 
 @media screen and (max-width: 750px) {
 
-    #hello {
-        width: 450px;
-        max-width: 100%;
-    }
+  #hello {
+    width: 450px;
+    max-width: 100%;
+  }
 }
