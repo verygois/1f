@@ -53,12 +53,16 @@
 }
 
 #credit {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: table-cell;
   vertical-align: bottom;
   text-align: justify;
   text-align: justify-all;
-  padding: 2vw 0 0;
-  height: 33vw;
+  padding: 0;
+  width: 100%;
 }
 
 #credit p {
