@@ -11,7 +11,7 @@ body {
 .vg {
   position: relative;
   z-index: -1;
-  padding: 10vw 1vw ;
+  padding: 10vw 1vw;
   text-shadow: 1px 1px 0 #fff;
   transform: scale(1, 4.5);
   font-family: "Great Vibes", cursive;
@@ -165,6 +165,10 @@ h3 {
 hr {
   border: none;
   height: 2vw;
+}
+
+#foot {
+  padding-top: 2vw
 }
 
 #foot .right p {
