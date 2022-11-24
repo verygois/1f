@@ -22,24 +22,20 @@
   padding: 0 0 4.5vw;
 }
 
-#credit {
-  height: 33vw;
-  margin: auto;
-  padding: 2vw 0 0;
-  display: table-cell;
-  vertical-align: bottom;
-  text-align: justify;
-  text-align: justify-all;
-}
-
-#credit p {
-  margin: 0;
-  padding: 0;
-  line-height: 100%;
+#contents u,
+#hello u {
+  border: 0.1vw solid;
+  border-radius: 5vw;
+  padding: 1% 2.5%;
 }
 
 #contents h1 {
+  font-size: 2.5vw;
   padding: 0 0 1.25vw;
+}
+
+#contents h1 a {
+  padding: 1.25%;
 }
 
 #contents h1 i {
@@ -55,6 +51,7 @@
 }
 
 #hello {
+  font-size: 4.5vw;
   padding: 0 0 15vw;
 }
 
@@ -64,4 +61,19 @@
   margin-left: 3.5vw;
   margin-right: 4vw;
   transform: scale(1.75);
+}
+
+#credit {
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: justify;
+  text-align: justify-all;
+  padding: 2vw 0 0;
+  height: 33vw;
+}
+
+#credit p {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
 }

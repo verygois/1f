@@ -2,100 +2,62 @@
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>1F | VG CTLG</title>
+  <link rel="stylesheet" href="1f.css" />
+  <link rel="stylesheet" href="archives.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+  <link rel="stylesheet" href="/jp/floor.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
 
-    <title>1F | VG CTLG</title>
+  <style type="text/css">
+  @font-face {
+    font-family: "Heritage-Display";
+    src: url("Heritage-Display.otf");
+  }
 
-    <link rel="stylesheet" href="1f.css" />
-    <link rel="stylesheet" href="archives.css" />
-    <link rel="stylesheet" type="text/css" media="print" href="print.css" />
-    <link rel="stylesheet" href="/jp/floor.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  .Heritage-Display {
+    font-family: "Heritage-Display";
+    font-size: 150%;
+    text-transform: uppercase;
+  }
 
-    <style type="text/css">
-        .Heritage-Display {
-            font-family: "Heritage-Display";
-            font-size: 150%;
-            text-transform: uppercase;
-        }
+  hr {
+    border: none;
+    display: block;
+  }
 
-        @font-face {
-            font-family: "Heritage-Display";
-            src: url("/1f/Heritage-Display.otf");
-        }
+  .print_only,
+  .print_block,
+  .none {
+    display: none;
+  }
 
-        #contents b a {
-            color: #fff;
-        }
+  #index {
+    padding: 2.5%;
+  }
 
-        #contents b a:hover {
-            color: #FF5733;
-        }
-
-        .pehu {
-            font-family: "MS Mincho", "SimSong", selif;
-            font-stretch: condensed;
-            font-variant: common-ligatures tabular-nums;
-            letter-spacing: 0.1vw;
-        }
-
-        .vg {
-            font-family: 'Great Vibes', cursive;
-        }
-
-        hr {
-            border: none;
-            display: block;
-        }
-
-        #credit a {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            z-index: 10;
-            width: 100%;
-        }
-
-        .print_only,
-        .print_block,
-        .none {
-            display: none;
-        }
-
-        #index {
-            padding: 2.5%;
-        }
-
-        @media print {
-            .print_only {
-                display: inline-block;
-            }
-
-            .print_block {
-                display: block;
-            }
-
-            #index,
-            .no_print {
-                display: none;
-            }
-        }
-    </style>
+  @media print {
+    #index {
+      display: none;
+    }
+  }
+  </style>
 </head>
 
 <body>
-    <div id="a4"></div>
-    <div id="index"></div>
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <div id="a4"></div>
+  <div id="index"></div>
 
-    <script>
-        $(function () {
-            $("#a4").load("contents.html");
-            $("#index").load("/jp/floor.html");
-        })
-    </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(function () {
+    $("#a4").load("contents.html");
+    $("#index").load("/jp/floor.html");
+  })
+  </script>
 </body>
 
 </html>

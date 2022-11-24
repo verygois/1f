@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "MS Mincho";
+  src: url("https://vg.pe.hu/jp/MSMincho.ttf");
+}
+
 body,
 #contents,
 #credit p {
@@ -10,7 +15,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+#contents h1 a:hover {
   color: #FF5733;
 }
 
@@ -18,72 +24,21 @@ a:hover {
   position: relative;
 }
 
+.vg {
+  font-family: 'Great Vibes', cursive;
+}
+
 #contents h1,
-#contents p,
 #credit,
 #PopupText {
-  font-family: "SimSong", "MS Mincho", selif;
+  font-family: "MS Mincho", "SimSong", selif;
   font-stretch: condensed;
   font-variant: common-ligatures tabular-nums;
   letter-spacing: -0.1vw;
 }
 
-#contents p a,
-#credit a {
-  text-decoration: underline dotted;
-}
-
-#contents h1 {
-  font-size: 2.5vw;
-  margin: 0 0 2.5vw;
-  padding: 0 2.5vw 1.25vw;
-  position: relative;
-  font-weight: 500;
-  line-height: 2.5vw;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-#contents h1 b {
-  display: inline-block;
-  font-weight: 555;
-  padding: 1.25%;
-  color: #fff;
-  background: #000;
-}
-
-#contents h1 i {
-  font-family: "Great Vibes", cursive;
-}
-
-#contents p {
-  font-size: 2.5vw;
-  padding: 2.5vw 0;
-  line-height: 100%;
-}
-
 #hello {
-  position: relative;
-  z-index: 1;
-  padding: 0 2.5vw 15vw;
   font-family: "Arial", sans-serif;
-  font-size: 4.5vw;
-  line-height: 200%;
-  font-weight: 500;
-}
-
-#hello a {
-  text-decoration: none;
-}
-
-#contents u,
-#hello u {
-  text-decoration: none;
-  white-space: nowrap;
-  border: 0.1vw solid;
-  border-radius: 2.5vw;
-  padding: 1% 1.5%;
 }
 
 #hello i,
@@ -93,14 +48,50 @@ a:hover {
   font-style: italic;
 }
 
+#contents h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0;
+  margin: 0 0 2.5vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#contents h1 a {
+  color: #fff;
+  background: #000;
+  display: inline-block;
+  font-weight: 555;
+  padding: 0.5rem;
+}
+
+#hello {
+  position: relative;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 200%;
+  padding: 2.5rem 2.5rem 5rem;
+  z-index: 1;
+}
+
+#contents u,
+#hello u {
+  border: 1px solid;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2.5rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
 #hello .image {
   position: relative;
-  height: 4.5vw;
-  margin-left: 1.75vw;
-  margin-right: 2.5vw;
+  height: 1.75rem;
+  margin-left: 0.45rem;
+  margin-right: 0.875rem;
   display: inline-block;
-  transition: all 0.5s ease-out;
   transform: scale(1.5);
+  transition: all 0.5s ease-out;
 }
 
 #hello .image:hover {
@@ -142,42 +133,15 @@ a:hover {
     display: block;
   }
 
-
-  #contents h1 {
-    font-size: 1rem;
-    padding: 2.5% 5% 0;
-    line-height: 1rem;
-  }
-
-  #contents h1 b {
-    padding: 0.5rem;
-  }
-
   #hello {
-    padding: 5% 5% 15vw;
-    font-size: 2rem;
-  }
-
-  #hello u {
-    padding: 0.25rem 1rem;
-    border-radius: 2rem;
+    padding: 5% 5% 10vw;
   }
 
   #hello .link {
     font-size: 110%;
   }
 
-  #hello .image {
-    height: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    display: inline-block;
-    transition: all 0.5s ease-out;
-    transform: scale(1.5);
-  }
-
   #hello .image:hover {
     transform: scale(3.5);
-    transform-origin: bottom center;
   }
 }
