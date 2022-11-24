@@ -207,6 +207,7 @@ hr {
   }
 
   #print,
+  #itempage,
   .no_print {
     display: none;
   }
