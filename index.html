@@ -40,7 +40,16 @@
   }
 
   @media print {
-    #index {
+    #index,
+    .print_block {
+      display: block;
+    }
+
+    .print_only {
+      display: inline-block;
+    }
+
+    .no_print {
       display: none;
     }
   }

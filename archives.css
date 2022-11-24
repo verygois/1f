@@ -5,6 +5,7 @@
 
 body,
 #contents,
+#contents h1,
 #credit p {
   padding: 0;
   margin: 0;
@@ -49,13 +50,11 @@ a:hover,
 }
 
 #contents h1 {
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0;
-  margin: 0 0 2.5vw;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 #contents h1 a {
@@ -63,7 +62,7 @@ a:hover,
   background: #000;
   display: inline-block;
   font-weight: 555;
-  padding: 0.5rem;
+  padding: 0.75rem;
 }
 
 #hello {
@@ -71,7 +70,9 @@ a:hover,
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 200%;
-  padding: 2.5rem 2.5rem 5rem;
+  padding: 2.5rem;
+  margin: 0 auto;
+  max-width: 750px;
   z-index: 1;
 }
 
