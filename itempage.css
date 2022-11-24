@@ -1,172 +1,151 @@
-#items {
-  position: relative;
-  font-family: 'Lucida Console', Courier, monospace;
-}
-
-#items a {
-  font-size: 2rem;
-  line-height: 200%;
-  text-decoration: none;
-  color: #000;
-}
-
-#items a:hover {
-  cursor: pointer;
-  padding-bottom: 0.5rem;
-  border-bottom: dotted 0.25rem;
-}
-
-#items a b {
-  font-size: 150%;
-  font-weight: 250;
-}
-
-#items a img {
-  width: 2rem;
-}
-
 hr {
   border: none;
   clear: both;
 }
 
+body,
+.ctlg .pr {
+  padding: 0;
+  margin: 0;
+}
+
+.no {
+  box-sizing: border-box;
+  padding: 1rem 2.5%;
+  margin: 0;
+}
+
+.no {
+  font-size: 125%;
+  font-style: normal;
+  font-family: 'Great Vibes', cursive;
+}
+
+.no i {
+  font-family: arial;
+  font-style: normal;
+}
+
+.ctlg .info,
+.ctlg .buy {
+  font-family: 'Lucida Console', Courier, monospace;
+}
+
+.ctlg .info,
+.ctlg .buy,
+.ctlg iframe {
+  display: block;
+  float: left;
+}
+
+.no i {
+  display: block;
+  float: right;
+}
+
+main {
+  padding: 2.5%;
+}
+
 .ctlg {
   font-size: 1rem;
   margin: 0 auto;
-  padding: 0 0 5%;
+}
+
+.ctlg .pr::before {
+  content: '';
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+.ctlg a {
+  color: #000;
+  text-decoration: none;
+}
+
+.ctlg a:hover {
+  color: #fff;
+  background: #000;
+}
+
+.ctlg .info a,
+.ctlg .info b,
+.ctlg .buy a,
+.ctlg .buy b {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid 0.1rem #000;
+  padding: 0 0.25rem;
+  margin: 0.125rem;
+}
+
+.ctlg b {
+  color: #fff;
+  background: #000;
+  margin-right: 1rem;
 }
 
 .ctlg p {
   line-height: 200%;
 }
 
-.pr a,
-.buy a {
-  border: solid 0.1rem #000;
-  color: #000;
-  padding: 0.25rem 0.5rem;
-  text-decoration: none;
-}
-
-.pr a:hover,
-.buy a:hover {
-  color: #fff;
-  background: #000;
-}
-
-.ctlg .no {
-  font-size: 125%;
-  padding: 0 2.5%;
-  font-style: normal;
-}
-
-.ctlg .order {
-  line-height: 150%;
-  font-size: 150%;
-  font-style: normal;
-  font-family: 'Great Vibes', cursive;
-  text-align: center;
-}
-
-.ctlg .order a {
-  padding-top: 1.5%;
-  display: block;
-}
-
-.ctlg .no i {
-  font-style: normal;
-  font-family: arial;
-  float: right;
-  padding-left: 2.5rem;
-  display: block;
-}
-
-.ctlg b {
-  color: #fff;
-  background: #000;
-  padding: 0.25rem 0.5rem;
-  margin-right: 1rem;
-}
-
-.ctlg img {
-  width: 100%;
-  max-width: 45rem;
-  float: right;
-  margin-bottom: 2.5rem;
+.ctlg .info {
+  box-sizing: border-box;
+  padding: 0 2rem 1rem 0;
 }
 
 .ctlg .info:first-child {
-  box-sizing: border-box;
-  max-width: 750px;
-  width: 66%;
-  font-size: 100%;
-}
-
-.ctlg .info {
-  float: left;
-  font-size: 75%;
-  box-sizing: border-box;
-  padding-right: 5rem;
-  font-family: 'Lucida Console', Courier, monospace;
-}
-
-.ctlg .pr {
-  clear: both;
-  position: relative;
-  margin: 2.5rem 0;
+  width: 50%;
 }
 
 .ctlg iframe {
+  border: none;
   width: 100%;
   height: 55vw;
   max-width: 750px;
   max-height: 27.5rem;
-  float: left;
-  border: none;
-  margin-bottom: 1.5rem;
 }
 
 .ctlg .buy {
-  float: left;
-  padding: 0 2rem;
-  margin: 0 0 2rem;
-  font-size: 90%;
-  width: 20rem;
-  font-family: 'Lucida Console', Courier, monospace;
+  box-sizing: border-box;
+  padding: 2rem;
+  margin: 0;
+  width: 35%;
+}
+
+.ctlg .order {
+  font-family: 'Great Vibes', cursive;
+  font-size: 150%;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+}
+
+.ctlg .order a {
+  display: block;
+  padding-top: 1.5%;
 }
 
 @media screen and (max-width: 1200px) {
-  .contents .buy {
+  .ctlg .buy {
     width: 100%;
-    padding: 0;
+    padding: 1rem 0;
   }
 
-  .ctlg .info:first-child {
-    width: 100%;
-    max-width: 100%;
-    padding-right: 0;
-    font-size: 100%;
-  }
-
-  .contents iframe {
+  .ctlg iframe {
     width: 100%;
     height: 55vw;
     max-width: 100%;
     max-height: 55vw;
-    float: left;
-    border: none;
-    margin-bottom: 1.5rem;
   }
 }
 
-
 @media screen and (max-width: 750px) {
 
-  .contents img,
-  .contents .info {
+  .ctlg .info:first-child,
+  .ctlg .info {
     width: 100%;
-    max-width: 100%;
-    padding-right: 0;
-    font-size: 100%;
+    padding: 0;
   }
 }
