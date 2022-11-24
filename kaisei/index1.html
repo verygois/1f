@@ -1,31 +1,126 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="book/random.js" defer></script>
   <title>快晴 | KAISEI</title>
   <link rel="stylesheet" href="../www.css" />
-  <link rel="stylesheet" type="text/css" href="../itempage.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
   <style>
-  :root {
-    --main-color: #000;
-    --sub-color: #fff;
-    --main-font: "MS Mincho", "SimSong", serif;
-    --sub-font: "MS Mincho", "SimSong", serif;
-  }
+    html {
+      color: #111;
+      background-color: #fff;
+    }
+
+    a {
+      color: #fff;
+      background: linear-gradient(-90deg, green, blue, yellow, red);
+      background-size: 200% 100%;
+      animation: AnimationName 2.5s ease infinite;
+    }
+
+    .pf {
+      line-height: 3vw;
+      font-size: 1.4vw;
+      float: left;
+      width: 50%;
+    }
+
+    @-webkit-keyframes AnimationName {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    @keyframes AnimationName {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    a:hover {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .aa {
+      line-height: 2vw;
+    }
+
+    .aa a {
+      font-size: 3vw;
+    }
+
+    #credit {
+      line-height: 5vw;
+    }
+
+    .random {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      max-height: 90vh;
+    }
+
+    .random img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      max-height: 90vh;
+    }
+
+    #info {
+      padding: 0;
+      margin: 0 auto 2.5vw;
+      line-height: 125%;
+    }
+
+    .print_only {
+      display: none;
+    }
+
+    #print {
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    @media print {
+      .print_only {
+        display: block;
+      }
+
+      .no_print {
+        display: none;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <section class="contents">
-    <h1>快晴</h1>
-    <h2>前期 : 2018年4月9日 - 18日<br />後期 : 2018年4月21日 - 30日</h2>
-    <h3>∧°┐ | pe.hu</h3>
+  <div class="contents print_only">
+    <h1 class="print_only">快晴</h1>
+    <h2 class="print_only">前期 : 2018年4月9日 - 18日<br />後期 : 2018年4月21日 - 30日</h2>
+    <h3 class="print_only">∧°┐ | pe.hu</h3>
     <hr />
-    <div class="text">
+    <div class="text print_only">
       <div class="left">
         大阪のカルチャーショップ<br />
         <a>ナイスショップスー</a> が、
@@ -34,8 +129,8 @@
         の制作チーム協力のもと、2018年5月に創刊する雑誌<b>「快晴」</b>の完成に先駆け、参加する日本の若手アーティスト16組による雑誌掲載作品を展覧会形式で展開するグループ展を二期に渡って開催いたします。<br />
         <hr />
         <p>We will launch a new magazine <b>快晴</b> with 16 young japanese artists'.</p>
-        <p>We will present the contents of the magazine ahead of completion in the exhibition format over the second term.<br />
-          organized by <a>nice shop su</a>, Support by <a href="http://revuelagon.com/">LAGON</a>.
+        <p>We will present the contents of the magazine ahead of completion in the exhibition format over the second
+          term.<br />organized by <a>nice shop su</a>, Support by <a href="http://revuelagon.com/">LAGON</a>.
       </div>
       <div class="right aa">
         <p><a>安部悠介 | Yusuke Abe</a></p>
@@ -57,35 +152,28 @@
       </div>
     </div>
     <hr />
-    <div id="foot">
+    <div id="foot" class="print_only">
       <div class="left">
-        ∧°┐ | <a href="/jp/">vg.pe.hu/jp</a>
-        <p>
-          〒530-0047<br />
+        &and;&deg;┐ | <a href="/jp/">vg.pe.hu/jp</a>
+        <p>〒530-0047<br />
           大阪府大阪市北区西天満4-8-1<br />
-          4-8-1 Nishitemma, Kita-ku, Osaka
-        </p>
+          4-8-1 Nishitemma, Kita-ku, Osaka</p>
       </div>
       <div class="right">　
-        <p>
-          平日：正午から午後9時<br />
+        <p>平日：正午から午後9時<br />
           土日祝：午後3時から午後9時<br />
-          休館日：毎週木曜日
-        </p>
+          休館日：毎週木曜日</p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="contents">
-    <h2 style="text-align: right;">
-      exhibition by<br />
-      16 young japanese artists
-    </h2>
+  <div class="contents print_only">
+    <h2 style="text-align: right;">exhibition by<br />16 young japanese artists</h2>
     <h3>快晴</h3>
     <hr />
     <div class="left">
       <p>前期 : 2018年4月9日 - 18日<br />first half: April 9 - 18</p>
-      <div>
+      <div class="pf">
         <p>安部悠介 | Yusuke Abe<img src="/1f/kaisei/abe.jpg" width="55%" /></p>
         <hr />
         <p>大石峰生 | Takao Oishi<img src="/1f/kaisei/takao.jpg" width="60%"></p>
@@ -95,7 +183,7 @@
         <p>櫻井崇史 | Takashi Sakurai<img src="/1f/kaisei/sakurai.jpg" width="67%" /></p>
         <hr />
       </div>
-      <div>
+      <div class="pf">
         <p>佐貫絢郁 | Ayaka Sanuki<img src="/1f/kaisei/sanuki.jpg" width="63%" /></p>
         <hr />
         <p>角ゆり子 | Yuriko Sumi<img src="/1f/kaisei/sumiyuriko.jpg" width="65%" /></p>
@@ -108,7 +196,7 @@
     </div>
     <div class="right">
       <p style="text-align: right;">後期 : 2018年4月21日 - 30日<br />second half: April 21 - 30</p>
-      <div>
+      <div class="pf">
         <p>Kazquiz<br /><img src="/1f/kaisei/kazquiz.jpg" width="65%" /></p>
         <hr />
         <p>カワイハルナ | Haruna Kawai<img src="/1f/kaisei/kawai.jpg" width="65%" /></p>
@@ -118,7 +206,7 @@
         <p>HAKKE<br /><img src="/1f/kaisei/HAKKE.jpg" width="65%" /></p>
         <hr />
       </div>
-      <div>
+      <div class="pf">
         <p>藤田紗衣 | Sae Fujita<img src="/1f/kaisei/fujita.jpg" width="60%" /></p>
         <hr />
         <p>フキン | Fukin<img src="/1f/kaisei/fukin.jpg" width="63%" /></p>
@@ -129,13 +217,17 @@
         <hr />
       </div>
     </div>
-  </section>
+    <hr />
+  </div>
 
-  <section class="no_print">
+  <div class="contents no_print">
     <h3>快晴 | KAISEI</h3>
     <h2>A new generation of<br />japanese artists</h2>
+    <hr />
+    <div class="random"></div>
+    <hr />
     <div class="left">
-      <h3>
+      <h3 id="credit">
         <a>Yusuke Abe</a>,
         <a href="https://soundcloud.com/takaoo">Takao Oishi</a>,
         <a href="http://kazquiz.com">Kazquiz</a>,
@@ -154,20 +246,35 @@
         <a href="http://5bangaimac.web.fc2.com/">Gobangai Mac</a><br />
       </h3>
     </div>
-    <div class="right random"></div>
-    <script src="random.js"></script>
-  </section>
-  <main id="itempage" class="ctlg"></main>
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript">
-  $(function () {
-    $("#itempage").load("ctlg.html");
-  })
-  </script>
-  <div id="print">
-    <a class="back" onclick="history.back(-1);return false;">↵</a>
-    <p class="mobile">
-      <a class="mobile" href="javascript:void(0)" onclick="window.print();return false;">このページを印刷すると、 2017年12月16日 - 27日に開催した展覧会の概要が表示されます。</a>
+    <div class="right">
+      <div id="info">
+        <p>Book<br />
+          14.7 x 21 cm / 64 pages</p>
+        <p>+ 8 sheets<br />
+          12.7 x 18 cm</p>
+        <p>+ card<br />
+          8.5 x 5.5 cm</p>
+        <p>+ poster<br />
+          29.4 x 42 cm</p>
+        <hr />
+        Released in <u>May 2018</u>
+        <h3>Out of Stock</h3>
+        <hr />
+        <p>
+          Curated by <u>Niceshop Su</u><br />
+          Supported by <a href="http://revuelagon.com/" target="_blank">Lagon</a><br />
+          Designed by <a href="https://jeanphilippebretin.fr/" target="_blank">Jean-Philippe Bretin</a><br />
+          Silkscreened by <a href="http://www.institut-serigraphique.com/" target="_blank">L'institut
+            sérigraphique</a><br />
+          Riso Print by <a href="http://www.papiermachine.fr/" target="_blank">Papier Machine</a></p>
+      </div>
+    </div>
+    <hr />
+    <p id="print">
+      <a class="back" onclick="history.back(-1);return false;"
+        style="font-size:7.5vw; border:none;">↵</a></br>
+      <a class="mobile" href="javascript:void(0)" onclick="window.print();return false;">ここをクリックすると、
+        2018年4月にペフで開催した展覧会「快晴」の概要が表示されます。</a>
     </p>
   </div>
 </body>

@@ -24,6 +24,9 @@ body {
   z-index: -1;
 }
 
+h1,
+h2,
+h3,
 .contents,
 .text,
 .left,
@@ -31,6 +34,7 @@ body {
 #footer,
 .no_print {
   box-sizing: border-box;
+  margin: 0
 }
 
 .contents {
@@ -99,16 +103,16 @@ h3,
 }
 
 h1 {
-  margin: 0 1vw 2vw;
+  padding: 0 1vw 2vw;
 }
 
 h2 {
-  margin: 0 2.5vw;
+  padding: 0 2.5vw;
 }
 
 h3 {
   line-height: 8vw;
-  margin: 0 2.5vw 0 0;
+  padding: 0 2.5vw 0 0;
 }
 
 .contents b {
