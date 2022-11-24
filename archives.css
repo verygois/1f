@@ -67,7 +67,7 @@ a:hover,
 
 #hello {
   position: relative;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
   line-height: 200%;
   padding: 2.5rem;
@@ -144,8 +144,8 @@ a:hover,
   }
 
   #hello {
-    font-size: 4.5vw;
-    padding: 2.5%;
+    font-size: 5vw;
+    padding: 5%;
   }
 
   #contents u,
