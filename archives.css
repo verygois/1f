@@ -57,12 +57,16 @@ a:hover,
   font-weight: 500;
 }
 
+#contents h1 a,
+#contents h1 span {
+  padding: 0.5rem;
+}
+
 #contents h1 a {
   color: #fff;
   background: #000;
   display: inline-block;
   font-weight: 555;
-  padding: 0.5rem;
 }
 
 #hello {
