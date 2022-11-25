@@ -20,14 +20,10 @@ body,
 }
 
 #visitors {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 100;
   padding: 1.25%;
   color: #fff;
   pointer-events: none;
-  font-family: "SimSong", "MS Mincho", selif;
+  font-family: "MS Mincho", "SimSong", selif;
   font-stretch: condensed;
   font-variant: common-ligatures tabular-nums;
   letter-spacing: -0.1vw;
