@@ -20,9 +20,6 @@ body,
 }
 
 #visitors {
-  padding: 1.25%;
-  color: #fff;
-  pointer-events: none;
   font-family: "MS Mincho", "SimSong", selif;
   font-stretch: condensed;
   font-variant: common-ligatures tabular-nums;
