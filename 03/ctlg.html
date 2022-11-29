@@ -32,9 +32,54 @@
     Wholesale Price
     <i>1000 JPY</i>
   </p>
-  <p class="order">
-    <a href="https://verygois.bandcamp.com/merch/03-by-takamitsu-ohta-muku-kobayashi-shoji-funakawa-soshi-matsunobe">Order Now</a>
-  </p>
+
+  <div id="smart-button-container">
+        <div style="text-align: center;">
+          <div id="paypal-button-container"></div>
+        </div>
+      </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=ATX03KkvGEzmH8gPLUaY8ftuRouxZBVcmD34NvAzc3DpVArk0_4eqcg5lGFoFjO0TUHcsyyz6BB3yspU&enable-funding=venmo&currency=JPY" data-sdk-integration-source="button-factory"></script>
+    <script>
+      function initPayPalButton() {
+        paypal.Buttons({
+          style: {
+            shape: 'pill',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'paypal',
+
+          },
+
+          createOrder: function(data, actions) {
+            return actions.order.create({
+              purchase_units: [{"amount":{"currency_code":"JPY","value":2000}}]
+            });
+          },
+
+          onApprove: function(data, actions) {
+            return actions.order.capture().then(function(orderData) {
+
+              // Full available details
+              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+              // Show a success message within this page, e.g.
+              const element = document.getElementById('paypal-button-container');
+              element.innerHTML = '';
+              element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+              // Or go to another URL:  actions.redirect('thank_you.html');
+
+            });
+          },
+
+          onError: function(err) {
+            console.log(err);
+          }
+        }).render('#paypal-button-container');
+      }
+      initPayPalButton();
+    </script>
+
   <p>
     <b>Distributors</b>
     <a href="_" target="_blank">???</a>
