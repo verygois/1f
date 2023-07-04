@@ -93,16 +93,16 @@ h3,
 }
 
 .contents h1 {
-  padding: 0 1vw 2vw;
+  padding: 2.5vw 1vw 2vw;
 }
 
 .contents h2 {
-  padding: 0 2.5vw;
+  padding: 2.5vw;
 }
 
 .contents h3 {
   line-height: 8vw;
-  padding: 0 2.5vw;
+  padding: 2.5vw;
 }
 
 .contents b {
