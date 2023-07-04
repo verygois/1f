@@ -106,6 +106,10 @@ h3,
   padding: 2.5vw;
 }
 
+.contents h3.sub {
+  padding: 0 2.5vw 2.5vw 0;
+}
+
 .contents b {
   font-size: 125%;
 }
@@ -157,10 +161,7 @@ hr {
 }
 
 #foot {
-  padding: 0.5vw 2.5vw;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  padding: 2.5vw;
 }
 
 #foot .right p {
@@ -220,6 +221,13 @@ h3.vg,
 @media print {
   .contents {
     display: block;
+  }
+
+  #foot {
+    padding: 0.5vw 2.5vw;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 
   #print,
