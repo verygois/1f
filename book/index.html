@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ja">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>1F | VG CTLG</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <script src="../index.js" async></script>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://vg.pe.hu/ctlg/compilation.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript">
-  $(function () {
-    $("#visitors").load("visitors.php");
-  })
-  </script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -29,7 +23,6 @@
         <span class="">This is The <i>BOX</i> for The Items that</span>
         <span class="">archive of <i>1F</i></span>
       </p>
-
       <p>
         <u><a href="/1f/03/">03</a></u> by
         <a class="link" href="/ctlg/book/takamitsu-ohta/"><b>Takamitsu Ohta</b></a>,
@@ -41,7 +34,6 @@
           <a class="link" href="/ctlg/book/reiji-saito/"><b>Reiji Saito</b></a>
         </span>
       </p>
-
       <p>
         <span class="archives">
           <u><a href="/1f/04/">04</a></u>
@@ -49,7 +41,6 @@
           <a class="link" href="/ctlg/book/emeraldclitoris/"><b>Emeraldclitoris</b></a>
         </span>
       </p>
-
       <p>
         <u><a href="/1f/05/">05</a></u>
         <span class="">Idea</span> by
@@ -78,6 +69,9 @@
     </div>
   </main>
   <div id="random"></div>
+  <div id="print">
+    <a id="visitors" class="no_print" href="#" onclick="history.back(-1);return false;"></a>
+  </div>
   <script type="text/javascript">
   let random = [
     "https://64.media.tumblr.com/9c973a0d8716dae0f37cd92c11d981f7/a44391d2dea1d331-8e/s2048x3072/12a6c123e5670e895179f4e28dcf9fff7c5d8978.jpg",
@@ -122,11 +116,13 @@
     "https://64.media.tumblr.com/ab9761e2dc1a80f9a6aa8ca993df1ed4/31a0c2dc6949b756-10/s2048x3072/b5e84004fbc3e89006e93926c4ff23c8cf6c9681.jpg",
     "https://64.media.tumblr.com/709659fe59c95658c9d2dc8646503498/31a0c2dc6949b756-ab/s2048x3072/d551ef60cffdfc6d3e96d23e8973e154651b7f7d.jpg"
   ];
+
+  fetch('visitors.php')
+  .then(response => response.text())
+  .then(innerHTML => {
+    document.querySelector('#visitors').innerHTML = innerHTML;
+  });
   </script>
   <script src="random.js"></script>
-  <div id="print">
-    <a id="visitors" class="no_print" href="#" onclick="history.back(-1);return false;"></a>
-  </div>
 </body>
-
 </html>

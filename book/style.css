@@ -7,16 +7,12 @@ body,
 }
 
 #random {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   height: 100vh;
-  z-index: -1;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: 1s;
 }
 
 #visitors {
