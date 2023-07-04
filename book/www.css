@@ -1,0 +1,19 @@
+#hello {
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 2rem 0 0;
+  font-size: 3.75vw
+}
+
+#hello u {
+  border: 0.25vw solid;
+  border-radius: 2vw;
+  padding: 0.75vw 1vw;
+}
+
+.pr,
+#random,
+#print,
+#visitors {
+  display: none;
+}
