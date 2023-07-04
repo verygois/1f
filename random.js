@@ -1,7 +1,6 @@
 function randomImg(randomArray) {
   var random =
     randomArray[Math.floor(Math.random() * randomArray.length)];
-  console.log(random);
   return random;
 }
 function sentenceGenerator() {
