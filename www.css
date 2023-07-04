@@ -131,12 +131,17 @@ h3,
   width: 50%;
 }
 
+p.left,
+p.right {
+  font-size: 111%;
+}
+
 .left {
-  padding-right: 2.5vw;
+  padding-right: 1.25vw;
 }
 
 .right {
-  padding-left: 2.5vw;
+  padding-left: 1.25vw;
 }
 
 .random {
