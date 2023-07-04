@@ -9,7 +9,7 @@ body {
 }
 
 .contents {
-  display: none;
+  display: ;
 }
 
 h1,
@@ -94,11 +94,11 @@ h3,
 }
 
 .contents h1 {
-  padding: 2.5vw 1vw 2vw;
+  padding: 2.5vw;
 }
 
 .contents h2 {
-  padding: 2.5vw;
+  padding: 2.5vw 0;
 }
 
 .contents h3 {
