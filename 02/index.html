@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>02 by Sarah Marshall, Natalia Panzer</title>
+  <meta name="format-detection" content="telephone=no" />
+  <script src="../index.js"></script>
   <link rel="stylesheet" href="../www.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
@@ -19,20 +19,20 @@
 </head>
 
 <body>
-  <section class="contents">
+  <article class="contents">
     <h1>02</h1>
     <h2>2018年1月12日 - 24日<br />1.12 - 1.24.2018</h2>
     <h3>∧°┐ | pe.hu</h3>
     <hr />
-    <div class="text">
-      <div class="left">
+    <section class="text">
+      <p class="left">
         日々の生活に関心を抱き、ありのままの日常を作品にする、ニューヨーク在住の２人の女性アーティストによる展覧会。<br />
         <a href="/ctlg/book/sarah-marshall/">サラ・マーシャル</a>
         は、生活の中で日常的に使われる言葉を用いて、デジタルとフィジカルを混合させた作品を制作する現代美術家。<br />
         <a href="/ctlg/book/natalia-panzer/">ナタリア・パンツァー</a>
         は、自身に深く関係するものごとを包み隠さず創造に取り入れ、従来の形態にとらわれない自由な表現を行っています。
-      </div>
-      <div class="right">
+      </p>
+      <p class="right">
         This exhibition by two female artists based in New York.<br />
         <a href="/ctlg/book/sarah-marshall/">Sarah Marshall</a>
         is interested in the accumulation of language through
@@ -40,10 +40,10 @@
         <a href="/ctlg/book/natalia-panzer/">Natalia Panzer</a>
         is builds, edits, and contributes to okcook.co, a gastro-poetic
         website of art, writing, and data. and runs a home-based gallery space called Refresh out of her apartment.
-      </div>
-    </div>
+      </p>
+    </section>
     <hr />
-    <div id="foot">
+    <footer id="foot">
       <div class="left">
         ∧°┐ | <a href="/jp/">vg.pe.hu/jp</a>
         <p>
@@ -59,13 +59,12 @@
           休館日：毎週木曜日
         </p>
       </div>
-    </div>
-  </section>
+    </footer>
+  </article>
 
-  <section class="contents">
+  <article class="contents">
     <h3>02</h3>
-    <hr/>
-    <div class="text">
+    <section class="text">
       <p>
         会期中には、数名の女性たちによる様々なイベントを開催いたします。<br/>
         and some event will do by female artists in This exhibition.
@@ -73,7 +72,6 @@
       <hr/>
       <div class="left">
         <h3>reading</h3>
-        <hr/>
         <p>
           1月14日(日)<br />
           Sunday, January 14<br />
@@ -83,7 +81,6 @@
         自由料金制 | name your price
         <hr/>
         <h3>closing event</h3>
-        <hr/>
         <p>
           1月24日(水)<br />
           Wednesday, January 24<br />
@@ -95,7 +92,6 @@
       </div>
       <div class="right">
         <h3>will do what we want to do</h3>
-        <hr/>
         <p>
           1月19日(金)<br />
           Friday, January 19<br />
@@ -114,28 +110,39 @@
         <p>by 6.7.r.n, one other person</p>
         自由料金制 | name your price
       </div>
-    </div>
-    <hr />
-  </section>
+    </section>
+  </article>
 
   <main class="no_print">
     <div class="left">
       <h3 class="vg">VG VTLG</h3>
       <hr/>
-      <h1>by<br />
+      <h2>by<br />
         <a href="/ctlg/book/sarah-marshall/">Sarah Marshall</a><br />
         <a href="/ctlg/book/natalia-panzer/">Natalia Panzer</a>
-      </h1>
+      </h2>
     </div>
-    <div class="right random"></div>
-    <script src="random.js"></script>
-  </main>
-  <div id="print">
-    <a class="back" onclick="history.back(-1);return false;">↵</a>
-    <p class="mobile">
-      <a class="mobile" href="javascript:void(0)" onclick="window.print();return false;">このページを印刷すると、 2017年12月16日 - 27日に開催した展覧会の概要が表示されます。</a>
-    </p>
-  </div>
-</body>
+    <script type="text/javascript">
+    const random = [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg",
+      "07.jpg",
+      "08.jpg",
+      "09.jpg"
+    ];
+    </script>
+    <script src="../random.js"></script>
 
+    <nav id="print">
+      <a class="back" onclick="history.back(-1);">↵</a>
+      <p class="mobile">
+        <a href="javascript:void(0)" onclick="window.print();">このページを印刷すると、 2018年1月12日 - 24日に開催した展覧会「02」の概要が表示されます。</a>
+      </p>
+    </nav>
+  </main>
+</body>
 </html>
