@@ -144,8 +144,8 @@ p.right {
 }
 
 .random {
-  height: 100vw;
-  max-height: 100vh;
+  height: calc(100vh - 10rem);
+  max-height: 100vw;
 }
 
 .random img {
