@@ -1,7 +1,3 @@
-html {
-  height: -webkit-fill-available;
-}
-
 @font-face {
   font-family: "MS Mincho";
   src: url("https://vg.pe.hu/jp/MSMincho.ttf");
@@ -12,20 +8,8 @@ body {
   padding: 0;
 }
 
-.vg {
-  position: relative;
-  z-index: -1;
-  padding: 10vw 1vw;
-  text-shadow: 1px 1px 0 #fff;
-  transform: scale(1, 4.5);
-  font-family: "Great Vibes", cursive;
-}
-
-.vg,
-.random {
-  pointer-events: none;
-  user-select: none;
-  z-index: -1;
+.contents {
+  display: none;
 }
 
 h1,
@@ -35,14 +19,16 @@ h3,
 .text,
 .left,
 .right,
+#foot,
 .no_print {
   box-sizing: border-box;
   margin: 0
 }
 
 .contents {
-  height: 100vh;
-  max-height: -webkit-fill-available;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
 }
 
 body {
@@ -61,14 +47,14 @@ a:hover {
   background-color: var(--main-color);
 }
 
-h1,
-h2,
+.contents h1,
+.contents h2,
 .right {
   display: block;
   float: right;
 }
 
-h3,
+.contents h3,
 .left,
 .no_print h1 {
   display: block;
@@ -76,24 +62,25 @@ h3,
 }
 
 hr,
-.contents,
 .no_print {
   clear: both;
 }
 
-h1,
+.contents h1,
+main h2,
 .back {
   font-size: 8vw;
   line-height: 100%;
 }
 
-h2,
+.contents h2,
 .text {
   font-size: 2vw;
   line-height: 200%;
 }
 
-h3,
+.contents h3,
+h3.vg,
 .text a {
   font-size: 4vw;
 }
@@ -105,17 +92,17 @@ h3,
   font-weight: 400;
 }
 
-h1 {
+.contents h1 {
   padding: 0 1vw 2vw;
 }
 
-h2 {
+.contents h2 {
   padding: 0 2.5vw;
 }
 
-h3 {
+.contents h3 {
   line-height: 8vw;
-  padding: 0 2.5vw 0 0;
+  padding: 0 2.5vw;
 }
 
 .contents b {
@@ -128,13 +115,10 @@ h3 {
   font-weight: 400;
 }
 
-.contents,
+.text,
+#foot,
 .no_print {
   padding: 2.5vw;
-}
-
-.text {
-  height: 75vh;
 }
 
 .left,
@@ -173,7 +157,9 @@ hr {
 }
 
 #foot {
-  padding-top: 2vw;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 #foot .right p {
@@ -198,8 +184,20 @@ hr {
   margin: 0;
 }
 
-.contents {
-  display: none;
+h3.vg {
+  position: relative;
+  z-index: -1;
+  padding: 10vw 1vw;
+  text-shadow: 1px 1px 0 #fff;
+  transform: scale(1, 4.5);
+  font-family: "Great Vibes", cursive;
+}
+
+h3.vg,
+.random {
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
 }
 
 @media screen and (max-width: 750px) {
@@ -207,6 +205,10 @@ hr {
   .right {
     width: 100%;
     padding: 0 0 4vw;
+  }
+
+  #foot .right p {
+    text-align: left;
   }
 
   .mobile {
