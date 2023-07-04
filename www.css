@@ -136,6 +136,11 @@ p.right {
   font-size: 111%;
 }
 
+.left p,
+.right p {
+  font-size: 90%;
+}
+
 .left {
   padding-right: 1.25vw;
 }
