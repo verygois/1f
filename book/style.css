@@ -57,11 +57,14 @@ body,
   font-style: italic;
 }
 
+.no a,
 #hello a {
+  color: #000;
   border: none;
   text-decoration: none;
 }
 
+.no a:hover,
 #hello a:hover,
 #hello b:hover {
   color: blue;
