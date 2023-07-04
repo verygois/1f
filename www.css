@@ -61,6 +61,7 @@ a:hover {
 }
 
 hr,
+#print,
 .no_print {
   clear: both;
 }
@@ -170,11 +171,6 @@ hr {
 
 #foot .right p {
   text-align: right;
-}
-
-#print {
-  clear: both;
-  padding-top: 1vw;
 }
 
 #print a {
