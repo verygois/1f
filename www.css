@@ -28,7 +28,6 @@ h3,
 .contents {
   padding: 0;
   position: relative;
-  min-height: 100vh;
 }
 
 body {
@@ -223,6 +222,7 @@ h3.vg,
 @media print {
   .contents {
     display: block;
+    min-height: 100vh;
   }
 
   #foot {
