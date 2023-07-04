@@ -190,10 +190,10 @@ hr {
 h3.vg {
   position: relative;
   z-index: -1;
-  padding: 10vw 1vw;
-  text-shadow: 1px 1px 0 #fff;
-  transform: scale(1, 4.5);
-  font-family: "Great Vibes", cursive;
+  padding: 0 0 1vw;
+  text-shadow: 0.25vw 0.25vw 0 #fff;
+  font-size: 7.5vw;
+  font-family: "Arial", sans-serif;
 }
 
 h3.vg,
