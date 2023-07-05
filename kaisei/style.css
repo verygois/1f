@@ -1,0 +1,66 @@
+:root {
+  --main-color: #000;
+  --sub-color: #fff;
+  --main-font: "MS Mincho", "SimSong", serif;
+  --sub-font: "MS Mincho", "SimSong", serif;
+}
+
+.contents .right a,
+.no_print a,
+.ctlg a {
+  color: #fff;
+  background: linear-gradient(-90deg, green, blue, yellow, red);
+  background-size: 200% 100%;
+  animation: AnimationName 2.5s ease infinite;
+}
+
+.contents a:hover,
+.no_print a:hover,
+.ctlg a:hover {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text .right {
+  line-height: 125%;
+}
+
+.text .right a {
+  font-size: 3vw;
+}
+
+.left div,
+.right div {
+  line-height: 3vw;
+  font-size: 1.4vw;
+  float: left;
+  width: 50%;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
