@@ -4,39 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="../index.js"></script>
-  <link rel="stylesheet" href="../www.css" />
-  <link rel="stylesheet" href="style.css" />
+  <script src="../../index.js"></script>
+  <link rel="stylesheet" href="../../www.css" />
+  <link rel="stylesheet" href="../style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
-  <style>
-  .contents {
-    display: block;
-  }
-
-  #foot {
-    display: block;
-  }
-
-  @media screen and (max-width: 750px) {
-    .left,
-    .right {
-      font-size: 150%;
-      width: 100%;
-      padding: 0 0 4vw;
-    }
-
-    .text .right a {
-      font-size: 200%;
-    }
-  }
-
-  @media print {
-    #foot {
-      display: block;
-    }
-  }
-  </style>
 </head>
 
 <body>
@@ -52,7 +24,7 @@
           <a href="http://revuelagon.com/">LAGON</a>
           の制作チーム協力のもと、2018年5月に創刊する雑誌
           <b>「快晴」</b>
-          の完成に合わせて、参加する日本の若手アーティスト16組による雑誌掲載作品を展覧会形式で展開するグループ展を開催いたします。
+          の完成に合わせて、日本の若手アーティスト16組による雑誌掲載作品を展覧会形式で展開するグループ展を開催いたします。
         </p>
         <p>
           <b>快晴</b>
@@ -63,7 +35,7 @@
         </p>
         <p>
           We take part in Fanzines Festival and will do the Exhibition in paris.<br/>
-          with the support by
+          support by
           <a href="http://revuelagon.com/">LAGON</a>
           revue in france.
         </p>
@@ -127,8 +99,56 @@
       </div>
     </section>
   </article>
+
+  <main class="no_print">
+    <section class="left">
+      <p>A new generation of japanese artists</p>
+      <h2>快晴・パリ</h2>
+      <hr>
+      <p>
+        大阪のカルチャーショップ
+        <b>ナイスショップスー</b> が
+        フランスの新進コミック雑誌「<b>LAGON</b>」の制作チーム協力のもと創刊した雑誌
+        <b>「快晴」</b>
+        の完成に合わせて、日本の若手アーティスト16組による雑誌掲載作品を展覧会形式で展開するグループ展を
+        フランス・パリのギャラリー「<b>Galerie P38</b>」にて
+        開催
+      </p>
+      <p>
+        フランス・パリ「La Parole errante」にて開催される
+        国際ブックフェア
+        <b>FANZINES ! festival</b>
+        に、特別ブースを出展しました。
+      </p>
+    </section>
+    <section class="right random"></section>
+    <script type="text/javascript">
+    const random = [
+      "001.JPG",
+      "002.JPG",
+      "003.JPG",
+      "004.JPG",
+      "005.JPG",
+      "006.JPG",
+      "007.JPG",
+      "008.JPG",
+      "009.JPG",
+      "010.JPG",
+      "011.JPG",
+      "012.JPG",
+      "013.JPG",
+      "014.JPG",
+      "015.JPG",
+    ];
+    </script>
+    <script src="../../random.js"></script>
+  </main>
+
   <nav id="print">
     <a class="back" href="/1f/kaisei/">↵</a>
+    <p class="mobile">
+      <a href="javascript:void(0)" onclick="window.print();">このページを印刷すると、 展覧会「快晴・パリ」と「ファンジン !フェスティバル」の概要が表示されます。</a>
+    </p>
   </nav>
 </body>
 </html>

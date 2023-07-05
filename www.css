@@ -200,6 +200,12 @@ h3.vg,
 }
 
 @media screen and (max-width: 750px) {
+  .left,
+  .right {
+    width: 100%;
+    padding: 0 0 4vw;
+  }
+
   #foot .right p {
     text-align: left;
   }
