@@ -199,6 +199,16 @@ h3.vg,
   z-index: -1;
 }
 
+@media screen and (max-width: 750px) {
+  #foot .right p {
+    text-align: left;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
 @media print {
   @page {
     size: B5 portrait;
