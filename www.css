@@ -158,6 +158,7 @@ p.right {
   transform: translate(-50%,-50%);
   pointer-events: none;
   user-select: none;
+  transition: 1s;
 }
 
 hr {
