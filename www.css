@@ -216,6 +216,10 @@ h3.vg,
 }
 
 @media print {
+  @page {
+    size: B5 portrait;
+  }
+
   .contents {
     display: block;
     min-height: 100vh;
