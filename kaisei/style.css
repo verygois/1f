@@ -16,6 +16,7 @@
 
 .contents a:hover,
 .no_print a:hover,
+.no_print #print a,
 .ctlg a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
