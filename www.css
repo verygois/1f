@@ -53,8 +53,8 @@ a:hover {
   float: right;
 }
 
-.contents h3,
 .left,
+.contents h3,
 .no_print h1 {
   display: block;
   float: left;
@@ -66,8 +66,8 @@ hr,
   clear: both;
 }
 
-.contents h1,
 main h2,
+.contents h1,
 .back {
   font-size: 8vw;
   line-height: 100%;
@@ -80,8 +80,8 @@ main h2,
   line-height: 200%;
 }
 
-.contents h3,
 h3.vg,
+.contents h3,
 .text a {
   font-size: 4vw;
 }
