@@ -15,11 +15,11 @@ function indexHead(obj) {
   const indexTitle = document.createElement('title');
   const ogTitle = document.createElement('meta');
   const twittetTitle = document.createElement('meta');
-  indexTitle.textContent = obj['title'] + ' | ' + obj['author'];
+  indexTitle.textContent = obj['title'];
   ogTitle.setAttribute("property", "og:title");
-  ogTitle.setAttribute("content", obj['title'] + ' | ' + obj['author']);
+  ogTitle.setAttribute("content", obj['title']);
   twittetTitle.setAttribute("name", "twitter:title");
-  twittetTitle.setAttribute("content", obj['title'] + ' | ' + obj['author']);
+  ogTitle.setAttribute("content", obj['title']);
   head.appendChild(indexTitle);
   head.appendChild(ogTitle);
   head.appendChild(twittetTitle);
