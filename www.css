@@ -67,6 +67,11 @@ hr,
 }
 
 main h2,
+h3.vg {
+  font-size: 3rem;
+  line-height: 100%;
+}
+
 .contents h1,
 .back {
   font-size: 8vw;
@@ -80,7 +85,6 @@ main h2,
   line-height: 200%;
 }
 
-h3.vg,
 .contents h3,
 .text a {
   font-size: 4vw;
@@ -184,15 +188,11 @@ hr {
 }
 
 h3.vg {
-  position: relative;
-  z-index: -1;
-  padding: 0 0 1vw;
-  text-shadow: 0.25vw 0.25vw 0 #fff;
-  font-size: 7.5vw;
+  text-shadow: 0.25rem 0.25rem 0 #fff;
+  padding: 0 0 0.5rem;
   font-family: "Arial", sans-serif;
 }
 
-h3.vg,
 .random {
   pointer-events: none;
   user-select: none;
@@ -204,6 +204,16 @@ h3.vg,
   .right {
     width: 100%;
     padding: 0 0 4vw;
+  }
+
+  main h2,
+  h3.vg {
+    font-size: 7vw;
+  }
+
+  h3.vg {
+    padding: 0 0 1vw;
+    text-shadow: 0.25vw 0.25vw 0 #fff;
   }
 
   #foot .right p {
