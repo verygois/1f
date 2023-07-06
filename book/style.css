@@ -55,6 +55,7 @@ body,
 
 #hello b,
 #hello i {
+  font-weight: 555;
   font-style: italic;
 }
 
