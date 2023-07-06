@@ -43,10 +43,6 @@ body,
   float: right;
 }
 
-.ctlg .half {
-  width: 50%;
-}
-
 .ctlg {
   font-size: 1rem;
   padding: 0 2.5%;
@@ -117,6 +113,10 @@ body,
   padding: 2rem;
   margin: 0 0 2rem;
   width: 35%;
+}
+
+.ctlg .half {
+  width: 50%;
 }
 
 .buy .order {
