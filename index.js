@@ -19,7 +19,7 @@ function indexHead(obj) {
   ogTitle.setAttribute("property", "og:title");
   ogTitle.setAttribute("content", obj['title']);
   twittetTitle.setAttribute("name", "twitter:title");
-  ogTitle.setAttribute("content", obj['title']);
+  twittetTitle.setAttribute("content", obj['title']);
   head.appendChild(indexTitle);
   head.appendChild(ogTitle);
   head.appendChild(twittetTitle);
