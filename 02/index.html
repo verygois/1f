@@ -6,6 +6,7 @@
   <meta name="format-detection" content="telephone=no" />
   <script src="../index.js"></script>
   <link rel="stylesheet" href="../www.css" />
+  <link rel="stylesheet" href="../itempage.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
   <style>
@@ -141,11 +142,20 @@
     <script src="../random.js"></script>
   </main>
 
+  <article id="itempage" class="ctlg"></article>
+
   <nav id="print">
     <a class="back" onclick="history.back(-1);">↵</a>
     <p class="mobile">
       <a href="javascript:void(0)" onclick="window.print();">このページを印刷すると、 2018年1月12日 - 24日に開催した展覧会「02」の概要が表示されます。</a>
     </p>
   </nav>
+  <script type="text/javascript">
+  fetch('ctlg.html')
+  .then(response => response.text())
+  .then(innerHTML => {
+    document.querySelector('#itempage').innerHTML = innerHTML;
+  });
+  </script>
 </body>
 </html>
