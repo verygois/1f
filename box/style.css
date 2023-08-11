@@ -7,17 +7,6 @@ body,
   margin: 0;
 }
 
-#random {
-  clear: both;
-  margin-top: 1rem;
-  width: 100%;
-  height: 100vh;
-  max-height: 100vw;
-  background-position: center;
-  background-size: contain;
-  transition: 1s;
-}
-
 .no b {
   font-weight: 500;
   margin-top: 2.5rem;

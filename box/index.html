@@ -74,26 +74,8 @@
     </article>
   </main>
   <article id="credit" class="contents"></article>
-  <div id="random"></div>
   <button id="print" onclick="history.back(-1);return false;" type="button">↵</button>
   <script type="text/javascript">
-  let random = [
-    "../03/img/001.jpeg",
-    "../03/img/002.jpeg",
-    "../03/img/003.jpeg",
-    "../03/img/004.jpeg",
-    "../04/img/001.JPG",
-    "../04/img/002.JPG",
-    "../04/img/003.JPG",
-    "../04/img/004.JPG",
-    "../04/img/005.JPG",
-    "../05/img/001.jpeg",
-    "../05/img/003.jpeg",
-    "../05/img/004.jpeg",
-    "../05/img/005.jpeg",
-    "../05/img/009.jpeg"
-  ];
-
   fetch('credit.html')
   .then(response => response.text())
   .then(innerHTML => {
