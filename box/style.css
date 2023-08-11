@@ -8,20 +8,14 @@ body,
 }
 
 #random {
+  clear: both;
+  margin-top: 1rem;
   width: 100%;
   height: 100vh;
   max-height: 100vw;
-  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   transition: 1s;
-}
-
-#visitors {
-  font-family: "MS Mincho", "SimSong", selif;
-  font-stretch: condensed;
-  font-variant: common-ligatures tabular-nums;
-  letter-spacing: -0.1vw;
 }
 
 .no b {

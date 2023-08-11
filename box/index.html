@@ -17,7 +17,7 @@
       <a href="/ctlg/">VG CTLG</a>
     </b>
     <i>
-      <a href="/1f/">1F</a>
+      <a href="/1f/book/">1F</a>
     </i>
   </nav>
   <main class="contents">
@@ -73,10 +73,9 @@
       </section>
     </article>
   </main>
+  <article id="credit" class="contents"></article>
   <div id="random"></div>
-  <p id="print" class="no_print">
-    <a id="visitors" onclick="history.back(-1);return false;"></a>
-  </p>
+  <button id="print" onclick="history.back(-1);return false;" type="button">↵</button>
   <script type="text/javascript">
   let random = [
     "../03/img/001.jpeg",
@@ -95,10 +94,10 @@
     "../05/img/009.jpeg"
   ];
 
-  fetch('visitors.php')
+  fetch('credit.html')
   .then(response => response.text())
   .then(innerHTML => {
-    document.querySelector('#visitors').innerHTML = innerHTML;
+    document.querySelector('#credit').innerHTML = innerHTML;
   });
   </script>
   <script src="random.js"></script>
