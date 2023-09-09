@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="../index.js" async></script>
+  <meta content="product" property="og:type">
+  <title>1F BOX | VG CTLG</title>
+  <meta content="1F BOX | VG CTLG" property="og:title">
+  <meta content="This is The BOX for The Items that archive of 1F" name="description">
+  <meta content="This is The BOX for The Items that archive of 1F" property="og:description">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/1f/box/" property="og:url">
+  <meta content="https://vg.pe.hu/1f/box/cover.jpeg" property="og:image">
+  <meta content="https://vg.pe.hu/1f/box/cover.jpeg" name="twitter:image:src">
+
+  <link rel="icon" href="https://vg.pe.hu/up/cv/logo.png" type="image/png">
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="www.css" media="print"/>
+  <link rel="stylesheet" href="www.css" media="print" />
   <link rel="stylesheet" href="https://vg.pe.hu/ctlg/compilation.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
 </head>
+
 <body>
   <nav class="no">
     <b>
@@ -56,7 +68,7 @@
         <i>Special Items</i>
       </p>
     </article>
-    <img src="box.jpeg" />
+    <img src="cover.jpeg" />
     <article class="pr">
       <section class="buy">
         <p class="no">
@@ -76,12 +88,13 @@
   <article id="credit" class="contents"></article>
   <button id="print" onclick="history.back(-1);return false;" type="button">↵</button>
   <script type="text/javascript">
-  fetch('credit.html')
-  .then(response => response.text())
-  .then(innerHTML => {
-    document.querySelector('#credit').innerHTML = innerHTML;
-  });
+    fetch('credit.html')
+      .then(response => response.text())
+      .then(innerHTML => {
+        document.querySelector('#credit').innerHTML = innerHTML;
+      });
   </script>
   <script src="random.js"></script>
 </body>
+
 </html>

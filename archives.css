@@ -3,9 +3,13 @@
   src: url("https://vg.pe.hu/fonts/family/MSMincho.ttf");
 }
 
+html {
+  font-size: 16px;
+}
+
 body,
 #contents,
-#contents h1,
+#contents #title,
 #credit p {
   padding: 0;
   margin: 0;
@@ -16,12 +20,12 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-#contents h1 a:hover {
+a:hover {
   color: #FF5733;
 }
 
-#contents {
+#contents,
+#hello {
   position: relative;
 }
 
@@ -29,13 +33,12 @@ a:hover,
   font-family: 'Great Vibes', cursive;
 }
 
-#contents h1,
-#credit,
-#PopupText {
-  font-family: "MS Mincho", "SimSong", selif;
+#contents #title,
+#credit {
+  font-family: "MS Mincho", "SimSong", serif;
   font-stretch: condensed;
   font-variant: common-ligatures tabular-nums;
-  letter-spacing: -0.1vw;
+  letter-spacing: -0.01rem;
 }
 
 #hello {
@@ -44,25 +47,24 @@ a:hover,
 
 #hello i,
 #hello .link {
-  font-family: "Times New Roman", Symbol;
-  font-size: 120%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 111%;
   font-style: italic;
 }
 
-#contents h1 {
+#contents #title {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  font-size: 1.25rem;
+  font-size: 100%;
   font-weight: 500;
 }
 
-#contents h1 a,
-#contents h1 span {
+#contents #title a,
+#contents #title span {
   padding: 0.5rem;
 }
 
-#contents h1 a {
+#contents #title a {
   color: #fff;
   background: #000;
   display: inline-block;
@@ -70,8 +72,7 @@ a:hover,
 }
 
 #hello {
-  position: relative;
-  font-size: 2.5rem;
+  font-size: 175%;
   font-weight: 500;
   line-height: 200%;
   padding: 2.5rem;
@@ -83,7 +84,7 @@ a:hover,
 #contents u,
 #hello u {
   border: 1px solid;
-  padding: 0.45rem 1rem;
+  padding: 0.25rem 0.75rem;
   border-radius: 2.5rem;
   text-decoration: none;
   white-space: nowrap;
@@ -110,26 +111,36 @@ a:hover,
   height: 100%;
 }
 
+#title .ctlg,
 #credit {
-  position: relative;
-  padding: 2.5vw;
-  margin: 0;
-  font-size: 2.5vw;
-  line-height: 150%;
-  word-spacing: 0.5vw;
-  flex-wrap: wrap;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  position: absolute;
 }
 
-.mobile_only {
-  display: none;
+#title .ctlg {
+  transform: scale(1, 5.5);
+  transform-origin: top right;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 175%;
+}
+
+#credit {
+  bottom: 0;
+  font-size: 90%;
+  line-height: 150%;
+  word-spacing: 0.5vw;
 }
 
 
 @media screen and (max-width: 750px) {
+  html {
+    font-size: 3vw;
+  }
+
+  #hello {
+    padding: 5%;
+  }
+
   .mobile {
     display: none;
   }
@@ -138,26 +149,22 @@ a:hover,
     display: block;
   }
 
-  #hello {
-    font-size: 5vw;
-    padding: 5%;
-  }
-
-  #contents u,
-  #hello u {
-    border: 0.1vw solid;
-    padding: 1vw 2.5vw;
-    border-radius: 5vw;
-  }
-
-  #hello .image {
-    height: 5vw;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
-  }
-
   #hello .image:hover {
     transform: scale(3);
     transform-origin: bottom left;
+  }
+}
+
+@page {
+  size: portrait;
+}
+
+@media print {
+  html {
+    font-size: 3vw;
+  }
+
+  #hello {
+    padding: 1rem 0 0;
   }
 }
