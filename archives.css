@@ -7,6 +7,11 @@ html {
   font-size: 16px;
 }
 
+hr {
+  border: none;
+  clear: both;
+}
+
 body,
 #contents,
 #contents #title,
@@ -111,12 +116,12 @@ a:hover {
   height: 100%;
 }
 
-#title .ctlg,
+#title .vg,
 #credit {
   position: absolute;
 }
 
-#title .ctlg {
+#title .vg {
   transform: scale(1, 5.5);
   transform-origin: top right;
   top: 0.5rem;
