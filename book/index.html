@@ -1,106 +1,49 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="../index.js" async></script>
+  <meta content="product" property="og:type">
+  <title>1F | Very Gois</title>
+  <meta content="1F | Very Gois" property="og:title">
+  <meta
+    content="This is The Showcase of Very Gois with 01 by 0100011110001 02 Idea by Sarah Marshall, Natalia Panzer 03 by Takamitsu Ohta, Muku Kobayashi, Shoji Funakawa, Soshi Matsunobe Video/Edit by Reiji Saito 04 by Emeraldclitoris 05 Idea by Laurel Schwulst, Woopheadclrms and Past & Present about Pehu with the Friends of Pehu"
+    name="description">
+  <meta
+    content="This is The Showcase of Very Gois with 01 by 0100011110001 02 Idea by Sarah Marshall, Natalia Panzer 03 by Takamitsu Ohta, Muku Kobayashi, Shoji Funakawa, Soshi Matsunobe Video/Edit by Reiji Saito 04 by Emeraldclitoris 05 Idea by Laurel Schwulst, Woopheadclrms and Past & Present about Pehu with the Friends of Pehu"
+    property="og:description">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/1f/book/" property="og:url">
+  <meta content="https://vg.pe.hu/1f/box/book.jpeg" property="og:image">
+  <meta content="https://vg.pe.hu/1f/box/book.jpeg" name="twitter:image:src">
+
+  <link rel="icon" href="https://vg.pe.hu/up/cv/logo.png" type="image/png">
+  <link rel="stylesheet" href="../archives.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="www.css" media="print"/>
-  <link rel="stylesheet" href="https://vg.pe.hu/ctlg/compilation.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
 </head>
-<body>
-  <nav class="no">
-    <b>
-      <a href="/ctlg/">VG CTLG</a>
-    </b>
-    <i>
-      <a href="/1f/">1F</a>
-    </i>
-  </nav>
-  <main class="contents">
-    <article id="hello">
-      <p>
-        <span class="">This is The <i>BOX</i> for The Items that</span>
-        <span class="">archive of <i>1F</i></span>
-      </p>
-      <p>
-        <u><a href="/1f/03/">03</a></u>
-        by
-        <a class="link" href="/ctlg/book/takamitsu-ohta/"><b>Takamitsu Ohta</b></a>,
-        <a class="link" href="/ctlg/book/muku-kobayashi/"><b>Muku Kobayashi</b></a>,
-        <a class="link" href="/ctlg/book/shoji-funakawa/"><b>Shoji Funakawa</b></a>,
-        <a class="link" href="/ctlg/book/soshi-matsunobe/"><b>Soshi Matsunobe</b></a>
-        <span>
-          Video/Edit by
-          <a class="link" href="/ctlg/book/reiji-saito/"><b>Reiji Saito</b></a>
-        </span>
-      </p>
-      <p>
-        <span class="archives">
-          <u><a href="/1f/04/">04</a></u>
-          by
-          <a class="link" href="/ctlg/book/emeraldclitoris/"><b>Emeraldclitoris</b></a>
-        </span>
-      </p>
-      <p>
-        <u><a href="/1f/05/">05</a></u>
-        <span class="">Idea</span>
-        by
-        <a class="link" href="/ctlg/book/woopheadclrms/"><b>Woopheadclrms</b></a>
-      </p>
-      <p>
-        and something more
-        <i>Special Items</i>
-      </p>
-    </article>
-    <img src="box.jpeg" />
-    <article class="pr">
-      <section class="buy">
-        <p class="no">
-          Sales Price
-          <i>5000 JPY</i>
-        </p>
-        <p class="order">
-          <a href="#">Order Now</a>
-        </p>
-        <p class="no">
-          <i>10 Qty</i>
-          Limited
-        </p>
-      </section>
-    </article>
-  </main>
-  <div id="random"></div>
-  <p id="print" class="no_print">
-    <a id="visitors" onclick="history.back(-1);return false;"></a>
-  </p>
-  <script type="text/javascript">
-  let random = [
-    "../03/img/001.jpeg",
-    "../03/img/002.jpeg",
-    "../03/img/003.jpeg",
-    "../03/img/004.jpeg",
-    "../04/img/001.JPG",
-    "../04/img/002.JPG",
-    "../04/img/003.JPG",
-    "../04/img/004.JPG",
-    "../04/img/005.JPG",
-    "../05/img/001.jpeg",
-    "../05/img/003.jpeg",
-    "../05/img/004.jpeg",
-    "../05/img/005.jpeg",
-    "../05/img/009.jpeg"
-  ];
 
-  fetch('visitors.php')
-  .then(response => response.text())
-  .then(innerHTML => {
-    document.querySelector('#visitors').innerHTML = innerHTML;
-  });
+<body>
+  <article>
+    <section id="main"></section>
+    <aside id="credit" class="archives">
+      <p class="print_block">
+        会場 音ビル | 559-0011 大阪府大阪市住之江区北加賀屋5-5-1 2F<br />
+        会期 2021年 1月 15日 (土) - 1月 30日 (日) | 開館時間 11:00 - 18:00<br />
+        主催 クリエイティブ・コミュニティスペース ペフ | 助成 おおさか創造千島財団
+      </p>
+    </aside>
+  </article>
+  <script type="text/javascript">
+    fetch('../contents.html')
+      .then(response => response.text())
+      .then(innerHTML => {
+        document.querySelector('#main').innerHTML = innerHTML;
+      });
   </script>
-  <script src="random.js"></script>
 </body>
+
 </html>

@@ -1,91 +1,117 @@
-body,
-#hello p,
-#hello a,
-#hello b  {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.archives,
+.print_only,
+.print_block:not(.vg),
+#hello .image,
+.kaisei {
+  display: none;
 }
 
-.no b {
-  font-weight: 500;
-  margin-top: 2.5rem;
+.ctlg {
   display: inline-block;
-  transform: scale(.5, 5);
-  -webkit-transform: scale(.5, 5);
 }
 
-.contents img {
-  margin-top: 2.5rem;
+#hello u {
+  border: 0.15rem solid;
+}
+
+#hello .hr::after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 100%;
+}
+
+#hello .link {
+  font-weight: 555;
+}
+
+#hello::before {
+  content: "This is The BOX for The Items that archive of 1F";
+  display: block;
+}
+
+#hello::after {
+  content: "and something more Special Items";
+  display: block;
 }
 
 #hello {
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 200%;
   float: left;
-  width: 450px;
+  width: 550px;
   max-width: 50%;
-  padding: 2rem 2rem 0 0;
 }
 
-#hello a,
-#hello i {
-  font-size: 120%;
-  font-family: "Times New Roman", serif;
+.contents img,
+#buy {
+  box-sizing: border-box;
+  display: block;
+  float: right;
 }
 
-#hello b,
-#hello i {
-  font-weight: 555;
-  font-style: italic;
+#buy {
+  padding: 1rem;
+  width: 50%;
+  max-width: 500px;
 }
 
-.no a,
-#hello a {
-  color: #000;
-  border: none;
-  text-decoration: none;
+#buy a {
+  border: solid 0.1rem;
+  display: block;
+  text-align: center;
+  padding-top: 0.5rem;
 }
 
-.no a:hover,
-#hello a:hover,
-#hello b:hover {
-  color: blue;
-  background: transparent;
+#buy p {
+  display: flex;
+  padding: 0;
+  margin: 0.5rem;
+  justify-content: space-between;
 }
 
-#hello b {
-  color: #000;
-  background: transparent;
+#buy a,
+#buy p {
+  font-family: 'Great Vibes', cursive;
 }
 
-#hello u {
-  text-decoration: none;
-  white-space: nowrap;
-  border: 2px solid;
-  border-radius: 1rem;
-  padding: 0.45rem 0.5rem;
+#buy p i {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+}
+
+#buy,
+#buy a {
+  font-size: 125%;
+}
+
+.contents img {
+  margin: 5rem 1rem 1rem;
+  max-width: calc(50% - 2rem);
+  max-height: 30rem;
 }
 
 @media screen and (max-width: 750px) {
-  #hello {
-    font-size: 5vw;
+  #hello,
+  #buy {
+    clear: both;
     width: 100%;
     max-width: 100%;
   }
 
-  #hello u {
-    text-decoration: none;
-    white-space: nowrap;
-    border: 0.5vw solid;
-    border-radius: 2.5vw;
-    padding: 0.9vw 1vw;
+  .contents img {
+    clear: both;
+    margin: 3.5rem 5% 0;
+    max-width: calc(100% - 10%);
+    max-height: 100vw;
   }
 
-  .no b {
-    margin-left: -1rem;
+  #buy {
+    padding: 5%;
   }
+}
+
+#index {
+  clear: both;
+  display: block;
+  width: 100%;
 }

@@ -16,85 +16,36 @@
   <meta content="https://vg.pe.hu/1f/box/cover.jpeg" name="twitter:image:src">
 
   <link rel="icon" href="https://vg.pe.hu/up/cv/logo.png" type="image/png">
+  <link rel="stylesheet" href="../archives.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="www.css" media="print" />
-  <link rel="stylesheet" href="https://vg.pe.hu/ctlg/compilation.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <nav class="no">
-    <b>
-      <a href="/ctlg/">VG CTLG</a>
-    </b>
-    <i>
-      <a href="/1f/book/">1F</a>
-    </i>
-  </nav>
   <main class="contents">
-    <article id="hello">
+    <img src="cover.jpeg" alt="1F BOX">
+    <section id="main"></section>
+    <nav id="buy">
       <p>
-        <span class="">This is The <i>BOX</i> for The Items that</span>
-        <span class="">archive of <i>1F</i></span>
+        Sales Price
+        <i>5000 JPY</i>
       </p>
+      <a href="#" class="order">Order Now</a>
       <p>
-        <u><a href="/1f/03/">03</a></u>
-        by
-        <a class="link" href="/ctlg/book/takamitsu-ohta/"><b>Takamitsu Ohta</b></a>,
-        <a class="link" href="/ctlg/book/muku-kobayashi/"><b>Muku Kobayashi</b></a>,
-        <a class="link" href="/ctlg/book/shoji-funakawa/"><b>Shoji Funakawa</b></a>,
-        <a class="link" href="/ctlg/book/soshi-matsunobe/"><b>Soshi Matsunobe</b></a>
-        <span>
-          Video/Edit by
-          <a class="link" href="/ctlg/book/reiji-saito/"><b>Reiji Saito</b></a>
-        </span>
+        Limited
+        <i>10 Qty</i>
       </p>
-      <p>
-        <span class="archives">
-          <u><a href="/1f/04/">04</a></u>
-          by
-          <a class="link" href="/ctlg/book/emeraldclitoris/"><b>Emeraldclitoris</b></a>
-        </span>
-      </p>
-      <p>
-        <u><a href="/1f/05/">05</a></u>
-        <span class="">Idea</span>
-        by
-        <a class="link" href="/ctlg/book/woopheadclrms/"><b>Woopheadclrms</b></a>
-      </p>
-      <p>
-        and something more
-        <i>Special Items</i>
-      </p>
-    </article>
-    <img src="cover.jpeg" />
-    <article class="pr">
-      <section class="buy">
-        <p class="no">
-          Sales Price
-          <i>5000 JPY</i>
-        </p>
-        <p class="order">
-          <a href="#">Order Now</a>
-        </p>
-        <p class="no">
-          <i>10 Qty</i>
-          Limited
-        </p>
-      </section>
-    </article>
+    </nav>
   </main>
-  <article id="credit" class="contents"></article>
-  <button id="print" onclick="history.back(-1);return false;" type="button">↵</button>
+  <article id="index" class="contents"></article>
   <script type="text/javascript">
-    fetch('credit.html')
+    fetch('../contents.html')
       .then(response => response.text())
       .then(innerHTML => {
-        document.querySelector('#credit').innerHTML = innerHTML;
+        document.querySelector('#main').innerHTML = innerHTML;
       });
   </script>
-  <script src="random.js"></script>
 </body>
 
 </html>

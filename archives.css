@@ -64,12 +64,12 @@ a:hover {
   font-weight: 500;
 }
 
-#contents #title a,
+#contents #title a:not(.vg),
 #contents #title span {
   padding: 0.5rem;
 }
 
-#contents #title a {
+#contents #title a:not(.vg) {
   color: #fff;
   background: #000;
   display: inline-block;
@@ -88,7 +88,7 @@ a:hover {
 
 #contents u,
 #hello u {
-  border: 1px solid;
+  border: 0.05rem solid;
   padding: 0.25rem 0.75rem;
   border-radius: 2.5rem;
   text-decoration: none;
@@ -126,12 +126,12 @@ a:hover {
   transform-origin: top right;
   top: 0.5rem;
   right: 1rem;
-  font-size: 175%;
+  font-size: 100%;
 }
 
 #credit {
   bottom: 0;
-  font-size: 90%;
+  font-size: 75%;
   line-height: 150%;
   word-spacing: 0.5vw;
 }
@@ -171,5 +171,9 @@ a:hover {
 
   #hello {
     padding: 1rem 0 0;
+  }
+
+  #title .vg {
+    font-size: 175%;
   }
 }

@@ -1,0 +1,29 @@
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    display: flex;
+}
+
+article {
+    height: 100vh;
+    max-height: -webkit-fill-available;
+}
+
+#main {
+    height: 100%;
+    overflow: auto;
+}
+
+.print_block {
+    display: block;
+}
+
+.print_only {
+    display: inline-block;
+}
+
+.no_print {
+    display: none;
+}
