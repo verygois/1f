@@ -121,9 +121,12 @@ a:hover {
   height: 100%;
 }
 
-#title .vg,
-#credit {
+#title .vg {
   position: absolute;
+}
+
+#credit {
+  position: fixed;
 }
 
 #title .vg {
@@ -139,6 +142,7 @@ a:hover {
   font-size: 75%;
   line-height: 150%;
   word-spacing: 0.5vw;
+  z-index: 5;
 }
 
 
@@ -180,5 +184,9 @@ a:hover {
 
   #title .vg {
     font-size: 175%;
+  }
+
+  #credit {
+    position: absolute;
   }
 }
