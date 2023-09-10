@@ -113,8 +113,6 @@ h2,
 h3 {
     font-family: 'Great Vibes', cursive;
     font-weight: 500;
-    transform: scale(1, 5.5);
-    transform-origin: top right;
     padding: 0.5rem;
     margin: 0;
     word-break: break-all;
@@ -122,6 +120,7 @@ h3 {
 
 h1 {
     font-size: 250%;
+    font-weight: 500;
     font-family: "Arial", sans-serif;
 }
 
