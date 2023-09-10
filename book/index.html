@@ -25,10 +25,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
   <script src="../script.js"></script>
-  <script src="script.js"></script>
   <script>
     document.addEventListener('readystatechange', event => {
       if (event.target.readyState === 'interactive') {
+        const directory = "https://ia800505.us.archive.org/20/items/1f_20230910/";
+
+        function thisIMG(id, arr) {
+          arr.forEach((arrEach) => {
+            const crearIMG = document.createElement("img");
+            crearIMG.src = directory + arrEach;
+            document.getElementById(id).appendChild(crearIMG)
+          });
+        }
+        
         const oneAll = [
           "001.jpg",
           "002.jpg",
@@ -115,7 +124,7 @@
         <div>
           <p>
             <strong>01</strong>
-            by<br/>
+            by<br />
             <i>0100011110001</i>
           </p>
         </div>
@@ -126,7 +135,7 @@
         <div>
           <p>
             <strong>02</strong>
-            by<br/>
+            by<br />
             <i>Sarah Marshall</i>,
             <i>Natalia Panzer</i>
           </p>
@@ -138,7 +147,7 @@
         <div>
           <p>
             <strong>03</strong>
-            by<br/>
+            by<br />
             <i>Takamitsu Ohta</i>,
             <i>Muku Kobayashi</i>,
             <i>Shoji Funakawa</i>,
@@ -156,7 +165,7 @@
         <div>
           <p>
             <strong>04</strong>
-            by<br/>
+            by<br />
             <i>Emeraldclitoris</i>
           </p>
         </div>
@@ -167,7 +176,7 @@
         <div>
           <p>
             <strong>05</strong>
-            by<br/>
+            by<br />
             <i>Woopheadclrms</i>
           </p>
         </div>
@@ -177,7 +186,7 @@
       <aside id="pehu">
         <div>
           <p>
-            <strong>daily basis (dialy)</strong><br/>
+            <strong>daily basis (dialy)</strong><br />
             Idea by
             <i>Laurel Schwulst</i>
           </p>
@@ -200,7 +209,8 @@
     <button id="next"><b>→</b></button>
   </nav>
 
-  <video id="video" poster="https://archive.org/download/1f_20230910/1f_20230910.thumbs/000_000001.jpg" preload="auto" muted playsinline>
+  <video id="video" poster="https://archive.org/download/1f_20230910/1f_20230910.thumbs/000_000001.jpg" preload="auto"
+    muted playsinline>
     <source src="https://ia800505.us.archive.org/20/items/1f_20230910/000.mp4" id="mp4" type="video/mp4" />
   </video>
 

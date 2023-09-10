@@ -109,6 +109,23 @@ button {
     z-index: 0;
 }
 
+#print h1,
+#print h2 {
+    font-family: 'Great Vibes', cursive;
+    transform: scale(1, 5.5);
+    transform-origin: top left;
+    padding: 0;
+    margin: 0.5rem;
+}
+
+#print h1 {
+    font-size: 250%;
+}
+
+#print h2 {
+    font-size: 200%;
+}
+
 @media (orientation: landscape) {
     #main section aside {
         padding: 2.5%;
