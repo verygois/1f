@@ -6,6 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
   <meta content="product" property="og:type">
+  <script src="../script.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'interactive') {
+        const oneAll = [
+          "001.jpg",
+          "002.jpg",
+          "003.jpg",
+          "004.jpg",
+          "005.jpg",
+          "006.jpg",
+          "007.jpg"
+        ];
+        thisIMG("one", oneAll)
+
+        const twoAll = [
+          "008.jpg",
+          "009.jpg",
+          "010.jpg",
+          "012.jpg",
+          "013.jpg",
+          "014.jpg",
+          "015.jpg",
+          "016.jpg",
+          "017.jpg",
+          "018.jpg"
+        ];
+        thisIMG("two", twoAll)
+
+        const threeAll = [
+          "019.jpg",
+          "020.jpg",
+          "021.jpg",
+          "022.jpg",
+          "023.jpg"
+        ];
+        thisIMG("three", threeAll)
+
+        const fourAll = [
+          "025.jpg",
+          "026.jpg",
+          "027.jpg",
+          "028.jpg",
+          "029.jpg",
+          "030.jpg",
+          "024.png"
+        ];
+        thisIMG("four", fourAll)
+
+        const fiveAll = [
+          "031.jpg",
+          "032.jpg",
+          "033.jpg",
+          "034.jpg",
+          "035.jpg",
+          "036.png"
+        ];
+        thisIMG("five", fiveAll)
+
+        const pehuAll = [
+          "037.jpg",
+          "038.jpg",
+          "039.jpg"
+        ];
+        thisIMG("pehu", pehuAll)
+
+        const boxAll = [
+          "040.jpg"
+        ];
+        thisIMG("box", boxAll)
+      } else if (event.target.readyState === 'complete') {
+        fetchHTML('#cover', '../contents.html')
+      }
+    });
+  </script>
   <title>1F | Very Gois</title>
   <meta content="1F | Very Gois" property="og:title">
   <meta
@@ -30,24 +106,25 @@
   <article id="main">
     <section id="cover"></section>
     <section>
-      1
-      <aside id="one"></aside>
+      <aside id="one">01</aside>
     </section>
     <section>
-      2
-      <aside id="two"></aside>
+      <aside id="two">02</aside>
     </section>
     <section>
-      3
-      <aside id="three"></aside>
+      <aside id="three">03</aside>
     </section>
     <section>
-      4
-      <aside id="four"></aside>
+      <aside id="four">04</aside>
     </section>
     <section>
-      5
-      <aside id="five"></aside>
+      <aside id="five">05</aside>
+    </section>
+    <section>
+      <aside id="pehu">P E H U</aside>
+    </section>
+    <section>
+      <aside id="box">BOX</aside>
     </section>
   </article>
 
@@ -70,21 +147,6 @@
   </footer>
 
   <script type="text/javascript">
-    fetchHTML('#cover', '../contents.html')
-    fetchHTML('#one', '../01/ctlg.html')
-    fetchHTML('#two', '../02/ctlg.html')
-    fetchHTML('#three', '../03/ctlg.html')
-    fetchHTML('#four', '../04/ctlg.html')
-    fetchHTML('#five', '../05/ctlg.html')
-
-    async function fetchHTML(query, url) {
-      fetch(url)
-        .then(response => response.text())
-        .then(innerHTML => {
-          document.querySelector(query).innerHTML = innerHTML;
-        });
-    }
-
     const video = document.querySelector('#video');
     window.addEventListener('load', function () {
       video.play();
@@ -94,6 +156,8 @@
     });
 
     const sectionAll = document.querySelectorAll('#main section');
+    const next = document.querySelector('#next');
+    const past = document.querySelector('#past');
     let i = 0;
 
     thisSection()
@@ -105,31 +169,37 @@
       sectionAll[i].hidden = false;
     };
 
-    document.querySelector('#next').addEventListener('click', function () {
+    next.addEventListener('click', function () {
       if (i == 0) {
         i++;
         video.hidden = true;
+        video.pause();
+        past.style.display = "grid"
       } else if (i < sectionAll.length - 1) {
         i++;
       } else if (i == sectionAll.length - 1) {
         i = 0;
         video.hidden = false;
+        video.play();
       }
       thisSection()
     }, false);
 
-    document.querySelector('#past').addEventListener('click', function () {
+    past.addEventListener('click', function () {
       if (i == 0) {
         i = sectionAll.length - 1;
         video.hidden = true;
+        video.pause();
       } else if (i == 1) {
         i--;
         video.hidden = false;
+        video.play();
       } else if (i < sectionAll.length - 1) {
         i--;
       } else if (i == sectionAll.length - 1) {
         i--;
         video.hidden = true;
+        video.pause();
       }
       thisSection()
     }, false);
