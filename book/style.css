@@ -108,18 +108,25 @@ button {
     z-index: 0;
 }
 
-#print h1,
-#print h2 {
+h1,
+h2,
+h3 {
     font-family: 'Great Vibes', cursive;
+    font-weight: 500;
     padding: 0.5rem;
     margin: 0;
+    word-break: break-all;
 }
 
-#print h1 {
+h1 {
     font-size: 250%;
 }
 
-#print h2 {
+h2 {
+    font-size: 200%;
+}
+
+h3 {
     font-size: 150%;
 }
 
