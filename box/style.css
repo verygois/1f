@@ -11,7 +11,7 @@
 }
 
 #hello u {
-  border: 0.15rem solid;
+  border: 0.2rem solid;
 }
 
 #hello .hr::after {
@@ -28,6 +28,7 @@
 #hello::before {
   content: "This is The BOX for The Items that archive of 1F";
   display: block;
+  margin-bottom: 1rem;
 }
 
 #hello::after {
@@ -107,6 +108,20 @@
 
   #buy {
     padding: 5%;
+  }
+}
+
+@media print {
+  #hello {
+    clear: both;
+    width: 100%;
+    max-width: 100%;
+    padding: 5%;
+  }
+
+  #buy,
+  .contents img {
+    display: none;
   }
 }
 

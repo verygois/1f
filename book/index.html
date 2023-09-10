@@ -27,22 +27,71 @@
 </head>
 
 <body>
-  <article>
-    <section id="main"></section>
-    <aside id="credit" class="archives">
-      <p class="print_block">
-        会場 音ビル | 559-0011 大阪府大阪市住之江区北加賀屋5-5-1 2F<br />
-        会期 2021年 1月 15日 (土) - 1月 30日 (日) | 開館時間 11:00 - 18:00<br />
-        主催 クリエイティブ・コミュニティスペース ペフ | 助成 おおさか創造千島財団
-      </p>
-    </aside>
+  <article id="main">
+    <section id="cover"></section>
+    <section>1</section>
+    <section>2</section>
+    <section>3</section>
+    <section>4</section>
+    <section>5</section>
   </article>
+
+  <button id="next"><b class="icon">→</b></button>
+
+  <video id="video" poster="https://archive.org/download/1f_20230910/1f_20230910.thumbs/000_000001.jpg" preload="auto"
+    muted playsinline>
+    <source src="https://ia800505.us.archive.org/20/items/1f_20230910/000.mp4" id="mp4" type="video/mp4" />
+  </video>
+
+  <footer id="credit" class="archives">
+    <p class="print_block">
+      会場 音ビル | 559-0011 大阪府大阪市住之江区北加賀屋5-5-1 2F<br />
+      会期 2021年 1月 15日 (土) - 1月 30日 (日) | 開館時間 11:00 - 18:00<br />
+      主催 クリエイティブ・コミュニティスペース ペフ | 助成 おおさか創造千島財団
+    </p>
+  </footer>
+
   <script type="text/javascript">
+    const video = document.querySelector('#video');
+    const next = document.querySelector('#next');
+
     fetch('../contents.html')
       .then(response => response.text())
       .then(innerHTML => {
-        document.querySelector('#main').innerHTML = innerHTML;
+        cover.innerHTML = innerHTML;
       });
+
+    window.addEventListener('load', function () {
+      video.play();
+      video.addEventListener('ended', () => {
+        video.play();
+      }, false);
+    });
+
+    const sectionAll = document.querySelectorAll('#main section');
+    let i = 0;
+
+    thisSection()
+
+    function thisSection() {
+      for (const sectionThis of sectionAll) {
+        sectionThis.hidden = true;
+      }
+      sectionAll[i].hidden = false;
+    }
+
+    next.addEventListener('click', function () {
+      if (i == 0) {
+        i++;
+        video.hidden = true;
+      } else if (i < sectionAll.length - 1) {
+        i++;
+      } else if (i == sectionAll.length - 1) {
+        i = 0;
+        video.hidden = false;
+      }
+      thisSection()
+    }, false);
   </script>
 </body>
 
