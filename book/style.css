@@ -64,7 +64,8 @@ body {
     display: inline-block;
 }
 
-.no_print {
+.no_print,
+#print {
     display: none;
 }
 
@@ -185,7 +186,8 @@ button {
         filter: invert(0);
     }
 
-    #main section {
+    #main section,
+    #print {
         display: block;
     }
 

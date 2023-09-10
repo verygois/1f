@@ -96,6 +96,7 @@
         thisIMG("box", boxAll)
       } else if (event.target.readyState === 'complete') {
         fetchHTML('#cover', '../contents.html')
+        fetchHTML('#print', '../print.php')
       }
     });
   </script>
@@ -190,6 +191,7 @@
       <aside>
         <p>PCブラウザ から このページを印刷 すると、展覧会の記録を収録した冊子を出力できます。</p>
       </aside>
+      <div id="print" hidden></div>
     </section>
   </article>
 

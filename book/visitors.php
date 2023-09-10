@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<title>Visitors | creative-community.pe.hu</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-<style>
-.counter {padding:0; margin:0; width:100%; text-align:right; font-size:1rem;}
-</style>
 <?php
 $counter_file = 'visitors.txt';
 $counter_lenght = 8;
@@ -30,5 +19,3 @@ echo '<p class="counter">';
 echo ('<b>'.$counter.'</b>');
 echo '</p>';
 ?>
-</body>
-</html>
