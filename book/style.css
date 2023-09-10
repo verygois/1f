@@ -112,10 +112,8 @@ button {
 #print h1,
 #print h2 {
     font-family: 'Great Vibes', cursive;
-    transform: scale(1, 5.5);
-    transform-origin: top left;
-    padding: 0;
-    margin: 0.5rem;
+    padding: 0.5rem;
+    margin: 0;
 }
 
 #print h1 {
