@@ -28,10 +28,6 @@ body {
     filter: invert();
 }
 
-#credit {
-    z-index: 5;
-}
-
 .print_block {
     display: block;
 }
