@@ -140,7 +140,6 @@ button {
         display: block;
     }
 
-    #main,
     #main section,
     #main section#cover::after {
         page-break-after: always;
@@ -153,21 +152,23 @@ button {
         font-size: 111%;
         padding: 1rem 0;
     }
-
-    #video {
-        display: block;
-        position: relative;
-        top: 0;
-        left: 0;
-        min-height: 100vh;
-        min-width: auto;
-        width: 75%;
+    
+    #main section aside img {
         margin: auto;
-        transform: translate(0, 0);
+        width: auto;
+        height: 50vh;
+    }
+
+    #main section aside#one img:last-child,
+    #main section aside#four img:last-child {
+        width: 100%;
+        height: auto;
     }
 
     nav,
-    #main section aside#box {
+    #video,
+    #main section aside#box,
+    #main section aside#four img:nth-child(4) {
         display: none;
     }
 }
