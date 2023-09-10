@@ -1,4 +1,5 @@
 body {
+    background-color: #fff;
     height: 100vh;
 }
 
@@ -11,13 +12,14 @@ body {
 #main,
 #main section,
 #main section aside {
+    box-sizing: border-box;
     height: 100%;
 }
 
 #main section aside {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    place-items: top;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -83,6 +85,19 @@ button {
 }
 
 @media (orientation: landscape) {
+    #main section aside {
+        padding: 2.5%;
+        gap: 5%;
+        overflow-x: auto;
+        scroll-snap-type: x;
+    }
+    
+    #main section aside img {
+        width: auto;
+        height: 90%;
+        scroll-snap-align: center;
+    }
+
     #video {
         min-width: 100%;
         min-height: 100%;
@@ -97,6 +112,19 @@ button {
     body {
         height: 100vh;
         max-height: -webkit-fill-available;
+    }
+
+    #main section aside {
+        flex-wrap: wrap;
+        overflow-y: auto;
+        scroll-snap-type: y;
+    }
+    
+    #main section aside img {
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        scroll-snap-align: center;
     }
 
     #video {
@@ -116,9 +144,18 @@ button {
         display: block;
     }
 
-    #main section:not(#cover),
-    #main {
+    #main,
+    #main section,
+    #main section#cover::after {
         page-break-after: always;
+    }
+
+    #main section#cover::after {
+        display: block;
+        content: "This Book was published by printing a website.";
+        font-family: "Arial", sans-serif;
+        font-size: 111%;
+        padding: 1rem 0;
     }
 
     #video {
@@ -133,7 +170,8 @@ button {
         transform: translate(0, 0);
     }
 
-    nav {
+    nav,
+    #main section aside#box {
         display: none;
     }
 }
