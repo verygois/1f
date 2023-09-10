@@ -141,6 +141,10 @@ button {
         height: auto;
     }
 
+    body {
+        position: relative;
+    }
+
     #main section {
         display: block;
     }
