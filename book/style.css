@@ -128,7 +128,7 @@ h2 i,
 h3 span {
     font-family: 'Great Vibes', cursive;
     transform: scale(1, 5.5);
-    transform-origin: top center;
+    transform-origin: center;
     display: inline-block;
 }
 
@@ -143,6 +143,10 @@ h2 {
 h1,
 h3 {
     font-size: 150%;
+}
+
+#print {
+    line-height: 500%;
 }
 
 @media (orientation: landscape) {
