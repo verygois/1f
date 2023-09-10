@@ -1,6 +1,6 @@
 <?php
 $ip = $_SERVER["REMOTE_ADDR"];
 
-echo "<h1>IP <i>" . $ip . "</i></h1>";
-echo "<h2>Printed on ".date('Y/m/d H:i:s')."</h2>";
+echo "<h2>IP <i>" . $ip . "</i></h2>";
+echo "<h3>Printed on <span>".date('Y/m/d H:i:s')."</span></h3>";
 ?>
