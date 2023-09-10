@@ -8,7 +8,7 @@ body {
 }
 
 #main {
-    background-color: #fff;
+    position: relative;
     overflow: auto;
     z-index: 1;
 }
@@ -21,12 +21,35 @@ body {
 }
 
 #main section aside {
+    background-color: #fff;
     display: flex;
     place-items: top;
     justify-content: space-between;
     width: 100%;
 }
 
+#main section aside div {
+    position: absolute;
+    top: 0;
+}
+
+#main section aside p {
+    font-family: "Arial", sans-serif;
+}
+
+
+#main section aside strong {
+    font-size: 155%;
+    margin-right: 0.25rem;
+}
+
+#main section aside i {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 175%;
+  font-style: italic;
+}
+
+#main section aside div,
 #credit {
     mix-blend-mode: exclusion;
     filter: invert();
@@ -91,6 +114,11 @@ button {
         overflow-x: auto;
         scroll-snap-type: x;
     }
+
+    #main section aside p {
+        padding: 0;
+        margin: 1rem 0;
+    }
     
     #main section aside img {
         width: auto;
@@ -119,6 +147,11 @@ button {
         overflow-y: auto;
         scroll-snap-type: y;
     }
+
+    #main section aside p {
+        padding: 0;
+        margin: 1rem;
+    }
     
     #main section aside img {
         margin: auto;
@@ -140,8 +173,15 @@ button {
         height: auto;
     }
 
-    body {
+    body,
+    #main section aside div {
         position: relative;
+    }
+
+    #main section aside div,
+    #credit {
+        mix-blend-mode: normal;
+        filter: invert(0);
     }
 
     #main section {
@@ -149,11 +189,11 @@ button {
     }
 
     #main section,
-    #main section#cover::after {
+    #main section aside div {
         page-break-after: always;
     }
 
-    #main section#cover::after {
+    #main section#about::before {
         display: block;
         content: "This Book was published by printing a website.";
         font-family: "Arial", sans-serif;
@@ -175,6 +215,7 @@ button {
 
     nav,
     #video,
+    #main section#about aside,
     #main section aside#box,
     #main section aside#four img:nth-child(4) {
         display: none;
