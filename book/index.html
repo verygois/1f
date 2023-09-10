@@ -106,6 +106,8 @@
       } else if (event.target.readyState === 'complete') {
         fetchHTML('#cover', '../contents.html')
         fetchHTML('#print', 'print.php')
+
+        document.querySelector('nav').hidden = false;
       }
     });
   </script>
@@ -204,7 +206,7 @@
     </section>
   </article>
 
-  <nav>
+  <nav hidden>
     <button id="past"><b>←</b></button>
     <button id="next"><b>→</b></button>
   </nav>
