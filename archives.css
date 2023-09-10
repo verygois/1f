@@ -107,7 +107,7 @@ a:hover {
   margin-right: 1.25rem;
   display: inline-block;
   transform: scale(1.5);
-  transform-origin: top left;
+  transform-origin: middle left;
   transition: all 0.5s ease-out;
 }
 
