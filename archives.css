@@ -3,6 +3,11 @@
   src: url("https://vg.pe.hu/fonts/family/MSMincho.ttf");
 }
 
+@font-face {
+  font-family: "Times New Roman";
+  src: url("times.ttf");
+}
+
 html {
   font-size: 16px;
 }

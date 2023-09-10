@@ -29,14 +29,32 @@
 <body>
   <article id="main">
     <section id="cover"></section>
-    <section>1</section>
-    <section>2</section>
-    <section>3</section>
-    <section>4</section>
-    <section>5</section>
+    <section>
+      1
+      <aside id="one"></aside>
+    </section>
+    <section>
+      2
+      <aside id="two"></aside>
+    </section>
+    <section>
+      3
+      <aside id="two"></aside>
+    </section>three
+    <section>
+      4
+      <aside id="four"></aside>
+    </section>
+    <section>
+      5
+      <aside id="five"></aside>
+    </section>
   </article>
 
-  <button id="next"><b class="icon">→</b></button>
+  <nav>
+    <button id="past"><b>←</b></button>
+    <button id="next"><b>→</b></button>
+  </nav>
 
   <video id="video" poster="https://archive.org/download/1f_20230910/1f_20230910.thumbs/000_000001.jpg" preload="auto"
     muted playsinline>
@@ -52,15 +70,17 @@
   </footer>
 
   <script type="text/javascript">
+    fetchHTML('#cover', '../contents.html')
+
+    async function fetchHTML(query, url) {
+      fetch(url)
+        .then(response => response.text())
+        .then(innerHTML => {
+          document.querySelector(query).innerHTML = innerHTML;
+        });
+    }
+
     const video = document.querySelector('#video');
-    const next = document.querySelector('#next');
-
-    fetch('../contents.html')
-      .then(response => response.text())
-      .then(innerHTML => {
-        cover.innerHTML = innerHTML;
-      });
-
     window.addEventListener('load', function () {
       video.play();
       video.addEventListener('ended', () => {
@@ -78,9 +98,9 @@
         sectionThis.hidden = true;
       }
       sectionAll[i].hidden = false;
-    }
+    };
 
-    next.addEventListener('click', function () {
+    document.querySelector('#next').addEventListener('click', function () {
       if (i == 0) {
         i++;
         video.hidden = true;
@@ -89,6 +109,22 @@
       } else if (i == sectionAll.length - 1) {
         i = 0;
         video.hidden = false;
+      }
+      thisSection()
+    }, false);
+
+    document.querySelector('#past').addEventListener('click', function () {
+      if (i == 0) {
+        i = sectionAll.length - 1;
+        video.hidden = true;
+      } else if (i == 1) {
+        i--;
+        video.hidden = false;
+      } else if (i < sectionAll.length - 1) {
+        i--;
+      } else if (i == sectionAll.length - 1) {
+        i--;
+        video.hidden = true;
       }
       thisSection()
     }, false);

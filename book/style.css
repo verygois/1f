@@ -25,6 +25,14 @@ body {
     display: none;
 }
 
+nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+}
+
 button {
     background-color: #fff;
     border: 0.125rem solid #000;
@@ -35,16 +43,15 @@ button {
     outline: none;
 }
 
-#next {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    width: 3rem;
-    height: 3rem;
+#next,
+#past {
+    padding: 0;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    width: 2.5rem;
+    height: 2.5rem;
     display: grid;
     place-items: center;
     font-size: 150%;
-    z-index: 100;
 }
 
 #video {
@@ -83,7 +90,33 @@ button {
 }
 
 @media print {
+    body,
+    #main {
+        height: auto;
+    }
+
+    #main section {
+        display: block;
+    }
+
+    #main section:not(#cover),
+    #main {
+        page-break-after: always;
+    }
+
     #video {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        min-width: auto;
+        width: 75%;
+        margin: auto;
+        transform: translate(0, 0);
+    }
+
+    nav {
         display: none;
     }
 }
