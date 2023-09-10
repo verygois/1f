@@ -34,6 +34,7 @@ body {
 }
 
 #main section aside p {
+    font-size: 90%;
     font-family: "Arial", sans-serif;
 }
 
@@ -44,9 +45,9 @@ body {
 }
 
 #main section aside i {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 175%;
-  font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 175%;
+    font-style: italic;
 }
 
 #main section aside div,
@@ -119,7 +120,7 @@ button {
         padding: 0;
         margin: 1rem 0;
     }
-    
+
     #main section aside img {
         width: auto;
         height: 90%;
@@ -152,7 +153,7 @@ button {
         padding: 0;
         margin: 1rem;
     }
-    
+
     #main section aside img {
         margin: auto;
         max-width: 100%;
@@ -188,19 +189,43 @@ button {
         display: block;
     }
 
-    #main section,
+    #main section#about::before,
+    #main section aside#one::after,
+    #main section aside#two::after,
+    #main section aside#box::before {
+        display: block;
+        padding: 1rem;
+    }
+
+    #main section#about::before {
+        content: "This Book was published by printing a website.";
+        font-family: "Arial", sans-serif;
+        font-size: 111%;
+    }
+
+    #main section aside#one::after {
+        content: "プレイタイムズ";
+    }
+
+    #main section aside#two::after {
+        content: "The Things I (We)";
+    }
+
+    #main section aside#box::before {
+        content: "P";
+    }
+
+    #main section:not(#www),
     #main section aside div {
         page-break-after: always;
     }
 
-    #main section#about::before {
-        display: block;
-        content: "This Book was published by printing a website.";
-        font-family: "Arial", sans-serif;
-        font-size: 111%;
-        padding: 1rem 0;
+    #main section#about aside,
+    #main section aside#one::after,
+    #main section aside#two::after {
+        page-break-before: always;
     }
-    
+
     #main section aside img {
         margin: auto;
         width: auto;
@@ -215,9 +240,9 @@ button {
 
     nav,
     #video,
-    #main section#about aside,
-    #main section aside#box,
-    #main section aside#four img:nth-child(4) {
+    #main section aside#box *,
+    #main section aside#four img:nth-child(4),
+    #main section#www aside {
         display: none;
     }
 }
