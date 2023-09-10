@@ -126,11 +126,16 @@ h3 {
 
 h1 small,
 h2 i,
+h3 {
+    line-height: 500%;
+}
+
+h1 small,
+h2 i,
 h3 span {
     font-family: 'Great Vibes', cursive;
     transform: scale(1, 5.5);
     transform-origin: center;
-    line-height: 500%;
     display: inline-block;
 }
 
