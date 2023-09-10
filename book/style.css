@@ -108,7 +108,7 @@ button {
     z-index: 0;
 }
 
-h1 small,
+h1,
 h2,
 h3 {
     font-family: 'Great Vibes', cursive;
@@ -120,8 +120,6 @@ h3 {
 
 h1 {
     font-size: 250%;
-    font-weight: 500;
-    font-family: "Arial", sans-serif;
 }
 
 h2 {
