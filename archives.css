@@ -181,6 +181,13 @@ a:hover {
     font-size: 3vw;
   }
 
+  .wbr::after {
+    content: "";
+    clear: both;
+    display: block;
+    width: 100%;
+  }
+
   #hello {
     font-size: 150%;
     padding: 1rem 5rem 0 0;
