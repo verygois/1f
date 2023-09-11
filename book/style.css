@@ -7,7 +7,12 @@ body {
     height: 100vh;
 }
 
-#main {
+* {
+    box-sizing: border-box;
+}
+
+#main,
+#box {
     position: relative;
     overflow: auto;
     z-index: 1;
@@ -23,7 +28,7 @@ body {
 #main section aside {
     background-color: #fff;
     display: flex;
-    place-items: top;
+    place-items: end;
     justify-content: space-between;
     width: 100%;
 }
@@ -31,23 +36,96 @@ body {
 #main section aside div {
     position: absolute;
     top: 0;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
 }
 
-#main section aside p {
-    font-size: 90%;
+h1,
+h2,
+h3,
+#main section strong {
+    font-weight: 500;
+}
+
+h1,
+#print,
+.pehu {
+    font-family: "MS Mincho", "SimSong", serif;
+}
+
+#main section {
     font-family: "Arial", sans-serif;
 }
 
+#main section i {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
 
-#main section aside strong {
-    font-size: 155%;
+h1 small,
+#print h2 i,
+#print h3 span,
+.buy {
+    font-family: 'Great Vibes', cursive;
+    transform: scale(1, 5.5);
+    transform-origin: center;
+    display: inline-block;
+}
+
+h1,
+.buy {
+    font-size: 150%;
+}
+
+#main section i {
+    font-size: 125%;
+}
+
+h2,
+h3,
+#main section strong {
+    font-size: 111%;
+}
+
+#main section p,
+h1 small {
+    font-size: 75%;
+}
+
+h1 small,
+#print h2 i {
+    line-height: 500%;
+}
+
+#print h3 {
+    line-height: 250%;
+}
+
+#main section aside h2,
+#main section aside p {
+    line-height: 200%;
+}
+
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 1rem;
+}
+
+#main section i {
+    display: inline-block;
     margin-right: 0.25rem;
 }
 
-#main section aside i {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 175%;
-    font-style: italic;
+#box h3 {
+    scroll-snap-align: center;
+}
+
+.buy {
+    margin: 1rem 0;
 }
 
 #main section aside div,
@@ -110,55 +188,10 @@ button {
 }
 
 h1,
-h2,
-h3,
+#print h2,
+#print h3,
 #print p {
-    font-weight: 500;
-    padding: 0.5rem;
-    margin: 0;
     word-break: break-all;
-}
-
-h1,
-h2,
-h3,
-#print p {
-    font-family: "MS Mincho", "SimSong", serif;
-}
-
-h1 small,
-h2 i {
-    line-height: 500%;
-}
-
-h3 {
-    line-height: 200%;
-}
-
-h1 small,
-h2 i,
-h3 span {
-    font-family: 'Great Vibes', cursive;
-    transform: scale(1, 5.5);
-    transform-origin: center;
-    display: inline-block;
-}
-
-h1,
-h2 {
-    font-size: 150%;
-}
-
-h3 {
-    font-size: 125%;
-}
-
-#print p {
-    font-size: 90%;
-}
-
-h1 small {
-    font-size: 75%;
 }
 
 @media (orientation: landscape) {
@@ -169,15 +202,15 @@ h1 small {
         scroll-snap-type: x;
     }
 
-    #main section aside p {
-        padding: 0;
-        margin: 1rem 0;
-    }
-
     #main section aside img {
         width: auto;
         height: 90%;
         scroll-snap-align: center;
+    }
+
+    #box h3 {
+        margin-bottom: 4.5rem;
+        min-width: 20rem;
     }
 
     #video {
@@ -202,16 +235,17 @@ h1 small {
         scroll-snap-type: y;
     }
 
-    #main section aside p {
-        padding: 0;
-        margin: 1rem;
-    }
-
     #main section aside img {
         margin: auto;
         max-width: 100%;
         max-height: 100%;
         scroll-snap-align: center;
+    }
+
+    #box h3 {
+        margin: 0;
+        padding: 75% 1rem 0;
+        min-height: 75%;
     }
 
     #video {
@@ -243,30 +277,13 @@ h1 small {
         display: block;
     }
 
-    #main section#about::before,
-    #main section aside#one::after,
-    #main section aside#two::after,
-    #main section aside#box::before {
+    #main section aside#two::after {
         display: block;
         padding: 1rem;
     }
 
-    #main section#about::before {
-        content: "Very Gois aims to disseminate vg things of all over the world.";
-        font-family: "Arial", sans-serif;
-        font-size: 111%;
-    }
-
-    #main section aside#one::after {
-        content: "プレイタイムズ";
-    }
-
     #main section aside#two::after {
         content: "The Things I (We)";
-    }
-
-    #main section aside#box::before {
-        content: "P";
     }
 
     #main section:not(#www),
@@ -275,7 +292,6 @@ h1 small {
     }
 
     #main section#about aside,
-    #main section aside#one::after,
     #main section aside#two::after {
         page-break-before: always;
     }
@@ -294,7 +310,8 @@ h1 small {
 
     nav,
     #video,
-    #main section aside#box *,
+    #main section aside#box img,
+    #box h3,
     #main section aside#four img:nth-child(4),
     #main section#www aside {
         display: none;
