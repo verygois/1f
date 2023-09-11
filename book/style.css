@@ -98,10 +98,7 @@ h1 small {
 }
 
 #print h2 i,
-#print h3 {
-    line-height: 250%;
-}
-
+#print h3,
 #main section aside h2,
 #main section aside p {
     line-height: 200%;
