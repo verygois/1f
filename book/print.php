@@ -1,6 +1,5 @@
 <?php
-$ip = $_SERVER["REMOTE_ADDR"];
-
-echo "<h2>IP <i>" . $ip . "</i></h2>";
-echo "<h3>Printed on <span>".date('Y/m/d H:i:s')."</span></h3>";
+echo "<p>This Book was published by printing a website.</p>";
+echo "<h2>by <i>".$_SERVER["REMOTE_ADDR"]."</i></h2>";
+echo "<h3>on <span>".date('Y/m/d H:i:s')."</span></h3>";
 ?>
