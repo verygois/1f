@@ -82,12 +82,12 @@
         thisIMG("four", fourAll)
 
         const fiveAll = [
+          "035.jpg",
+          "036.jpg",
           "031.jpg",
           "032.jpg",
           "033.jpg",
-          "034.jpg",
-          "035.jpg",
-          "036.jpg"
+          "034.jpg"
         ];
         thisIMG("five", fiveAll)
 
@@ -114,7 +114,7 @@
 <body>
   <article id="main">
     <section id="cover">
-      <h1>1F Book<br/><small>Now Loading</small></h1>
+      <h1>1F Book<br /><small>Now Loading</small></h1>
     </section>
     <section id="about">
       <aside id="box">
@@ -140,8 +140,8 @@
         <h3>
           This is The <i>Box</i>
           for The Items that archive of
-          <i>1F</i>.<br/>
-          <a class="buy" href="/1f/box/">
+          <i>1F</i>.<br />
+          <a class="buy" href="https://vg.pe.hu/1f/box/">
             <strong>¥5,000</strong>
             <small>+ shipping fee</small>
           </a>
@@ -151,17 +151,20 @@
     <section>
       <aside id="one">
         <div>
-          <h2>プレイタイムズ</h2>
           <h3>
+            <strong>
+              <a href="http://praytimes.pe.hu/" target="_blank">プレイタイムズ</a>
+            </strong><br />
+            <br>
             inspired by
-            <strong>01</strong><br/>
+            <strong>01</strong><br />
             <small>by</small>
             <i>0100011110001</i>
           </h3>
           <p>
             2020年、私（わたしたち）は 展覧会「01」を真似て
             プレイタイムズ と名付けたビデオ通話を行うためのグループを作成しました。
-            <br/>
+            <br />
             会期中、プレイタイムズでは会場の映像・音声と出版物を上映し、YouTubeにてプレイタイムズの生配信を実施しました。
           </p>
         </div>
@@ -171,11 +174,26 @@
       <aside id="two">
         <div>
           <h3>
-            <strong>02</strong>
-            <small>by</small><br />
-            <i>Sarah Marshall</i>,
-            <i>Natalia Panzer</i>
+            <strong>
+              <a href="https://creative-community.space/map/heard/" target="_blank">Things that I (We) heard</a>
+            </strong><br />
+            <br>
+            inspired by
+            <strong>Things that I heard in New York</strong><br />
+            <small>by</small>
+            <i>Sarah Marshall</i>
           </h3>
+          <p>
+            私（わたしたち）は、展覧会「02」で発表した
+            Sarah Marshall（サラ・マーシャル）の作品
+            things that i heard in new york
+            を真似て、私（わたしたち）が聞いた言葉
+            を記録しています。<br />
+            ショーケースでは、2017年にサラ・マーシャル
+            が発表した作品の日本語翻訳版
+            私がニューヨークで聞いた言葉
+            を展示しました。
+          </p>
         </div>
       </aside>
     </section>
@@ -183,17 +201,33 @@
       <aside id="three">
         <div>
           <h3>
-            <strong>03</strong>
+            <strong>
+              <a href="https://vg.pe.hu/1f/03/">03</a>
+            </strong>
             <small>by</small><br />
             <i>Takamitsu Ohta</i>,
             <i>Muku Kobayashi</i>,
             <i>Shoji Funakawa</i>,
-            <i>Soshi Matsunobe</i>
-          </h3>
-          <h3>
+            <i>Soshi Matsunobe</i><br />
+            <br />
             Video/Edit by
             <i>Reiji Saito</i>
           </h3>
+          <p class="info">
+            <strong>
+              <i>Format</i>
+              DVD-R
+              <br />
+              <i>Total Time</i>
+              21:56
+            </strong>
+          </p>
+          <p>
+            <a class="buy" href="https://vg.pe.hu/1f/03/">
+              <strong>¥2,000</strong>
+              <small>+ shipping fee</small>
+            </a>
+          </p>
         </div>
       </aside>
     </section>
@@ -205,6 +239,21 @@
             <small>by</small><br />
             <i>Emeraldclitoris</i>
           </h3>
+          <p class="info">
+            <strong>
+              <b>Format</b>
+              DVD-R
+              <br>
+              <b>Total Time</b>
+              47:10
+            </strong>
+          </p>
+          <p>
+            <a class="buy" href="https://vg.pe.hu/1f/04/">
+              <strong>¥2,000</strong>
+              <small>+ shipping fee</small>
+            </a>
+          </p>
         </div>
       </aside>
     </section>
@@ -216,6 +265,19 @@
             <small>by</small><br />
             <i>Woopheadclrms</i>
           </h3>
+          <p class="info">
+            <b>Format</b>
+            CD-R + Digital Files
+            <br>
+            <b>Total Time</b>
+            30 min + 23 min
+          </p>
+          <p>
+            <a class="buy" href="https://vg.pe.hu/1f/05/">
+              <strong>¥1,000</strong>
+              <small>+ shipping fee</small>
+            </a>
+          </p>
         </div>
       </aside>
     </section>
@@ -227,6 +289,10 @@
             Idea by
             <i>Laurel Schwulst</i>
           </h3>
+          <p>
+            私（わたしたち）は、P E H U
+            から始まるペフに似合う言葉を集めています。
+          </p>
         </div>
       </aside>
     </section>
@@ -288,7 +354,7 @@
         i++;
         video.hidden = true;
         video.pause();
-      } else if  (i == 1) {
+      } else if (i == 1) {
         i++;
       } else if (i < sectionAll.length - 1) {
         i++;
