@@ -37,8 +37,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    user-select: none;
-    pointer-events: none;
 }
 
 h1,
@@ -98,10 +96,13 @@ h1 small {
 }
 
 #print h2 i,
-#print h3,
-#main section aside h2,
-#main section aside p {
+#print h3 {
     line-height: 200%;
+}
+
+#main section aside div h2,
+#main section aside div h3 {
+    line-height: 175%;
 }
 
 h1,
@@ -125,7 +126,7 @@ p {
     margin: 1rem 0;
 }
 
-#main section aside div,
+#main section:not(#about) aside div,
 #credit {
     mix-blend-mode: exclusion;
     filter: invert();
@@ -140,7 +141,8 @@ p {
 }
 
 .no_print,
-#print {
+#print,
+#main section:not(#about) aside div p {
     display: none;
 }
 
@@ -241,8 +243,7 @@ h1,
 
     #box h3 {
         margin: 0;
-        padding: 75% 1rem 0;
-        min-height: 75%;
+        padding: 50vw 1rem 2.5vw;
     }
 
     #video {
@@ -263,14 +264,21 @@ h1,
         position: relative;
     }
 
-    #main section aside div,
+    #one div {
+        display: grid;
+        place-items: end center;
+        height: 100vh;
+    }
+
+    #main section:not(#about) aside div,
     #credit {
         mix-blend-mode: normal;
         filter: invert(0);
     }
 
     #main section,
-    #print {
+    #print,
+    #main section:not(#about) aside div p {
         display: block;
     }
 
@@ -288,7 +296,6 @@ h1,
         page-break-after: always;
     }
 
-    #main section#about aside,
     #main section aside#two::after {
         page-break-before: always;
     }
