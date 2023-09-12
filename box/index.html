@@ -18,6 +18,7 @@
   <link rel="icon" href="https://vg.pe.hu/up/cv/logo.png" type="image/png">
   <link rel="stylesheet" href="../archives.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../itempage.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
 </head>
@@ -39,11 +40,19 @@
     </nav>
   </main>
   <article id="index" class="contents"></article>
+  <hr>
+  <article id="itempage" class="ctlg"></article>
   <script type="text/javascript">
     fetch('../contents.html')
       .then(response => response.text())
       .then(innerHTML => {
         document.querySelector('#main').innerHTML = innerHTML;
+      });
+
+    fetch('ctlg.html')
+      .then(response => response.text())
+      .then(innerHTML => {
+        document.querySelector('#itempage').innerHTML = innerHTML;
       });
   </script>
 </body>
