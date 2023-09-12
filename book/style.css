@@ -273,8 +273,7 @@ h1,
 
     #one div,
     #two div,
-    #pehu div,
-    #www div {
+    #pehu div {
         display: grid;
         place-items: end center;
         width: 100%;
@@ -282,8 +281,7 @@ h1,
     }
 
     #one h3,
-    #pehu p,
-    #www div * {
+    #pehu p {
         text-align: left;
         width: 100%;
     }
