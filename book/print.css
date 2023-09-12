@@ -1,0 +1,92 @@
+body,
+#main {
+    height: auto;
+}
+
+body,
+#main section aside div {
+    position: relative;
+}
+
+#one div,
+#two div,
+#pehu div {
+    display: grid;
+    place-items: end center;
+    width: 100%;
+    height: 100vh;
+}
+
+#one h3,
+#pehu p {
+    text-align: left;
+    width: 100%;
+}
+
+#box h3,
+#two h3,
+#pehu h3 {
+    text-align: right;
+    width: 100%;
+}
+
+#one h3,
+#two h3,
+#pehu h3 {
+    align-self: flex-start;
+}
+
+#box h3 {
+    margin: 0;
+    padding: 5vw 5vw 45vw;
+}
+
+#main section:not(#about) aside div,
+#credit {
+    mix-blend-mode: normal;
+    filter: invert(0);
+}
+
+#main section,
+#print,
+#main section:not(#about) aside div p {
+    display: block;
+}
+
+#main section:not(#www),
+#main section aside div,
+#main section aside#pehu::before {
+    page-break-after: always;
+}
+
+#main section aside#pehu::before {
+    content: "People \A Exercise \A Home \A Univers";
+    display: grid;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 250%;
+    line-height: 200%;
+    place-items: center;
+    white-space: pre;
+    width: 100%;
+    height: 100vh;
+}
+
+#main section aside img {
+    margin: auto;
+    width: auto;
+    height: 50vh;
+}
+
+#main section aside#one img:last-child,
+#main section aside#four img:last-child {
+    width: 100%;
+    height: auto;
+}
+
+nav,
+#video,
+#main section aside#four img:nth-child(5),
+#main section aside#pehu img:nth-child(n+6),
+#main section#www aside {
+    display: none;
+}
