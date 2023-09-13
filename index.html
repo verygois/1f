@@ -43,7 +43,7 @@
         display: inline-block;
       }
 
-      #index,
+      #floor,
       .no_print {
         display: none;
       }
@@ -61,7 +61,7 @@
       主催 クリエイティブ・コミュニティスペース ペフ | 助成 おおさか創造千島財団
     </p>
   </aside>
-  <nav id="index"></nav>
+  <nav id="floor"></nav>
   <script>
     fetch('contents.html')
       .then(response => response.text())
@@ -72,7 +72,7 @@
     fetch('/jp/floor.html')
       .then(response => response.text())
       .then(innerHTML => {
-        document.querySelector('#index').innerHTML = innerHTML;
+        document.querySelector('#floor').innerHTML = innerHTML;
       });
   </script>
 </body>

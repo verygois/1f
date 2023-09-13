@@ -64,6 +64,7 @@ a:hover {
 
 #hello u {
   font-size: 111%;
+  text-decoration: none;
 }
 
 #contents #title {
@@ -95,8 +96,7 @@ a:hover {
   z-index: 1;
 }
 
-#contents u,
-#hello u {
+#hello u a {
   border: 0.05rem solid;
   padding: 0.25rem 0.75rem;
   border-radius: 2.5rem;

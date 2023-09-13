@@ -1,0 +1,33 @@
+#title {
+    padding: 0;
+}
+
+#hello {
+    clear: both;
+    width: 100%;
+    max-width: 100%;
+    padding: 5% 20% 5% 0%;
+}
+
+#hello u::before {
+    content: "";
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+#itempage .info {
+    padding: 2.5%;
+    width: 100%;
+}
+
+#itempage {
+    page-break-before: always;
+    font-size: 75%;
+    padding: 0;
+}
+
+#buy,
+.contents img {
+    display: none;
+}

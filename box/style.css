@@ -10,7 +10,7 @@
   display: inline-block;
 }
 
-#hello u {
+#hello u a {
   border: 0.2rem solid;
 }
 
@@ -120,6 +120,8 @@ hr {
 
 #itempage {
   box-sizing: border-box;
+  clear: both;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 0 1rem;
@@ -151,6 +153,8 @@ hr {
 }
 
 #itempage p {
+  padding: 0;
+  margin: 0.5rem 0;
   line-height: 200%;
 }
 
@@ -180,21 +184,8 @@ hr {
   }
 
   #itempage .info {
+    padding: 2.5%;
     width: 100%;
-  }
-}
-
-@media print {
-  #hello {
-    clear: both;
-    width: 100%;
-    max-width: 100%;
-    padding: 5%;
-  }
-
-  #buy,
-  .contents img {
-    display: none;
   }
 }
 
