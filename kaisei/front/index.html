@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  <script src="../../index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchHTML('#ctlg', '../ctlg.html')
+    });
+  </script>
+
+  <!--og:meta-->
   <meta content="article" property="og:type">
   <title>快晴・前期 | 会期 : 2018年4月9日 - 18日</title>
   <meta content="快晴・前期 | 会期 : 2018年4月9日 - 18日" property="og:title">
@@ -15,58 +24,44 @@
   <meta content="https://vg.pe.hu/1f/kaisei/front/cover.jpg" name="twitter:image:src">
 
   <link rel="icon" href="../../icon.png" type="image/png">
-  <link rel="stylesheet" href="../../www.css" />
+  <link rel="stylesheet" href="../../00/www.css" />
   <link rel="stylesheet" href="../style.css" />
-  <base target="_blank">
+  <style>
+    .back {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
   <main class="no_print">
     <section class="left">
-      <h2>快晴 | KAISEI</h2>
       <h1>前期 : 2018年4月9日 - 18日</h1>
       <hr>
-      <h3 style="line-height: 125%;">
-        <a>安部悠介 | Yusuke Abe</a>
-        <a href="https://soundcloud.com/takaoo">大石峰生 | Takao Oishi</a>
-        <a href="http://kaito-itsuki.tumblr.com/">皆藤齋 | Itsuki Kaito</a>
-        <a href="https://www.smoothness.onl/">櫻井崇史 | Takashi Sakurai</a>
-        <a href="http://sanukiayaka.tumblr.com/">佐貫絢郁 | Ayaka Sanuki</a>
-        <a href="https://www.instagram.com/__________sumi/">角ゆり子 | Yuriko Sumi</a>
-        <a href="https://www.instagram.com/matsumoto_haruka1993/">松元悠 | Haruka Matsumoto</a>
-        <a href="https://www.instagram.com/ryusuke_marume/">丸目龍介 | Ryusuke Marume</a>
-      </h3>
-      <br>
-      <P>
-        <u>快晴・大阪</u><br/>
-        <a href="../front/" target="_self">前期 : 2018年4月9日 - 18日</a><br />
-        <a href="../back/" target="_self">後期 : 2018年4月21日 - 30日</a><br />
-      </P>
-      <P>
-        <u>快晴・パリ</u><br/>
-        <a href="../paris/" target="_self">会期 : 2018年5月17日 - 6月2日</a><br />
-      </P>
-      <br>
-      <nav id="print">
-        <a target="_self" class="back" onclick="history.back(-1);">↵</a>
-      </nav>
+      <section id="ctlg"></section>
     </section>
     <section class="right random"></section>
     <script type="text/javascript">
-    const random = [
-      "001.jpg",
-      "002.jpg",
-      "kaito.jpg",
-      "marume.jpg",
-      "matsumoto_sanuki.jpg",
-      "sakurai_kaito.jpg",
-      "sakurai.jpg",
-      "sanuki.jpg",
-      "sumi.jpg",
-      "takao_abe.jpg",
-    ];
+      const random = [
+        "001.jpg",
+        "002.jpg",
+        "kaito.jpg",
+        "marume.jpg",
+        "matsumoto_sanuki.jpg",
+        "sakurai_kaito.jpg",
+        "sakurai.jpg",
+        "sanuki.jpg",
+        "sumi.jpg",
+        "takao_abe.jpg",
+      ];
     </script>
-    <script src="../../random.js"></script>
   </main>
+
+  <nav id="print" hidden>
+    <a class="back" href="javascript:void(0)" onclick="history.back(-1);">↵</a>
+    <button type="button"></button>
+  </nav>
+  <script src="../../00/print.js"></script>
 </body>
+
 </html>

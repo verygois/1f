@@ -7,11 +7,22 @@
 
 .contents .right a,
 .no_print a,
-.ctlg a {
+#itempage a {
   color: #fff;
   background: linear-gradient(-90deg, green, blue, yellow, red);
   background-size: 200% 100%;
   animation: AnimationName 2.5s ease infinite;
+}
+
+#ctlg h2 a {
+  font-size: 55%;
+  line-height: 100%;
+}
+
+#itempage {
+  font-size: 1rem;
+  padding: 0 2.5%;
+  margin: 0 auto;
 }
 
 .contents a:hover,

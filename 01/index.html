@@ -5,6 +5,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  <script src="../index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchHTML('#events', 'events.html')
+      fetchHTML('#itempage', 'contents.html')
+    });
+  </script>
+
+  <!--og:meta-->
   <meta content="article" property="og:type">
   <title>01 by 斎藤玲児, 0100011110001 | ∧° ┐</title>
   <meta content="01 by 斎藤玲児, 0100011110001" property="og:title">
@@ -16,8 +25,8 @@
   <meta content="https://vg.pe.hu/1f/01/001.jpg" name="twitter:image:src">
 
   <link rel="icon" href="../icon.png" type="image/png">
-  <link rel="stylesheet" href="../www.css" />
-  <link rel="stylesheet" href="../itempage.css" />
+  <link rel="stylesheet" href="../00/www.css" />
+  <link rel="stylesheet" href="../box/contents.css" />
   <style>
     :root {
       --main-color: #fff;
@@ -30,8 +39,11 @@
 
 <body>
   <article class="contents">
-    <h1 id="title">01</h1>
-    <h2 id="date">2017年12月16日 - 27日<br />12.16 - 12.27.2017</h2>
+    <h1>01</h1>
+    <h2>
+      2017年12月16日 - 27日<br />
+      12.16 - 12.27.2017
+    </h2>
     <h3>∧°┐ | pe.hu</h3>
     <hr />
     <section class="text">
@@ -72,50 +84,7 @@
     </footer>
   </article>
 
-  <article class="contents">
-    <h3>01</h3>
-    <section class="text">
-      <p>by 斎藤玲児, 0100011110001<br />　</p>
-      <p>
-        会期初日12月16日(土) 18時から
-        <a>服部峻</a>
-        をゲストにお招きしたオープニングパーティ<br />
-        12月17日(日) 17時から
-        <a>江崎將史</a> ・
-        <a>Theodore Cale Schafer</a> ・
-        <a>aoosya</a>
-        による音楽会を開催します。
-      </p>
-      <hr />
-      <div class="left">
-        <h3 class="sub">opening<br />party</h3>
-        <p>
-          12月16日(土)<br />
-          Saturday, December 16<br />
-          Start : 6pm
-        </p>
-        <p>
-          <u>special guest</u><br>
-          服部峻 | Takashi Hattori
-        </p>
-        自由料金制 | name your price
-      </div>
-      <div class="right">
-        <h3 class="sub">音楽会<br />concert</h3>
-        <p>12月17日(日)<br />
-          Sunday, December 17<br />
-          Start : 5pm
-        </p>
-        <p>
-          <u>act</u><br />
-          江崎將史 | Masafumi Ezaki<br />
-          Theodore Cale Schafer<br />
-          aoosya
-        </p>
-        自由料金制 | name your price
-      </div>
-    </section>
-  </article>
+  <article id="events" class="contents"></article>
 
   <main class="no_print">
     <section class="left">
@@ -136,24 +105,15 @@
         "004.jpg"
       ];
     </script>
-    <script src="../random.js"></script>
   </main>
 
   <article id="itempage" class="ctlg"></article>
 
   <nav id="print">
-    <a class="back" onclick="history.back(-1);">↵</a>
-    <p class="mobile">
-      <a href="javascript:void(0)" onclick="window.print();">このページを印刷すると、 2017年12月16日 - 27日 に ∧° ┐ で 開催した展覧会「01」の概要が表示されます。</a>
-    </p>
+    <a class="back" href="javascript:void(0)" onclick="history.back(-1);">↵</a>
+    <button type="button"></button>
   </nav>
-  <script type="text/javascript">
-    fetch('ctlg.html')
-      .then(response => response.text())
-      .then(innerHTML => {
-        document.querySelector('#itempage').innerHTML = innerHTML;
-      });
-  </script>
+  <script src="../00/print.js"></script>
 </body>
 
 </html>

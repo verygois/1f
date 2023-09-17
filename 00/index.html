@@ -5,53 +5,71 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  <script src="../index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchHTML('#events', 'events.html')
+    });
+  </script>
+
+  <!--og:meta-->
   <meta content="article" property="og:type">
   <title>00 by nice shop su | ∧° ┐</title>
   <meta content="00 by nice shop su" property="og:title">
   <meta content="This exhibition is looks back on the activities of Nice shop su" name="description">
   <meta content="This exhibition is looks back on the activities of Nice shop su" property="og:description">
+
+  <!--for Twitter-->
   <meta content="summary_large_image" name="twitter:card">
   <meta content="https://vg.pe.hu/1f/00/" property="og:url">
   <meta content="https://vg.pe.hu/1f/00/000.jpg" property="og:image">
   <meta content="https://vg.pe.hu/1f/00/000.jpg" name="twitter:image:src">
 
   <link rel="icon" href="../icon.png" type="image/png">
-  <link rel="stylesheet" href="../www.css">
+  <link rel="stylesheet" href="../00/www.css" />
   <style>
-  :root {
-    --main-color: #000;
-    --sub-color: #fff;
-    --main-font: "MS Mincho", "SimSong", serif;
-    --sub-font: "MS Mincho", "SimSong", serif;
-  }
-
-  .contents {
-    display: block;
-  }
-
-  #foot {
-    display: none;
-  }
-
-  @media screen and (max-width: 750px) {
-    .left,
-    .right {
-      font-size: 150%;
+    :root {
+      --main-color: #000;
+      --sub-color: #fff;
+      --main-font: "MS Mincho", "SimSong", serif;
+      --sub-font: "MS Mincho", "SimSong", serif;
     }
-  }
 
-  @media print {
-    #foot {
+    code {
+      font-family: inherit;
+    }
+
+    .contents {
       display: block;
     }
-  }
+
+    #foot {
+      display: none;
+    }
+
+    @media screen and (max-width: 750px) {
+
+      .left,
+      .right {
+        font-size: 150%;
+      }
+    }
+
+    @media print {
+      #foot {
+        display: block;
+      }
+    }
   </style>
 </head>
 
 <body>
   <article class="contents">
     <h1>00</h1>
-    <h2>2018年3月21日 - 4月4日<br />3.21.18 - 4.4.18</h2>
+    <h2>
+      2018年3月21日 - 4月4日<br />
+      3.21.18 - 4.4.18
+    </h2>
     <h3>∧°┐ | pe.hu</h3>
     <hr />
     <section class="text">
@@ -94,33 +112,7 @@
     </footer>
   </article>
 
-  <article class="contents">
-    <h2>
-      2018年3月21日(水)<br/>
-      Wednesday, March 21
-    </h2>
-    <h3>chotto crazy <3</h3>
-    <section class="text">
-      <hr/>
-      <div class="left">
-        <h3 class="sub">地図を<br />作ろう</h3>
-        <p>
-          12:00 - 6pm
-        </p>
-        <p>ペフの周りの 気になる場所を集めた 地図を作ろう</p>
-        <p>by nice shop su</p>
-      </div>
-      <div class="right">
-        <h3 class="sub">白いもの<br />を集める</h3>
-        <p>
-          7pm - 9pm
-        </p>
-        <p>白い表紙の本やCD・レコード・カセットなどを集める</p>
-        自由料金制 | name your price
-      </div>
-      <hr/>
-    </section>
-  </article>
+  <article id="events" class="contents"></article>
 </body>
 
 </html>

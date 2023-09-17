@@ -3,7 +3,6 @@ hr {
   clear: both;
 }
 
-body,
 .ctlg .pr {
   padding: 0;
   margin: 0;
@@ -151,6 +150,7 @@ body,
 }
 
 @media screen and (max-width: 750px) {
+
   .ctlg .info:first-child,
   .ctlg .info {
     width: 100%;

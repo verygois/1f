@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  <script src="../../index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchHTML('#ctlg', '../ctlg.html')
+    });
+  </script>
+
+  <!--og:meta-->
   <meta content="article" property="og:type">
   <title>快晴・後期 | 会期 : 2018年4月21日 - 30日</title>
   <meta content="快晴・後期 | 会期 : 2018年4月21日 - 30日" property="og:title">
@@ -15,58 +24,44 @@
   <meta content="https://vg.pe.hu/1f/kaisei/back/cover.jpg" name="twitter:image:src">
 
   <link rel="icon" href="../../icon.png" type="image/png">
-  <link rel="stylesheet" href="../../www.css" />
+  <link rel="stylesheet" href="../../00/www.css" />
   <link rel="stylesheet" href="../style.css" />
-  <base target="_blank">
+  <style>
+    .front {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
   <main class="no_print">
     <section class="left">
-      <h2>快晴 | KAISEI</h2>
       <h1>後期 : 2018年4月21日 - 30日</h1>
       <hr>
-      <h3 style="line-height: 125%;">
-        <a href="http://kazquiz.com">Kazquiz</a>,
-        <a href="https://www.instagram.com/haruna_kawai/">カワイハルナ | Haruna Kawai</a>
-        <a href="http://nanoooook.blogspot.jp/">NANOOK</a>
-        <a href="http://hakke.info/">HAKKE</a>
-        <a href="https://www.instagram.com/saefujita/">藤田紗衣 | Sae Fujita</a>
-        <a href="http://fukin.tumblr.com/">フキン | Fukin</a>
-        <a href="http://shingominamida.tumblr.com/">南田真吾 | Shingo Minamida</a>
-        <a href="http://5bangaimac.web.fc2.com/">五番街マック | Gobangai Mac</a>
-      </h3>
-      <br>
-      <P>
-        <u>快晴・大阪</u><br/>
-        <a href="../front/" target="_self">前期 : 2018年4月9日 - 18日</a><br />
-        <a href="../back/" target="_self">後期 : 2018年4月21日 - 30日</a><br />
-      </P>
-      <P>
-        <u>快晴・パリ</u><br/>
-        <a href="../paris/" target="_self">会期 : 2018年5月17日 - 6月2日</a><br />
-      </P>
-      <br>
-      <nav id="print">
-        <a target="_self" class="back" onclick="history.back(-1);">↵</a>
-      </nav>
+      <section id="ctlg"></section>
     </section>
     <section class="right random"></section>
     <script type="text/javascript">
-    const random = [
-      "000.jpg",
-      "001.jpg",
-      "002.jpg",
-      "003.jpg",
-      "004.jpg",
-      "005.jpg",
-      "006.JPG",
-      "5bangai.jpg",
-      "minamida_kawai.jpg",
-      "minamida_nanook.jpg",
-    ];
+      const random = [
+        "000.jpg",
+        "001.jpg",
+        "002.jpg",
+        "003.jpg",
+        "004.jpg",
+        "005.jpg",
+        "006.JPG",
+        "5bangai.jpg",
+        "minamida_kawai.jpg",
+        "minamida_nanook.jpg",
+      ];
     </script>
-    <script src="../../random.js"></script>
   </main>
+
+  <nav id="print" hidden>
+    <a class="back" href="javascript:void(0)" onclick="history.back(-1);">↵</a>
+    <button type="button"></button>
+  </nav>
+  <script src="../../00/print.js"></script>
 </body>
+
 </html>

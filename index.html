@@ -5,7 +5,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <meta content="product" property="og:type">
+  <script src="index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchHTML('#main', 'contents.html')
+      fetchHTML('#floor', '/jp/floor.html')
+    });
+  </script>
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
   <title>1F | Very Gois</title>
   <meta content="1F | Very Gois" property="og:title">
   <meta
@@ -14,6 +23,8 @@
   <meta
     content="01 by Reiji Saito, 0100011110001 | 02 by Sarah Marshall, Natalia Panzer | 03 by Takamitsu Ohta, Muku Kobayashi, Shoji Funakawa, Soshi Matsunobe | 04 by Emeraldclitoris | 05 by Laurel Schwulst, Woopheadclrms | 00 by Nice shop su | 快晴 by Yusuke Abe, Takao Oishi, Kazquiz, Haruna Kawai, Itsuki Kaito, Takashi Sakurai, Ayaka Sanuki, Yuriko Sumi, NANOOK, HAKKE, Sae Fujita, Fukin, Haruka Matsumoto, Ryusuke Marume, Shingo Minamida, Gobangai Mac"
     property="og:description">
+
+  <!--for Twitter-->
   <meta content="summary_large_image" name="twitter:card">
   <meta content="https://vg.pe.hu/1f/" property="og:url">
   <meta content="https://vg.pe.hu/1f/cover.png" property="og:image">
@@ -53,7 +64,6 @@
 
 <body>
   <main id="main"></main>
-
   <aside id="credit" class="archives">
     <p class="print_block">
       会場 音ビル | 559-0011 大阪府大阪市住之江区北加賀屋5-5-1 2F<br />
@@ -62,19 +72,6 @@
     </p>
   </aside>
   <nav id="floor"></nav>
-  <script>
-    fetch('contents.html')
-      .then(response => response.text())
-      .then(innerHTML => {
-        document.querySelector('#main').innerHTML = innerHTML;
-      });
-
-    fetch('/jp/floor.html')
-      .then(response => response.text())
-      .then(innerHTML => {
-        document.querySelector('#floor').innerHTML = innerHTML;
-      });
-  </script>
 </body>
 
 </html>

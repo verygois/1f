@@ -165,6 +165,7 @@ hr {
 }
 
 @media screen and (max-width: 750px) {
+
   #hello,
   #buy {
     clear: both;

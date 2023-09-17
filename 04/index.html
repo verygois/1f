@@ -5,7 +5,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <meta content="product" property="og:type">
+  <script src="../index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchHTML('#events', 'events.html')
+      fetchHTML('#itempage', 'contents.html')
+    });
+  </script>
+
+  <!--og:meta-->
+  <meta content="article" property="og:type">
   <title>04 by emeraldclitoris | ∧° ┐</title>
   <meta content="04 by emeraldclitoris" property="og:title">
   <meta content="このページを印刷すると、 2018年2月19日 - 28日 に ∧° ┐ で 開催した展覧会「04」の概要が表示されます。" name="description">
@@ -16,24 +25,27 @@
   <meta content="https://vg.pe.hu/1f/04/img/000.jpeg" name="twitter:image:src">
 
   <link rel="icon" href="../icon.png" type="image/png">
-  <link rel="stylesheet" href="../www.css">
-  <link rel="stylesheet" href="../itempage.css">
+  <link rel="stylesheet" href="../00/www.css" />
+  <link rel="stylesheet" href="../box/contents.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
   <style>
-  :root {
-    --main-color: #fff;
-    --sub-color: #009B77;
-    --main-font: "MS Mincho", "SimSong", serif;
-    --sub-font: "MS Mincho", "SimSong", serif;
-  }
+    :root {
+      --main-color: #fff;
+      --sub-color: #009B77;
+      --main-font: "MS Mincho", "SimSong", serif;
+      --sub-font: "MS Mincho", "SimSong", serif;
+    }
   </style>
 </head>
 
 <body>
   <article class="contents">
     <h1>04</h1>
-    <h2>2018年2月19日 - 28日<br />2.19 - 2.28.2018</h2>
+    <h2>
+      2018年2月19日 - 28日<br />
+      2.19 - 2.28.2018
+    </h2>
     <h3>∧°┐ | pe.hu</h3>
     <hr />
     <section class="text">
@@ -47,8 +59,10 @@
       <p class="right">
         This exhibition consists of a new sound adventure by
         <a href="https://vg.pe.hu/1f/04/">emeraldclitoris</a>.<br />
-        were an total art posse in around 2005. with members Zeki, Syozo Ghibon, Kentarou Obata and Dinami Shaisuke.<br />
-        It is fragile, fleeting, ugly, but therefore has a beautiful process that is human-like and lively "Form without a form".<br />
+        were an total art posse in around 2005. with members Zeki, Syozo Ghibon, Kentarou Obata and Dinami
+        Shaisuke.<br />
+        It is fragile, fleeting, ugly, but therefore has a beautiful process that is human-like and lively "Form without
+        a form".<br />
         About the current breakthrough that <br />《 emerald 》 and 《 clitoris 》 bring.
       </p>
     </section>
@@ -72,59 +86,12 @@
     </footer>
   </article>
 
-  <article class="contents">
-    <h3><a>chotto crazy</a></h3>
-    <section class="text">
-      <p>by shaisuke, zeki, haruka, kaori, kazuma<br/>　</p>
-      <div class="left">
-        <p>
-          <u>2月25日(日)</u><br />
-          Sunday, February 25<br />
-          <i>3pm - 7pm</i>
-        </p>
-        <p>
-          エメラルドクリトリス
-          と ゲスト が<br/>
-          やりたいことをやる
-        </p>
-        自由料金制 | name your price
-      </div>
-      <div class="right">
-        <p>
-          <u>進行表</u>
-        </p>
-        <h3 class="sub">エクササイズ<br/>声に出して読む</h3>
-        <p>
-          <i>3pm - 4pm</i><br/>
-          by kazuma
-        </p>
-        <br/>
-        <h3 class="sub">砂を移す<br/>数を数える</h3>
-        <p>
-          <i>4pm - 5pm</i><br/>
-          by kaori
-        </p>
-        <br/>
-        <h3 class="sub">何かを<br/>壊す・割る</h3>
-        <p>
-          <i>5pm - 6pm</i><br/>
-          by haruka
-        </p>
-        <br/>
-        <h3 class="sub">面接<br/>サイファー</h3>
-        <p>
-          <i>6pm - 7pm</i><br/>
-          by shaisuke, zeki
-        </p>
-        <br/>
-      </div>
-    </section>
-  </article>
+  <article id="events" class="contents"></article>
 
   <main class="no_print">
     <div class="left">
       <h3 class="vg">04</h3>
-      <hr/>
+      <hr />
       <h2>
         by<br />
         <a href="/ctlg/book/emeraldclitoris/">エメラルドクリトリス</a>
@@ -132,32 +99,23 @@
     </div>
     <section class="right random"></section>
     <script type="text/javascript">
-    const random = [
-      "img/001.JPG",
-      "img/002.JPG",
-      "img/003.JPG",
-      "img/004.JPG",
-      "img/005.JPG"
-    ];
+      const random = [
+        "img/001.JPG",
+        "img/002.JPG",
+        "img/003.JPG",
+        "img/004.JPG",
+        "img/005.JPG"
+      ];
     </script>
-    <script src="../random.js"></script>
   </main>
 
   <article id="itempage" class="ctlg"></article>
-  
+
   <nav id="print">
-    <a class="back" onclick="history.back(-1);">↵</a>
-    <p class="mobile">
-      <a href="javascript:void(0)" onclick="window.print();">このページを印刷すると、 2018年2月19日 - 28日 に ∧° ┐ で 開催した展覧会「04」の概要が表示されます。</a>
-    </p>
+    <a class="back" href="javascript:void(0)" onclick="history.back(-1);">↵</a>
+    <button type="button"></button>
   </nav>
-  <script type="text/javascript">
-  fetch('ctlg.html')
-  .then(response => response.text())
-  .then(innerHTML => {
-    document.querySelector('#itempage').innerHTML = innerHTML;
-  });
-  </script>
+  <script src="../00/print.js"></script>
 </body>
 
 </html>

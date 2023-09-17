@@ -1,11 +1,11 @@
 @font-face {
   font-family: "MS Mincho";
-  src: url("MSMincho.ttf");
+  src: url("book/MSMincho.ttf");
 }
 
 @font-face {
   font-family: "Times New Roman";
-  src: url("times.ttf");
+  src: url("book/times.ttf");
 }
 
 html {

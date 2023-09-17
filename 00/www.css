@@ -1,6 +1,6 @@
 @font-face {
   font-family: "MS Mincho";
-  src: url("https://vg.pe.hu/fonts/family/MSMincho.ttf");
+  src: url("../book/MSMincho.ttf");
 }
 
 body {
@@ -157,9 +157,9 @@ p.right {
   position: absolute;
   max-width: 100%;
   max-height: 100%;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   pointer-events: none;
   user-select: none;
 }
@@ -187,6 +187,18 @@ hr {
   margin: 0;
 }
 
+#print button {
+  color: var(--sub-color);
+  background-color: var(--main-color);
+  display: block;
+  font-family: inherit;
+  font-size: 111%;
+}
+
+#print button:hover {
+  cursor: pointer;
+}
+
 h3.vg {
   text-shadow: 0.25rem 0.25rem 0 #fff;
   padding: 0 0 0.5rem;
@@ -200,6 +212,7 @@ h3.vg {
 }
 
 @media screen and (max-width: 750px) {
+
   .left,
   .right {
     width: 100%;
@@ -218,10 +231,6 @@ h3.vg {
 
   #foot .right p {
     text-align: left;
-  }
-
-  .mobile {
-    display: none;
   }
 }
 

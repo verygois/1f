@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <meta content="product" property="og:type">
+  <script src="../index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchHTML('#itempage', 'contents.html')
+      fetchHTML('#ctlg', 'ctlg.html')
+    });
+  </script>
+
+  <!--og:meta-->
+  <meta content="article" property="og:type">
   <title>快晴 KAISEI | A new generation of japanese artists</title>
   <meta content="快晴 KAISEI" property="og:title">
   <meta content="このページを印刷すると、 2018年4月9日 - 18日・2018年4月21日 - 30日 に ∧° ┐ で 開催した展覧会「快晴」の概要が表示されます。" name="description">
-  <meta content="このページを印刷すると、 2018年4月9日 - 18日・2018年4月21日 - 30日 に ∧° ┐ で 開催した展覧会「快晴」の概要が表示されます。" property="og:description">
+  <meta content="このページを印刷すると、 2018年4月9日 - 18日・2018年4月21日 - 30日 に ∧° ┐ で 開催した展覧会「快晴」の概要が表示されます。"
+    property="og:description">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="https://vg.pe.hu/1f/kaisei/" property="og:url">
   <meta content="https://vg.pe.hu/1f/kaisei/book/000.jpg" property="og:image">
   <meta content="https://vg.pe.hu/1f/kaisei/book/000.jpg" name="twitter:image:src">
 
   <link rel="icon" href="../icon.png" type="image/png">
-  <link rel="stylesheet" href="../www.css" />
+  <link rel="stylesheet" href="../00/www.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <article class="contents">
     <h1>快晴</h1>
-    <h2>前期 : 2018年4月9日 - 18日<br />後期 : 2018年4月21日 - 30日</h2>
+    <h2>
+      前期 : 2018年4月9日 - 18日<br />
+      後期 : 2018年4月21日 - 30日
+    </h2>
     <h3>∧°┐ | pe.hu</h3>
     <hr />
     <section class="text">
@@ -37,7 +51,8 @@
         <hr />
         <p>We will launch a new magazine <b>快晴</b> with 16 young japanese artists'.</p>
         <p>
-          We will present the contents of the magazine ahead of completion in the exhibition format over the second term.<br />
+          We will present the contents of the magazine ahead of completion in the exhibition format over the second
+          term.<br />
           organized by nice shop su, Support by <a href="http://revuelagon.com/">LAGON</a>.
         </p>
       </div>
@@ -185,78 +200,38 @@
   </article>
 
   <main class="no_print">
-    <section class="left">
-      <h2>快晴 | KAISEI</h2>
-      <p>A new generation of japanese artists</p>
-      <h1 style="margin-bottom: 1rem;">
-        <a>Yusuke Abe</a>,
-        <a href="https://soundcloud.com/takaoo">Takao Oishi</a>,
-        <a href="http://kazquiz.com">Kazquiz</a>,
-        <a href="https://www.instagram.com/haruna_kawai/">Haruna Kawai</a>,
-        <a href="http://kaito-itsuki.tumblr.com/">Itsuki Kaito</a>,
-        <a href="https://www.smoothness.onl/">Takashi Sakurai</a>,
-        <a href="http://sanukiayaka.tumblr.com/">Ayaka Sanuki</a>,
-        <a href="https://www.instagram.com/__________sumi/">Yuriko Sumi</a>,
-        <a href="http://nanoooook.blogspot.jp/">NANOOK</a>,
-        <a href="http://hakke.info/">HAKKE</a>,
-        <a href="https://www.instagram.com/saefujita/">Sae Fujita</a>,
-        <a href="http://fukin.tumblr.com/">Fukin</a>,
-        <a href="https://www.instagram.com/matsumoto_haruka1993/">Haruka Matsumoto</a>,
-        <a href="https://www.instagram.com/ryusuke_marume/">Ryusuke Marume</a>,
-        <a href="http://shingominamida.tumblr.com/">Shingo Minamida</a>,
-        <a href="http://5bangaimac.web.fc2.com/">Gobangai Mac</a><br />
-      </h1>
-      <h3>
-        <u>快晴・大阪</u><br/>
-        <a href="front/">前期 : 2018年4月9日 - 18日</a><br />
-        <a href="back/">後期 : 2018年4月21日 - 30日</a><br />
-      </h3>
-      <h3>
-        <u>快晴・パリ</u><br/>
-        <a href="paris/">会期 : 2018年5月17日 - 6月2日</a><br />
-      </h3>
-      <h3>
-        <u>快晴・東京</u><br/>
-        <a href="https://www.kg-cornerprinting.com/kaisei-tokyo">会期 : 2018年6月9日 - 6月24日</a><br />
-      </h3>
-    </section>
+    <section class="left" id="ctlg"></section>
     <section class="right random"></section>
     <script type="text/javascript">
-    const random = [
-      "book/001.jpeg",
-      "book/002.jpeg",
-      "book/003.jpeg",
-      "book/004.jpeg",
-      "book/005.jpeg",
-      "book/006.jpeg",
-      "book/007.jpeg",
-      "book/008.jpeg",
-      "book/009.jpeg",
-      "book/010.jpeg",
-      "book/011.jpeg",
-      "book/012.jpeg",
-      "book/013.jpeg",
-      "book/014.jpeg",
-      "book/015.jpeg",
-      "book/016.jpeg",
-      "book/017.jpeg"
-    ];
+      const random = [
+        "book/001.jpeg",
+        "book/002.jpeg",
+        "book/003.jpeg",
+        "book/004.jpeg",
+        "book/005.jpeg",
+        "book/006.jpeg",
+        "book/007.jpeg",
+        "book/008.jpeg",
+        "book/009.jpeg",
+        "book/010.jpeg",
+        "book/011.jpeg",
+        "book/012.jpeg",
+        "book/013.jpeg",
+        "book/014.jpeg",
+        "book/015.jpeg",
+        "book/016.jpeg",
+        "book/017.jpeg"
+      ];
     </script>
-    <script src="../random.js"></script>
   </main>
-  <main id="itempage" style="padding: 2.5%;"></main>
+
+  <article id="itempage"></article>
+
   <nav id="print">
-    <a class="back" onclick="history.back(-1);">↵</a>
-    <p class="mobile">
-      <a href="javascript:void(0)" onclick="window.print();">このページを印刷すると、 2018年4月9日 - 18日・2018年4月21日 - 30日 に ∧° ┐ で 開催した展覧会「快晴」の概要が表示されます。</a>
-    </p>
+    <a class="back" href="javascript:void(0)" onclick="history.back(-1);">↵</a>
+    <button type="button"></button>
   </nav>
-  <script type="text/javascript">
-  fetch('ctlg.html')
-  .then(response => response.text())
-  .then(innerHTML => {
-    document.querySelector('#itempage').innerHTML = innerHTML;
-  });
-  </script>
+  <script src="../00/print.js"></script>
 </body>
+
 </html>

@@ -5,6 +5,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  <script src="../index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchHTML('#events', 'events.html')
+      fetchHTML('#itempage', 'contents.html')
+    });
+  </script>
+
+  <!--og:meta-->
   <meta content="article" property="og:type">
   <title>02 by Sarah Marshall, Natalia Panzer | ∧° ┐</title>
   <meta content="02 by Sarah Marshall, Natalia Panzer" property="og:title">
@@ -16,8 +25,8 @@
   <meta content="https://vg.pe.hu/1f/02/01.jpg" name="twitter:image:src">
 
   <link rel="icon" href="../icon.png" type="image/png">
-  <link rel="stylesheet" href="../www.css">
-  <link rel="stylesheet" href="../itempage.css">
+  <link rel="stylesheet" href="../00/www.css" />
+  <link rel="stylesheet" href="../box/contents.css" />
   <style>
   :root {
     --main-color: #fff;
@@ -31,7 +40,10 @@
 <body>
   <article class="contents">
     <h1>02</h1>
-    <h2>2018年1月12日 - 24日<br />1.12 - 1.24.2018</h2>
+    <h2>
+      2018年1月12日 - 24日<br />
+      1.12 - 1.24.2018
+    </h2>
     <h3>∧°┐ | pe.hu</h3>
     <hr />
     <section class="text">
@@ -72,57 +84,7 @@
     </footer>
   </article>
 
-  <article class="contents">
-    <h3>02</h3>
-    <section class="text">
-      <p>by Sarah Marshall, Natalia Panzer<br/>　</p>
-      <p>
-        会期中には、数名の女性たちによる様々なイベントを開催いたします。<br/>
-        and some event will do by female artists in This exhibition.
-      </p>
-      <hr/>
-      <div class="left">
-        <h3 class="sub">reading<br />朗読会</h3>
-        <p>
-          1月14日(日)<br />
-          Sunday, January 14<br />
-          Start : 5pm
-        </p>
-        <p>by chika4ngel, 5ft46, one other person</p>
-        自由料金制 | name your price
-        <hr/>
-        <h3 class="sub">closing<br/>party</h3>
-        <p>
-          1月24日(水)<br />
-          Wednesday, January 24<br />
-          Start : 7pm
-        </p>
-        水に石を落としたり、<br />撮影したり
-        <p>by ดบ『Dove<br />with Natalia's favorite drinks.</p>
-        自由料金制 | name your price
-      </div>
-      <div class="right">
-        <h3 class="sub">will do what we want to do</h3>
-        <p>
-          1月19日(金)<br />
-          Friday, January 19<br />
-          Start : 7pm
-        </p>
-        湯気を眺めたり、<br />ユーフォニアムの演奏を聞いたり
-        <p>by ootsusan, мкт∵</p>
-        自由料金制 | name your price
-        <hr/>
-        <p>
-          1月22日(月)<br />
-          Monday, January 22<br />
-          Start : 7pm
-        </p>
-        何かを壊したり、<br />粘土で四角を作ったり
-        <p>by 6.7.r.n, one other person</p>
-        自由料金制 | name your price
-      </div>
-    </section>
-  </article>
+  <article id="events" class="contents"></article>
 
   <main class="no_print">
     <section class="left">
@@ -148,23 +110,15 @@
       "09.jpg"
     ];
     </script>
-    <script src="../random.js"></script>
   </main>
 
   <article id="itempage" class="ctlg"></article>
 
   <nav id="print">
-    <a class="back" onclick="history.back(-1);">↵</a>
-    <p class="mobile">
-      <a href="javascript:void(0)" onclick="window.print();">このページを印刷すると、 2018年1月12日 - 24日 に ∧° ┐ で 開催した展覧会「02」の概要が表示されます。</a>
-    </p>
+    <a class="back" href="javascript:void(0)" onclick="history.back(-1);">↵</a>
+    <button type="button"></button>
   </nav>
-  <script type="text/javascript">
-  fetch('ctlg.html')
-  .then(response => response.text())
-  .then(innerHTML => {
-    document.querySelector('#itempage').innerHTML = innerHTML;
-  });
-  </script>
+  <script src="../00/print.js"></script>
 </body>
+
 </html>
