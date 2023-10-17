@@ -47,7 +47,18 @@
 
     #main {
       position: relative;
+      display: grid;
+      place-content: center;
+      min-height: 100vh;
       z-index: 1000;
+    }
+
+    #title {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
     }
 
     @media print {
