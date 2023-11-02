@@ -205,13 +205,11 @@ h1,
         padding: 2.5%;
         gap: 5%;
         overflow-x: auto;
-        scroll-snap-type: x;
     }
 
     #main section aside img {
         width: auto;
         height: 90%;
-        scroll-snap-align: center;
     }
 
     #box h3 {
