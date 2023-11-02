@@ -113,7 +113,7 @@
         fetchHTML('#cover', '../contents.html')
         fetchHTML('#print', 'print.php')
         
-        const scrollElementAll = document.querySelectorAll('#main section');
+        const scrollElementAll = document.querySelectorAll('#main section aside');
         scrollElementAll.forEach((scrollElement) => {
           scrollElement.addEventListener('wheel', (e) => {
             if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return;
