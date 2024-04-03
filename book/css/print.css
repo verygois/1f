@@ -2,6 +2,10 @@
     size: A5 portrait;
 }
 
+html {
+    font-size: 3vw;
+}
+
 body {
     height: auto;
     max-height: auto;
