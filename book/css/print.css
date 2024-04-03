@@ -19,6 +19,7 @@ article section h3 {
 }
 
 #www aside {
+    display: grid;
     font-size: 275%;
     place-items: end;
     word-break: break-all;
