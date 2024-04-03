@@ -1,0 +1,109 @@
+body {
+    height: auto;
+    max-height: auto;
+}
+
+main,
+article,
+article section p,
+article section h3 {
+    display: block;
+}
+
+#www aside {
+    word-break: break-all;
+    font-size: 300%;
+}
+
+article section h2 {
+    font-size: 100%;
+}
+
+article section p {
+    font-size: 90%;
+}
+
+h2 i {
+    line-height: 150%;
+}
+
+main,
+article,
+article aside {
+    height: auto;
+    min-height: 100vh;
+    page-break-after: always;
+}
+
+article:not(#contents, #www) section {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+}
+
+#about aside h3,
+#two section h2 {
+    width: 100%;
+    text-align: right;
+}
+
+main,
+article,
+article section {
+    position: relative;
+}
+
+footer {
+    position: absolute;
+}
+
+article:not(#contents) section,
+footer {
+    filter: invert(0);
+    mix-blend-mode: normal;
+}
+
+article aside img {
+    margin: auto;
+    width: auto;
+    height: 50vh;
+}
+
+article section p,
+article section h3 {
+    height: auto;
+    width: 100%;
+    place-self: end;
+}
+
+#about h3 {
+    place-self: start;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#pehu aside::before {
+    content: "People \A Exercise \A Home \A Univers";
+    display: grid;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 250%;
+    line-height: 200%;
+    place-items: center;
+    white-space: pre;
+    width: 100%;
+    height: 100vh;
+}
+
+#one aside img:last-child,
+#four aside img:last-child {
+    width: 100%;
+    height: auto;
+}
+
+#four aside img:nth-child(5),
+#pehu aside img:nth-child(n+5),
+#www section,
+footer nav,
+#video {
+    display: none;
+}

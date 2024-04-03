@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+
   <meta content="product" property="og:type">
   <title>1F | Very Gois</title>
   <meta content="1F | Very Gois" property="og:title">
@@ -14,412 +15,243 @@
   <meta
     content="This is The Showcase of Very Gois with 01 by 0100011110001 02 Idea by Sarah Marshall, Natalia Panzer 03 by Takamitsu Ohta, Muku Kobayashi, Shoji Funakawa, Soshi Matsunobe Video/Edit by Reiji Saito 04 by Emeraldclitoris 05 Idea by Laurel Schwulst, Woopheadclrms and Past & Present about Pehu with the Friends of Pehu"
     property="og:description">
+
   <meta content="summary_large_image" name="twitter:card">
   <meta content="https://vg.pe.hu/1f/book/" property="og:url">
   <meta content="https://vg.pe.hu/1f/book/cover.png" property="og:image">
   <meta content="https://vg.pe.hu/1f/book/cover.png" name="twitter:image:src">
-
-  <link rel="icon" href="../icon.png" type="image/png">
-  <link rel="stylesheet" href="../archives.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="print.css" media="print" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
   <script src="../index.js"></script>
+  <script src="js/imgArr.js"></script>
+  <script src="js/www.js"></script>
+
   <script>
     document.addEventListener('readystatechange', event => {
       if (event.target.readyState === 'interactive') {
-        const directory = "https://d2w9rnfcy7mm78.cloudfront.net/";
-
-        function thisIMG(id, arr) {
-          arr.forEach((arrEach) => {
-            const crearIMG = document.createElement("img");
-            crearIMG.src = directory + arrEach;
-            document.getElementById(id).appendChild(crearIMG)
-          });
-        }
-
-        const oneAll = [
-          "27258767/original_8670629e8b09a8c39f39ebbd9a48e8c5.jpg",
-          "27258761/original_5591947faa1b4ecd590611118c1fe955.jpg",
-          "27258759/original_a66e3f44a2c867fd4915dded14129c96.jpg",
-          "27258757/original_9bcf8e6a5ae0efb64761dec6c342d296.jpg",
-          "27258758/original_a28d3f0c1d82589ec653473afc0f75f1.jpg",
-          "27258762/original_7e177f8bc0039e781e5786aa2dfedd0a.jpg",
-          "27258760/original_66f023d3b95e453a5495ab64607629dd.jpg"
-        ];
-        thisIMG("one", oneAll)
-
-        const twoAll = [
-          "27258763/original_12d17851d550a2cb873b9816c37f58b1.jpg",
-          "27258768/original_8094a7e3ce6eb87866a49cdbc1f8aea6.jpg",
-          "27258770/original_2f81e2f4fa0e625a76682bb809a18e47.jpg",
-          "27258775/original_1e3d883f32be0491f7a4f79708ea085a.jpg",
-          "27258771/original_a656a0c792414f1e146ac7c4f9589191.jpg",
-          "27258766/original_80686db5136fe23ffe1560e9800bf0ca.jpg",
-          "27258778/original_d84e5dc00fcddce5b4ea1e5203e51536.jpg",
-          "27258773/original_6ca07c125157bc6d40f1774faca065e8.jpg"
-        ];
-        thisIMG("two", twoAll)
-
-        const threeAll = [
-          "27258772/original_440243861704d525990f0b2df1202b41.jpg",
-          "27258776/original_143e929e2100189d8313b6f444ac9769.jpg",
-          "27258777/original_c3cadce470cc31d92c8fa8c02e32245c.jpg",
-          "27258774/original_9a9bad7ef585f94b5db32d0e9af46c5b.jpg",
-          "27258779/original_c48e01eb88a4e664bf0cd7bcadc5d2cf.jpg",
-          "27258764/original_0e17b920e486b1a13ed3e00ea8e941c3.jpg"
-        ];
-        thisIMG("three", threeAll)
-
-        const fourAll = [
-          "27258781/original_694c23d56d5ee6c6b3a6ccff1f95bf76.jpg",
-          "27258782/original_261ee4cb403236bdfa81f27f196977c9.jpg",
-          "27258783/original_a78c8f16532d5a10201551e7e8240b92.jpg",
-          "27258785/original_8b66de373c3e18c2b277f733e9841545.jpg",
-          "27258784/original_aa592e79791c6198bf217d6aff3756df.jpg",
-          "27258862/original_a69b1ea75c218469e17d346d3213af54.png"
-        ];
-        thisIMG("four", fourAll)
-
-        const fiveAll = [
-          "27258790/original_b377d9d140ece9a673a746a862b134b3.jpg",
-          "27258794/original_4831c510d709f35f6a7e14b4196ee9d6.jpg",
-          "27258786/original_0331f4a6454fa500f6b4e695cee494c0.jpg",
-          "27258780/original_e54c747effab7be53d1091e7afbeb8a3.jpg",
-          "27258787/original_41cb575dbb8af0d3959b623e593034b1.jpg",
-          "27258810/original_c357635d71fcc6930da72d3e33a7ebbe.jpg"
-        ];
-        thisIMG("five", fiveAll)
-
-        const pehuAll = [
-          "27258791/original_97d7c1820950cf091e8ada69b77c390f.jpg",
-          "27258792/original_d5648b70b3a18812520d883a87b08b35.jpg",
-          "27258795/original_28b906d92bcb2d4b53eb68fe921720b6.jpg",
-          "27258769/original_178eb47b07e1924c9dd808c06a94f52c.jpg",
-          "27258796/original_427b5386325808a7dc14dc323cbc08a8.jpg",
-          "27258789/original_ce42668bce73899d34d105c263c9d993.jpg",
-          "27258800/original_16c216691a7ebda5dd79e3775d72e728.jpg",
-          "27258797/original_88ad86780ce2ae982daa5bda2c8be47c.jpg",
-          "27258798/original_02169d4007fdb290b4434a313055bdb4.jpg"
-        ];
-        thisIMG("pehu", pehuAll)
-
-        const boxAll = [
-          "27258799/original_2332f0de1274a9c4d490d7c8204b6d6e.jpg"
-        ];
-        thisIMG("box", boxAll)
+        readmeMD('footer address', 'README.md');
       } else if (event.target.readyState === 'complete') {
-        fetchHTML('#cover', '../contents.html')
-        fetchHTML('#print', 'print.php')
+        fetchHTML('#cover', '../contents.html');
 
-        const scrollElementAll = document.querySelectorAll('#main section aside');
-        scrollElementAll.forEach((scrollElement) => {
-          scrollElement.addEventListener('wheel', (e) => {
-            if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return;
-            const maxScrollLeft = scrollElement.scrollWidth - scrollElement.clientWidth;
-            if (
-              (scrollElement.scrollLeft <= 0 && e.deltaY < 0) ||
-              (scrollElement.scrollLeft >= maxScrollLeft && e.deltaY > 0)
-            )
-              return;
-            e.preventDefault();
-            scrollElement.scrollLeft += e.deltaY;
-          });
-        });
+        const video = document.querySelector('#video');
+        video.play();
+        video.addEventListener('ended', () => {
+          video.play();
+        }, false);
       }
     });
+
+    window.addEventListener("beforeprint", () => {
+      fetchHTML('#www aside', 'print.php');
+    });
   </script>
+
+  <link rel="icon" href="../icon.png" type="image/png">
+  <link rel="stylesheet" href="../archives.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/www.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <article id="main">
-    <section id="cover">
-      <h1>
-        1F Book<br>
-        <small>Now Loading</small>
-      </h1>
-    </section>
-    <section id="about">
-      <aside id="box">
-        <div>
-          <h2>
-            This <i>Showcase</i> had announce the
-            <i>Publications</i> and <i>Projects</i>
-            that inspired by the exhibitions that held at
-            <strong class="pehu">∧°┐</strong> in
-            <i>2017 - 2018</i>.
-          </h2>
-          <p>
-            これは、2017年から2018年 に
-            西天満の
-            <strong class="pehu">∧°┐</strong>
-            で開催した 5つの展覧会
-            に関する
-            <i>出版物</i> と
-            <i>プロジェクト</i>
-            を 発表する
-            <i>ショーケース</i> です。
-          </p>
-        </div>
-        <h3>
-          This is The <i>Box</i>
-          for The Items that archive of
-          <i>1F</i>.<br />
-          <a class="buy" href="https://vg.pe.hu/1f/box/">
-            <strong>¥5,000</strong>
-            <small>+ shipping fee</small>
-          </a>
-        </h3>
-      </aside>
-    </section>
-    <section>
-      <aside id="one">
-        <div>
-          <h3>
-            <strong>
-              <a href="http://praytimes.pe.hu/" target="_blank">プレイタイムズ</a>
-            </strong><br />
-            <br>
-            inspired by
-            <strong>01</strong><br />
-            <small>by</small>
-            <i>0100011110001</i>
-          </h3>
-          <p>
-            2020年、私（わたしたち）は 展覧会「01」を真似て、プレイタイムズ と名付けた 私たちにとっての祈り／遊びの場を Google ハングアウト上に作成しました。<br />
-            会期中、プレイタイムズに会場の映像・音声と出版物を上映し、YouTubeにてプレイタイムズの生配信を実施しました。
-          </p>
-        </div>
-      </aside>
-    </section>
-    <section>
-      <aside id="two">
-        <div>
-          <h3>
-            <strong>
-              <a href="https://things-that-i-we-heard.github.io/" target="_blank">Things that I (We) heard</a>
-            </strong><br />
-            <br>
-            inspired by
-            <strong>Things that I heard in New York</strong><br />
-            <small>by</small>
-            <i>Sarah Marshall</i>
-          </h3>
-          <p>
-            私（わたしたち）は、展覧会「02」で発表した
-            Sarah Marshall（サラ・マーシャル）の作品
-            things that i heard in new york
-            を真似て、私（わたしたち）が聞いた言葉
-            を記録しています。<br />
-            ショーケースでは、2017年にサラ・マーシャル
-            が発表した作品の日本語翻訳版
-            私がニューヨークで聞いた言葉
-            を展示しました。
-          </p>
-        </div>
-      </aside>
-    </section>
-    <section>
-      <aside id="three">
-        <div>
-          <h3>
-            <strong>03</strong>
-            <small>by</small><br />
-            <i>Takamitsu Ohta</i>,
-            <i>Muku Kobayashi</i>,
-            <i>Shoji Funakawa</i>,
-            <i>Soshi Matsunobe</i><br />
-            <br />
-            Video/Edit by
-            <i>Reiji Saito</i>
-          </h3>
-          <p class="info">
-            <strong>
-              <i>Format</i>
-              DVD-R
-              <br />
-              <i>Total Time</i>
-              21:56
-            </strong>
-          </p>
-          <p>
-            <a class="buy" href="https://vg.pe.hu/1f/03/">
-              <strong>¥2,000</strong>
-              <small>+ shipping fee</small>
-            </a>
-          </p>
-        </div>
-      </aside>
-    </section>
-    <section>
-      <aside id="four">
-        <div>
-          <h3>
-            <strong>04</strong>
-            <small>by</small><br />
-            <i>Emeraldclitoris</i>
-          </h3>
-          <h3>
-            <small>
-              オーディオコント・映像作品「戯れるS子たち」ほか、エメラルドクリトリスによる様々な映像作品を収録
-            </small>
-          </h3>
-          <p class="info">
-            <strong>
-              <i>Format</i>
-              DVD-R
-              <br>
-              <i>Total Time</i>
-              47:10
-            </strong>
-          </p>
-          <p>
-            <a class="buy" href="https://vg.pe.hu/1f/04/">
-              <strong>¥2,000</strong>
-              <small>+ shipping fee</small>
-            </a>
-          </p>
-        </div>
-      </aside>
-    </section>
-    <section>
-      <aside id="five">
-        <div>
-          <h3>
-            <strong>05</strong>
-            <small>Idea by</small><br />
-            <i>Woopheadclrms</i>
-          </h3>
-          <h3>
-            <small>
-              Google翻訳に適当にタイピングした文章を、色んな言語に翻訳し音声に変換する
-            </small>
-          </h3>
-          <p class="info">
-            <i>Format</i>
-            CD-R + Digital Files
-            <br>
-            <i>Total Time</i>
-            30 min + 23 min
-          </p>
-          <p>
-            <a class="buy" href="https://vg.pe.hu/1f/05/">
-              <strong>¥1,000</strong>
-              <small>+ shipping fee</small>
-            </a>
-          </p>
-        </div>
-      </aside>
-    </section>
-    <section>
-      <aside id="pehu">
-        <div>
-          <h3>
-            <strong>daily basis (dialy)</strong><br />
-            Idea by
-            <i>Laurel Schwulst</i>
-          </h3>
-          <p>
-            ローレル・シュヴルスト
-            が考案した
-            P E H U
-            から始まるペフに似合う言葉を使った日記を用いて、
-            ショーケースの会期中に会った人・した運動・家でしたこと・考えていたこと
-            を記録しました。
-          </p>
-        </div>
-      </aside>
-    </section>
-    <section id="www">
-      <aside>
-        <div>
-          <h3>
-            PCブラウザ の 印刷機能を使用してこのページを出力すると、「1F」の記録冊子が作成できます。
-          </h3>
-        </div>
-      </aside>
-      <div id="print" hidden></div>
-    </section>
-  </article>
+  <main id="cover">
+    <h1>
+      1F Book<br>
+      <small>Now Loading</small>
+    </h1>
+  </main>
 
-  <nav hidden>
-    <button id="past"><b>←</b></button>
-    <button id="next"><b>→</b></button>
-  </nav>
+  <footer>
+    <nav hidden>
+      <button id="past">←</button>
+      <button id="next">→</button>
+    </nav>
+    <address class="pehu"></address>
+  </footer>
+
+  <article id="about" hidden>
+    <section>
+      <h2>
+        This <i>Showcase</i> had announce the
+        <i>Publications</i> and <i>Projects</i>
+        that inspired by the exhibitions that held at
+        <strong class="pehu">∧°┐</strong> in
+        <i>2017 - 2018</i>.
+      </h2>
+      <p>
+        これは、2017年から2018年 に ⻄天満の <strong class="pehu">∧°┐</strong> で開催した 5つの展覧会 に関する
+        <i>出版物</i> と <i>プロジェクト</i> を 発表する <i>ショーケース</i> です。
+      </p>
+    </section>
+    <aside>
+      <h3>
+        This is The <i>Box</i>
+        for The Items that archive of
+        <i>1F</i>.<br />
+        <a class="buy" href="../box/">
+          <strong>¥5,000</strong>
+          <small>+ shipping fee</small>
+        </a>
+      </h3>
+    </aside>
+  </article>
+  <article id="one" hidden>
+    <section>
+      <h2>
+        <a href="http://praytimes.pe.hu/" target="_blank">プレイタイムズ</a><br />
+        <br>
+        inspired by
+        <strong>01</strong><br />
+        <small>by</small>
+        <i>0100011110001</i>
+      </h2>
+      <p>
+        2020年、私（わたしたち）は 展覧会「01」を真似て、プレイタイムズ と名付けた 私たちにとっての祈り／遊びの場を Google ハングアウト上に作成しました。<br />
+        会期中、プレイタイムズに会場の映像・音声と出版物を上映し、YouTubeにてプレイタイムズの生配信を実施しました。
+      </p>
+    </section>
+    <aside></aside>
+  </article>
+  <article id="two" hidden>
+    <section>
+      <h2>
+        <a href="https://things-that-i-we-heard.github.io/" target="_blank">Things that I (We) heard</a><br />
+        <br>
+        inspired by
+        <strong>Things that I heard in New York</strong><br />
+        <small>by</small>
+        <i>Sarah Marshall</i>
+      </h2>
+      <p>
+        私（わたしたち）は、展覧会「02」で発表した
+        Sarah Marshall（サラ・マーシャル）の作品
+        things that i heard in new york
+        を真似て、私（わたしたち）が聞いた言葉
+        を記録しています。<br />
+        ショーケースでは、2017年にサラ・マーシャル
+        が発表した作品の日本語翻訳版
+        私がニューヨークで聞いた言葉
+        を展示しました。
+      </p>
+    </section>
+    <aside></aside>
+  </article>
+  <article id="three" hidden>
+    <section>
+      <h2>
+        <strong>03</strong>
+        <small>by</small><br />
+        <i>Takamitsu Ohta</i>,
+        <i>Muku Kobayashi</i>,
+        <i>Shoji Funakawa</i>,
+        <i>Soshi Matsunobe</i><br />
+        <br />
+        Video/Edit by
+        <i>Reiji Saito</i>
+      </h2>
+      <p>
+        <strong>
+          <i>Format</i>
+          DVD-R
+          <br />
+          <i>Total Time</i>
+          21:56
+        </strong>
+      </p>
+      <h3>
+        <a class="buy" href="../03/">
+          <strong>¥2,000</strong>
+          <small>+ shipping fee</small>
+        </a>
+      </h3>
+    </section>
+    <aside></aside>
+  </article>
+  <article id="four" hidden>
+    <section>
+      <h2>
+        <strong>04</strong>
+        <small>by</small><br />
+        <i>Emeraldclitoris</i><br />
+        <br />
+        <small>
+          オーディオコント・映像作品「戯れるS子たち」ほか、エメラルドクリトリスによる様々な映像作品を収録
+        </small>
+      </h2>
+      <p>
+        <strong>
+          <i>Format</i>
+          DVD-R
+          <br>
+          <i>Total Time</i>
+          47:10
+        </strong>
+      </p>
+      <h3>
+        <a class="buy" href="../04/">
+          <strong>¥2,000</strong>
+          <small>+ shipping fee</small>
+        </a>
+      </h3>
+    </section>
+    <aside></aside>
+  </article>
+  <article id="five" hidden>
+    <section>
+      <h2>
+        <strong>05</strong>
+        <small>Idea by</small><br />
+        <i>Woopheadclrms</i><br />
+        <br />
+        <small>
+          Google翻訳に適当にタイピングした文章を、色んな言語に翻訳し音声に変換する
+        </small>
+      </h2>
+      <p class="info">
+        <i>Format</i>
+        CD-R + Digital Files
+        <br>
+        <i>Total Time</i>
+        30 min + 23 min
+      </p>
+      <h3>
+        <a class="buy" href="../05/">
+          <strong>¥1,000</strong>
+          <small>+ shipping fee</small>
+        </a>
+      </h3>
+    </section>
+    <aside></aside>
+  </article>
+  <article id="pehu" hidden>
+    <section>
+      <h2>
+        <strong>daily basis (dialy)</strong><br />
+        Idea by
+        <i>Laurel Schwulst</i>
+      </h2>
+      <p>
+        ローレル・シュヴルスト
+        が考案した
+        P E H U
+        から始まるペフに似合う言葉を使った日記を用いて、
+        ショーケースの会期中に会った人・した運動・家でしたこと・考えていたこと
+        を記録しました。
+      </p>
+    </section>
+    <aside></aside>
+  </article>
+  <article id="www" hidden>
+    <section>
+      PCブラウザ の 印刷機能を使用してこのページを出力すると、「1F」の記録冊子が作成できます。
+    </section>
+    <aside class="vg"></aside>
+  </article>
 
   <video id="video" poster="cover.png" preload="auto" muted playsinline>
     <source src="https://arena-attachments.s3.amazonaws.com/27258734/d8253cd8d5f57e482ceb6177fd2918d9.mp4" id="mp4"
       type="video/mp4" />
   </video>
-
-  <footer id="credit" class="archives">
-    <p class="print_block">
-      会場 音ビル | 559-0011 大阪府大阪市住之江区北加賀屋5-5-1 2F<br />
-      会期 2021年 1月 15日 (土) - 1月 30日 (日) | 開館時間 11:00 - 18:00<br />
-      主催 クリエイティブ・コミュニティスペース ペフ | 助成 おおさか創造千島財団
-    </p>
-  </footer>
-
-  <script type="text/javascript">
-    const video = document.querySelector('#video');
-    window.addEventListener('load', function () {
-      video.play();
-      video.addEventListener('ended', () => {
-        video.play();
-      }, false);
-    });
-
-    const sectionAll = document.querySelectorAll('#main section');
-    const next = document.querySelector('#next');
-    const past = document.querySelector('#past');
-    let i = 0;
-
-    thisSection()
-
-    function thisSection() {
-      for (const sectionThis of sectionAll) {
-        sectionThis.hidden = true;
-      }
-      sectionAll[i].hidden = false;
-    };
-
-    next.addEventListener('click', function () {
-      if (i == 0) {
-        i++;
-        video.hidden = true;
-        video.pause();
-      } else if (i == 1) {
-        i++;
-      } else if (i < sectionAll.length - 1) {
-        i++;
-      } else if (i == sectionAll.length - 1) {
-        i = 0;
-        video.hidden = false;
-        video.play();
-      }
-      thisSection()
-    }, false);
-
-    past.addEventListener('click', function () {
-      if (i == 0) {
-        i = sectionAll.length - 1;
-        video.hidden = true;
-        video.pause();
-      } else if (i == 1) {
-        i--;
-        video.hidden = false;
-        video.play();
-      } else if (i < sectionAll.length - 1) {
-        i--;
-      } else if (i == sectionAll.length - 1) {
-        i--;
-        video.hidden = true;
-        video.pause();
-      }
-      thisSection()
-    }, false);
-  </script>
 </body>
 
 </html>

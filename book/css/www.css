@@ -1,0 +1,132 @@
+html {
+    height: -webkit-fill-available;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: -webkit-fill-available;
+}
+
+main,
+article {
+    position: relative;
+    z-index: 1;
+}
+
+article,
+article aside {
+    height: 100%;
+}
+
+article section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 1;
+}
+
+article aside {
+    background-color: #fff;
+    display: flex;
+    place-items: end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer,
+footer nav {
+    display: flex;
+}
+
+footer {
+    justify-content: space-between;
+    align-items: end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    filter: invert(1);
+    mix-blend-mode: difference;
+}
+
+@media (orientation: landscape) {
+    article aside {
+        padding: 2.5%;
+        gap: 5%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    article aside img {
+        width: auto;
+        height: 90%;
+    }
+
+    footer {
+        flex-flow: row-reverse;
+    }
+}
+
+@media (orientation: portrait) {
+    article aside {
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        overflow-y: auto;
+        scroll-snap-type: y;
+    }
+
+    article aside img {
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        scroll-snap-align: center;
+    }
+
+    footer {
+        flex-flow: wrap;
+    }
+}
+
+footer address {
+    font-size: 90%;
+    font-style: normal;
+    user-select: none;
+    pointer-events: none;
+    width: 100%;
+}
+
+footer nav {
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+footer nav button {
+    appearance: none;
+    background-color: #fff;
+    border: 0.125rem solid #000;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    outline: none;
+}
+
+footer nav #next,
+footer nav #past {
+    padding: 0;
+    margin: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    font-size: 150%;
+}
