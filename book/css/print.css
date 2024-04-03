@@ -14,7 +14,8 @@ body {
 main,
 article,
 article section p,
-article section h3 {
+article section h3,
+#www aside {
     display: block;
 }
 
