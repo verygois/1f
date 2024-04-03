@@ -20,7 +20,7 @@ article section h3 {
 
 #www aside {
     display: grid;
-    font-size: 275%;
+    font-size: 300%;
     place-items: end;
     word-break: break-all;
 }
