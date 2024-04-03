@@ -20,8 +20,9 @@ article section h3,
 }
 
 #www aside {
+    font-size: 250%;
+    place-items: end;
     word-break: break-all;
-    font-size: 200%;
 }
 
 article section h2 {
