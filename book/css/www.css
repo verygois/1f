@@ -34,7 +34,6 @@ article section {
 }
 
 article aside {
-    background-color: #fff;
     display: flex;
     place-items: end;
     justify-content: space-between;

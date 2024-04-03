@@ -37,6 +37,10 @@ h3 {
     line-height: 200%;
 }
 
+article {
+    background-color: #fff;
+}
+
 article:not(#contents) section {
     filter: invert(1);
     mix-blend-mode: difference;
