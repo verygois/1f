@@ -11,8 +11,10 @@ window.addEventListener('load', function () {
         sectionAll[i].hidden = false;
     };
 
+    const navBtu = document.querySelector('footer nav');
     const next = document.querySelector('#next');
     const past = document.querySelector('#past');
+    navBtu.hidden = false;
 
     next.addEventListener('click', function () {
         if (i == 0) {

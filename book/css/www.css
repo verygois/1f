@@ -40,6 +40,10 @@ article aside {
     width: 100%;
 }
 
+footer nav[hidden] {
+    display: none;
+}
+
 footer,
 footer nav {
     display: flex;
