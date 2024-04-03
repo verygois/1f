@@ -37,7 +37,7 @@ h3 {
     line-height: 200%;
 }
 
-article {
+article+:not(#contents) {
     background-color: #fff;
 }
 
