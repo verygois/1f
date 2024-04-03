@@ -132,6 +132,7 @@ article aside img {
 .no_print,
 #print,
 article section p,
-article section h3 {
+article section h3,
+#www aside {
     display: none;
 }

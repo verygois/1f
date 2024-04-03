@@ -30,6 +30,7 @@
         readmeMD('footer address', 'README.md');
       } else if (event.target.readyState === 'complete') {
         fetchHTML('#cover', '../contents.html');
+        fetchHTML('#www aside', 'print.php');
 
         const video = document.querySelector('#video');
         video.play();
@@ -37,10 +38,6 @@
           video.play();
         }, false);
       }
-    });
-
-    window.addEventListener("beforeprint", () => {
-      fetchHTML('#www aside', 'print.php');
     });
   </script>
 
