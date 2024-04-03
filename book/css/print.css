@@ -19,13 +19,13 @@ article section h3 {
 }
 
 #www aside h2 {
-    place-items: end;
+    word-break: break-all;
 }
 
 #www aside {
     display: grid;
     font-size: 300%;
-    word-break: break-all;
+    place-items: end;
 }
 
 article section h2 {
