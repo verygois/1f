@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: 2.95vw;
+    font-size: 2.9vw;
 }
 
 body {
@@ -16,10 +16,6 @@ article,
 article section p,
 article section h3 {
     display: block;
-}
-
-#hello {
-    margin: 0;
 }
 
 #www aside {
