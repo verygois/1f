@@ -155,7 +155,7 @@ a:hover {
   }
 
   #hello {
-    padding: 5%;
+    padding: 12.5% 5% 5%;
   }
 
   .mobile {
@@ -173,7 +173,7 @@ a:hover {
 }
 
 @page {
-  size: portrait;
+  size: portrait A5;
 }
 
 @media print {
