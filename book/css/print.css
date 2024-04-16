@@ -27,6 +27,7 @@ article section h3 {
 }
 
 #www aside h2 {
+    font-size: 150%;
     place-self: start;
     word-break: break-all;
 }
@@ -37,7 +38,7 @@ article section h3 {
 }
 
 article section h2 {
-    font-size: 150%;
+    font-size: 123%;
 }
 
 article section p {
