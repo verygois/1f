@@ -30,7 +30,7 @@ article section h3 {
 #www aside {
     display: grid;
     font-family: "Arial", sans-serif;
-    font-size: 275%;
+    font-size: 250%;
     place-items: end;
     padding: 2.5vw;
 }
