@@ -22,9 +22,15 @@ article section h3 {
     word-break: break-all;
 }
 
+#www aside h3 strong {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
 #www aside {
     display: grid;
-    font-size: 295%;
+    font-family: "Arial", sans-serif;
+    font-size: 275%;
     place-items: end;
     padding: 2.5vw;
 }
