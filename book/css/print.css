@@ -18,15 +18,6 @@ article section h3 {
     display: block;
 }
 
-#www aside h2 {
-    word-break: break-all;
-}
-
-#www aside h3 strong {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-}
-
 #www aside {
     display: grid;
     font-family: "Arial", sans-serif;
@@ -35,8 +26,18 @@ article section h3 {
     padding: 2.5vw;
 }
 
+#www aside h2 {
+    place-self: start;
+    word-break: break-all;
+}
+
+#www aside h3 strong {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
 article section h2 {
-    font-size: 123%;
+    font-size: 150%;
 }
 
 article section p {
