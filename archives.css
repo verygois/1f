@@ -8,10 +8,6 @@
   src: url("book/times.ttf");
 }
 
-html {
-  font-size: 16px;
-}
-
 hr {
   border: none;
   clear: both;
@@ -104,13 +100,13 @@ h1#title a:not(.vg) {
 }
 
 #hello .image {
-  height: 1.75rem;
-  vertical-align: middle;
-  margin-left: 0.5rem;
+  height: 2rem;
+  vertical-align: baseline;
+  margin-left: 1rem;
   margin-right: 1rem;
   display: inline-block;
-  transform: scale(1.25);
-  transform-origin: center bottom;
+  transform: scale(1.5);
+  transform-origin: center center;
   transition: all 0.5s ease-out;
 }
 
@@ -159,8 +155,16 @@ h1#title .vg {
     display: block;
   }
 
+  #hello .image {
+    height: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    vertical-align: baseline;
+    transform-origin: center bottom;
+  }
+
   #hello .image:hover {
-    transform: scale(3);
+    transform: scale(2.5);
   }
 }
 
