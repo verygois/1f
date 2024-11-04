@@ -100,11 +100,12 @@ h1#title a:not(.vg) {
 }
 
 #hello .image {
+  display: inline-block;
   height: 2rem;
-  vertical-align: baseline;
   margin-left: 1rem;
   margin-right: 1rem;
-  display: inline-block;
+  position: relative;
+  vertical-align: baseline;
   transform: scale(1.5);
   transform-origin: center center;
   transition: all 0.5s ease-out;
