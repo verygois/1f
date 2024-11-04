@@ -68,13 +68,13 @@ const pehuAll = [
 
 document.addEventListener('readystatechange', event => {
     if (event.target.readyState === 'interactive') {
-        imgArr("#about aside", boxAll)
-        imgArr("#one aside", oneAll)
-        imgArr("#two aside", twoAll)
-        imgArr("#three aside", threeAll)
-        imgArr("#four aside", fourAll)
-        imgArr("#five aside", fiveAll)
-        imgArr("#pehu aside", pehuAll)
+        collection("#about aside", boxAll);
+        collection("#one aside", oneAll);
+        collection("#two aside", twoAll);
+        collection("#three aside", threeAll);
+        collection("#four aside", fourAll);
+        collection("#five aside", fiveAll);
+        collection("#pehu aside", pehuAll);
     } else if (event.target.readyState === 'complete') {
         const scrollElementAll = document.querySelectorAll('article aside');
         scrollElementAll.forEach((scrollElement) => {
@@ -84,8 +84,7 @@ document.addEventListener('readystatechange', event => {
                 if (
                     (scrollElement.scrollLeft <= 0 && e.deltaY < 0) ||
                     (scrollElement.scrollLeft >= maxScrollLeft && e.deltaY > 0)
-                )
-                    return;
+                ) return;
                 e.preventDefault();
                 scrollElement.scrollLeft += e.deltaY;
             });
@@ -93,7 +92,7 @@ document.addEventListener('readystatechange', event => {
     }
 });
 
-function imgArr(query, arr) {
+function collection(query, arr) {
     arr.forEach((arrEach) => {
         const crearIMG = document.createElement("img");
         crearIMG.src = directory + arrEach;

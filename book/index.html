@@ -21,17 +21,16 @@
   <meta content="https://vg.pe.hu/1f/book/cover.png" property="og:image">
   <meta content="https://vg.pe.hu/1f/book/cover.png" name="twitter:image:src">
   <script src="../index.js"></script>
-  <script src="js/imgArr.js"></script>
+  <script src="js/collection.js"></script>
   <script src="js/www.js"></script>
 
   <script>
     document.addEventListener('readystatechange', event => {
       if (event.target.readyState === 'interactive') {
-        readmeMD('footer address', 'README.md');
-      } else if (event.target.readyState === 'complete') {
         fetchHTML('#cover', '../contents.html');
         fetchHTML('#www aside', 'print.php');
-
+        readmeMD('footer address', '../README.md');
+      } else if (event.target.readyState === 'complete') {
         const video = document.querySelector('#video');
         video.play();
         video.addEventListener('ended', () => {
@@ -112,10 +111,9 @@
   <article id="two" hidden>
     <section>
       <h2>
-        <a href="https://creative-community.space/map/heard/otobuilding/" target="_blank">
-          Things that I (We) heard
-        </a><br />
-        <br>
+        <a>Things that I (We) heard</a>
+        <br />
+        <br />
         inspired by
         <strong>Things that I heard in New York</strong><br />
         <small>by</small>

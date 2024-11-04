@@ -18,8 +18,7 @@ hr {
 }
 
 body,
-#contents,
-#contents #title,
+h1#title,
 #credit p {
   padding: 0;
   margin: 0;
@@ -34,7 +33,7 @@ a:hover {
   color: #FF5733;
 }
 
-#contents,
+main,
 #hello {
   position: relative;
 }
@@ -43,7 +42,7 @@ a:hover {
   font-family: 'Great Vibes', cursive;
 }
 
-#contents #title,
+h1#title,
 #credit {
   font-family: "MS Mincho", "SimSong", serif;
   font-stretch: condensed;
@@ -67,19 +66,19 @@ a:hover {
   text-decoration: none;
 }
 
-#contents #title {
+h1#title {
   display: flex;
   justify-content: space-between;
   font-size: 100%;
   font-weight: 500;
 }
 
-#contents #title a:not(.vg),
-#contents #title span {
+h1#title a:not(.vg),
+h1#title span {
   padding: 0.5rem;
 }
 
-#contents #title a:not(.vg) {
+h1#title a:not(.vg) {
   color: #fff;
   background: #000;
   display: inline-block;
@@ -125,15 +124,8 @@ a:hover {
   height: 100%;
 }
 
-#title .vg {
+h1#title .vg {
   position: absolute;
-}
-
-#credit {
-  position: fixed;
-}
-
-#title .vg {
   transform: scale(1, 5.5);
   transform-origin: top right;
   top: 0.5rem;
@@ -142,6 +134,7 @@ a:hover {
 }
 
 #credit {
+  position: fixed;
   bottom: 0;
   font-size: 75%;
   line-height: 150%;
@@ -150,7 +143,7 @@ a:hover {
 }
 
 @media screen and (max-width: 750px) {
-  html {
+  main {
     font-size: 3vw;
   }
 
@@ -177,7 +170,7 @@ a:hover {
 }
 
 @media print {
-  html {
+  main {
     font-size: 3vw;
   }
 
@@ -193,7 +186,7 @@ a:hover {
     padding: 1rem 5rem 0 0;
   }
 
-  #title .vg {
+  h1#title .vg {
     font-size: 175%;
   }
 

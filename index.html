@@ -7,10 +7,12 @@
   <meta name="format-detection" content="telephone=no" />
   <script src="index.js"></script>
   <script>
+    indexJSON("index.json");
+
     document.addEventListener("DOMContentLoaded", () => {
-      fetchHTML('#main', 'contents.html')
-      fetchHTML('#floor', '/jp/floor.html')
-    });
+      fetchHTML('#main', 'contents.html');
+      readmeMD('#credit p', 'README.md');
+    }, false);
   </script>
 
   <!--og:meta-->
@@ -32,7 +34,7 @@
 
   <link rel="icon" href="icon.png" type="image/png">
   <link rel="stylesheet" href="archives.css" />
-  <link rel="stylesheet" href="https://vg.pe.hu/jp/floor.css" />
+  <link rel="stylesheet" href="index.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
   <style type="text/css">
@@ -49,12 +51,12 @@
       position: relative;
       display: grid;
       place-content: center;
-      min-height: 100vh;
+      min-height: 100dvh;
       z-index: 1000;
     }
 
     #title {
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       right: 0;
@@ -63,9 +65,10 @@
 
     @media print {
       #main {
+        padding-top: 1rem;
         min-height: auto;
       }
-      
+
       .print_block {
         display: block;
       }
@@ -74,9 +77,19 @@
         display: inline-block;
       }
 
-      #floor,
-      .no_print {
+      .no_print,
+      #index nav {
         display: none;
+      }
+
+      #index {
+        font-size: 2.22vw;
+        page-break-before: always;
+      }
+
+      #index ul {
+        flex-flow: wrap-reverse row-reverse;
+        height: calc(100dvh - 1.23rem);
       }
     }
   </style>
@@ -85,13 +98,12 @@
 <body>
   <main id="main"></main>
   <aside id="credit" class="archives">
-    <p class="print_block">
-      会場 音ビル | 559-0011 大阪府大阪市住之江区北加賀屋5-5-1 2F<br />
-      会期 2021年 1月 15日 (土) - 1月 30日 (日) | 開館時間 11:00 - 18:00<br />
-      主催 クリエイティブ・コミュニティスペース ペフ | 助成 おおさか創造千島財団
-    </p>
+    <p class="print_block"></p>
   </aside>
-  <nav id="floor"></nav>
+  <article id="index">
+    <nav></nav>
+    <ul></ul>
+  </article>
 </body>
 
 </html>

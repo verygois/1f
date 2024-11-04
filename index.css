@@ -1,0 +1,82 @@
+#index nav input,
+#index ul li[hidden] {
+    display: none;
+}
+
+#index nav input+label {
+    font-family: "MS Mincho", "SimSong", serif;
+    text-transform: uppercase;
+    text-decoration: solid underline;
+}
+
+#index ul li u,
+#index ul li small {
+    font-family: "Arial Narrow", "Arial", sans-serif;
+}
+
+#index ul li strong {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#index ul li u {
+    font-size: 95%;
+}
+
+#index ul li strong {
+    font-size: 111%;
+}
+
+#index nav input:checked+label {
+    font-size: 125%;
+}
+
+#index nav input:checked+label {
+    color: #FF5733;
+    text-decoration: double underline;
+}
+
+#index ul {
+    list-style: none inside;
+}
+
+#index nav,
+#index ul {
+    padding: 0.5rem;
+    margin: 0;
+}
+
+#index ul li {
+    padding-right: 0.5rem;
+}
+
+#index ul {
+    min-height: calc(100dvh - 3.21rem);
+}
+
+#index nav,
+#index ul,
+#index ul li {
+    display: flex;
+    gap: 0.5rem;
+    flex-flow: wrap;
+}
+
+#index nav {
+    place-items: start;
+}
+
+#index ul li {
+    place-items: baseline;
+}
+
+#index ul {
+    place-content: end left;
+}
+
+#index nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
