@@ -66,15 +66,23 @@ const pehuAll = [
     "27258798/original_02169d4007fdb290b4434a313055bdb4.jpg"
 ];
 
+function imgArr(query, arr) {
+    arr.forEach((arrEach) => {
+        const crearIMG = document.createElement("img");
+        crearIMG.src = directory + arrEach;
+        document.querySelector(query).appendChild(crearIMG);
+    }, false);
+};
+
 document.addEventListener('readystatechange', event => {
     if (event.target.readyState === 'interactive') {
-        collection("#about aside", boxAll);
-        collection("#one aside", oneAll);
-        collection("#two aside", twoAll);
-        collection("#three aside", threeAll);
-        collection("#four aside", fourAll);
-        collection("#five aside", fiveAll);
-        collection("#pehu aside", pehuAll);
+        imgArr("#about aside", boxAll);
+        imgArr("#one aside", oneAll);
+        imgArr("#two aside", twoAll);
+        imgArr("#three aside", threeAll);
+        imgArr("#four aside", fourAll);
+        imgArr("#five aside", fiveAll);
+        imgArr("#pehu aside", pehuAll);
     } else if (event.target.readyState === 'complete') {
         const scrollElementAll = document.querySelectorAll('article aside');
         scrollElementAll.forEach((scrollElement) => {
@@ -89,13 +97,5 @@ document.addEventListener('readystatechange', event => {
                 scrollElement.scrollLeft += e.deltaY;
             });
         });
-    }
-});
-
-function collection(query, arr) {
-    arr.forEach((arrEach) => {
-        const crearIMG = document.createElement("img");
-        crearIMG.src = directory + arrEach;
-        document.querySelector(query).appendChild(crearIMG)
-    }, false)
-}
+    };
+}, false);

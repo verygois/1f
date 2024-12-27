@@ -7,10 +7,78 @@
   <meta name="format-detection" content="telephone=no" />
   <script src="../index.js"></script>
   <script>
+    let h1, random;
+
+    if (location.search) {
+      let params = new URLSearchParams(location.search);
+      if (params.get("id") === "front") {
+        h1 = "大阪 前期 : 2018年4月9日 - 18日";
+        random = [
+          "front/001.jpg",
+          "front/002.jpg",
+          "front/kaito.jpg",
+          "front/marume.jpg",
+          "front/matsumoto_sanuki.jpg",
+          "front/sakurai_kaito.jpg",
+          "front/sakurai.jpg",
+          "front/sanuki.jpg",
+          "front/sumi.jpg",
+          "front/takao_abe.jpg",
+        ];
+      } else if (params.get("id") === "back") {
+        h1 = "大阪 後期 : 2018年4月21日 - 30日";
+        random = [
+          "back/000.jpg",
+          "back/001.jpg",
+          "back/002.jpg",
+          "back/003.jpg",
+          "back/004.jpg",
+          "back/005.jpg",
+          "back/006.JPG",
+          "back/5bangai.jpg",
+          "back/minamida_kawai.jpg",
+          "back/minamida_nanook.jpg",
+        ];
+      };
+
+      window.addEventListener("load", () => {
+        document.querySelector('#h1').textContent = h1;
+        for (let target of document.querySelectorAll("#ctlg h2 a")) {
+          target.hidden = true;
+          if (target.className == params.get("id")) {
+            target.hidden = false;
+          };
+        };
+      }, false);
+    } else {
+      random = [
+        "book/001.jpeg",
+        "book/002.jpeg",
+        "book/003.jpeg",
+        "book/004.jpeg",
+        "book/005.jpeg",
+        "book/006.jpeg",
+        "book/007.jpeg",
+        "book/008.jpeg",
+        "book/009.jpeg",
+        "book/010.jpeg",
+        "book/011.jpeg",
+        "book/012.jpeg",
+        "book/013.jpeg",
+        "book/014.jpeg",
+        "book/015.jpeg",
+        "book/016.jpeg",
+        "book/017.jpeg"
+      ];
+
+      document.addEventListener("DOMContentLoaded", () => {
+        fetchHTML('#itempage', 'contents.html');
+      }, false);
+    };
+
     document.addEventListener("DOMContentLoaded", () => {
-      fetchHTML('#itempage', 'contents.html')
-      fetchHTML('#ctlg', 'ctlg.html')
-    });
+      fetchHTML('#ctlg', 'ctlg.html');
+    }, false);
   </script>
 
   <!--og:meta-->
@@ -200,29 +268,14 @@
   </article>
 
   <main class="no_print">
-    <section class="left" id="ctlg"></section>
+    <section class="left">
+      <h1 id="h1">
+        <a href="/1f/kaisei/">A new generation of japanese artists</a>
+      </h1>
+      <hr>
+      <section id="ctlg"></section>
+    </section>
     <section class="right random"></section>
-    <script type="text/javascript">
-      const random = [
-        "book/001.jpeg",
-        "book/002.jpeg",
-        "book/003.jpeg",
-        "book/004.jpeg",
-        "book/005.jpeg",
-        "book/006.jpeg",
-        "book/007.jpeg",
-        "book/008.jpeg",
-        "book/009.jpeg",
-        "book/010.jpeg",
-        "book/011.jpeg",
-        "book/012.jpeg",
-        "book/013.jpeg",
-        "book/014.jpeg",
-        "book/015.jpeg",
-        "book/016.jpeg",
-        "book/017.jpeg"
-      ];
-    </script>
   </main>
 
   <article id="itempage"></article>

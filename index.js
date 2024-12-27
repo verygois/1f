@@ -6,7 +6,7 @@ async function indexJSON(requestURL) {
     const jsonIndex = await response.text();
     const index = JSON.parse(jsonIndex);
     indexContents(index);
-}
+};
 
 function indexContents(obj) {
     const contents = document.querySelector('#index ul');
@@ -15,15 +15,18 @@ function indexContents(obj) {
     ];
 
     for (const content of obj.contents) {
-        // indexOf()による判断
-        const index = org.indexOf(content.org);
-        if (index < 0) {
-            org.push(content.org);
-        };
-
         const contentsLi = document.createElement('li');
-        contentsLi.classList.add(content.org);
         contents.appendChild(contentsLi);
+
+        if (content.org) {
+            // indexOf()による判断
+            const index = org.indexOf(content.org);
+            if (index < 0) {
+                org.push(content.org);
+            };
+
+            contentsLi.classList.add(content.org);
+        };
 
         const date = document.createElement('u');
         date.textContent = content.date;
@@ -48,7 +51,7 @@ function indexContents(obj) {
         };
 
         const label = document.createElement('label');
-        label.textContent = orgEach;
+        label.textContent = orgEach.replace("-", "/");
         label.setAttribute('for', orgEach);
 
         nav.appendChild(input);

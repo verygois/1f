@@ -19,6 +19,10 @@
   line-height: 100%;
 }
 
+p {
+  line-height: 125%;
+}
+
 #itempage {
   font-size: 1rem;
   padding: 0 2.5%;

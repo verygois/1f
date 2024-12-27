@@ -50,10 +50,6 @@
     padding-right: 0.5rem;
 }
 
-#index ul {
-    min-height: calc(100dvh - 3.21rem);
-}
-
 #index nav,
 #index ul,
 #index ul li {
