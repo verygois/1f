@@ -196,6 +196,7 @@ hr {
   display: block;
   font-family: inherit;
   font-size: 111%;
+  text-align: left;
 }
 
 #print button:hover {
